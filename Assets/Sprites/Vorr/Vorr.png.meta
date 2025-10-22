@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 7b448db47737ebc46904031869b57313
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1647946143178355164
+    second: Vorr_0
+  - first:
+      213: -9021492744232865183
+    second: Vorr_1
+  - first:
+      213: -364092143949551430
+    second: Vorr_2
+  - first:
+      213: -8372210417752974953
+    second: Vorr_3
+  - first:
+      213: -1028209928399755806
+    second: Vorr_4
+  - first:
+      213: -1862373463507015201
+    second: Vorr_5
+  - first:
+      213: -6877354614701853201
+    second: Vorr_6
+  - first:
+      213: 8047434521244121633
+    second: Vorr_7
+  - first:
+      213: -2555929793324513419
+    second: Vorr_8
+  - first:
+      213: -4051157314420357148
+    second: Vorr_9
+  - first:
+      213: -144905621618107996
+    second: Vorr_10
+  - first:
+      213: 8020868591076453491
+    second: Vorr_11
+  - first:
+      213: 6467071705529186321
+    second: Vorr_12
+  - first:
+      213: 1366153413215480851
+    second: Vorr_13
+  - first:
+      213: -8621277474369310843
+    second: Vorr_14
+  - first:
+      213: -9215372179035437168
+    second: Vorr_15
+  - first:
+      213: -4327585674075056872
+    second: Vorr_16
+  - first:
+      213: 621321518619969908
+    second: Vorr_17
+  - first:
+      213: -7447661180044987289
+    second: Vorr_18
+  - first:
+      213: -2144059559208109297
+    second: Vorr_19
+  - first:
+      213: 1698190238430892346
+    second: Vorr_20
+  - first:
+      213: 8673537180832261358
+    second: Vorr_21
+  - first:
+      213: -5656499164343634667
+    second: Vorr_22
+  - first:
+      213: -6822498753483270965
+    second: Vorr_23
+  - first:
+      213: 5140992861683985422
+    second: Vorr_24
+  - first:
+      213: -9113710624828286667
+    second: Vorr_25
+  - first:
+      213: 2791210092942770460
+    second: Vorr_26
+  - first:
+      213: -7326065202085197891
+    second: Vorr_27
+  - first:
+      213: -4099403536319148964
+    second: Vorr_28
+  - first:
+      213: 8115557018309244430
+    second: Vorr_29
+  - first:
+      213: -5680861394028948982
+    second: Vorr_30
+  - first:
+      213: 3133501359329532341
+    second: Vorr_31
+  - first:
+      213: -2390757072348830901
+    second: Vorr_32
+  - first:
+      213: 5913897849688310921
+    second: Vorr_33
+  - first:
+      213: -1384059929731664948
+    second: Vorr_34
+  - first:
+      213: 5553803119592341986
+    second: Vorr_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vorr_0
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 670
+        width: 69
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1fe19394eaed610800000000000000
+      internalID: 1647946143178355164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_1
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 669
+        width: 67
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1627c34a5283dc280800000000000000
+      internalID: -9021492744232865183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_2
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 669
+        width: 67
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab86066cf1c72faf0800000000000000
+      internalID: -364092143949551430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 669
+        width: 67
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7995201abfeefcb80800000000000000
+      internalID: -8372210417752974953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_4
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 669
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5e33f84801bb1f0800000000000000
+      internalID: -1028209928399755806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_5
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 669
+        width: 67
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9ec84c3358726e0800000000000000
+      internalID: -1862373463507015201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_6
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 669
+        width: 67
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe57d4c6a6abe80a0800000000000000
+      internalID: -6877354614701853201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_7
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 669
+        width: 67
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ab8f75f0b3eaf60800000000000000
+      internalID: 8047434521244121633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_8
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 669
+        width: 67
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5770e061563878cd0800000000000000
+      internalID: -2555929793324513419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_9
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 537
+        width: 60
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7cfb0f2e567c7c0800000000000000
+      internalID: -4051157314420357148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_10
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 537
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9de79da113dfdf0800000000000000
+      internalID: -144905621618107996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_11
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 537
+        width: 63
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c2339bc79df4f60800000000000000
+      internalID: 8020868591076453491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_12
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 537
+        width: 61
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118fb01c377afb950800000000000000
+      internalID: 6467071705529186321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_13
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 537
+        width: 61
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c65678a4d85f210800000000000000
+      internalID: 1366153413215480851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_14
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 537
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58fe32680d11b5880800000000000000
+      internalID: -8621277474369310843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_15
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 537
+        width: 60
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097439b04db6c1080800000000000000
+      internalID: -9215372179035437168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_16
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 537
+        width: 59
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815dfa902c351f3c0800000000000000
+      internalID: -4327585674075056872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_17
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 537
+        width: 60
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47946a811a06f9800800000000000000
+      internalID: 621321518619969908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_18
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 405
+        width: 69
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764b3fbbd9794a890800000000000000
+      internalID: -7447661180044987289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_19
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 405
+        width: 67
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bbe1cc035ce32e0800000000000000
+      internalID: -2144059559208109297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_20
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 405
+        width: 66
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3195b2460f219710800000000000000
+      internalID: 1698190238430892346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_21
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 405
+        width: 67
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee466a19c189e5870800000000000000
+      internalID: 8673537180832261358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_22
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 405
+        width: 68
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515f00dbaf31081b0800000000000000
+      internalID: -5656499164343634667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_23
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 405
+        width: 68
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc49516e78d9151a0800000000000000
+      internalID: -6822498753483270965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_24
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 405
+        width: 67
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c2e7105c9785740800000000000000
+      internalID: 5140992861683985422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_25
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 405
+        width: 67
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53918652978958180800000000000000
+      internalID: -9113710624828286667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_26
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 405
+        width: 67
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11c6538ace5cb620800000000000000
+      internalID: 2791210092942770460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_27
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 275
+        width: 60
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db78c5c8386945a90800000000000000
+      internalID: -7326065202085197891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_28
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 275
+        width: 65
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c87ba043efb17c0800000000000000
+      internalID: -4099403536319148964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_29
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 275
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0630ce2c1040a070800000000000000
+      internalID: 8115557018309244430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_30
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 275
+        width: 60
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a029cae19a68921b0800000000000000
+      internalID: -5680861394028948982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_31
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 275
+        width: 61
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b95a0262ee6c7b20800000000000000
+      internalID: 3133501359329532341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_32
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 275
+        width: 67
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4325660c1352ded0800000000000000
+      internalID: -2390757072348830901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_33
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 275
+        width: 62
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9844e98d2c2621250800000000000000
+      internalID: 5913897849688310921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_34
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 275
+        width: 59
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3fd74b3d4dacce0800000000000000
+      internalID: -1384059929731664948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorr_35
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 275
+        width: 60
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e102cf0382131d40800000000000000
+      internalID: 5553803119592341986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vorr_0: 1647946143178355164
+      Vorr_1: -9021492744232865183
+      Vorr_10: -144905621618107996
+      Vorr_11: 8020868591076453491
+      Vorr_12: 6467071705529186321
+      Vorr_13: 1366153413215480851
+      Vorr_14: -8621277474369310843
+      Vorr_15: -9215372179035437168
+      Vorr_16: -4327585674075056872
+      Vorr_17: 621321518619969908
+      Vorr_18: -7447661180044987289
+      Vorr_19: -2144059559208109297
+      Vorr_2: -364092143949551430
+      Vorr_20: 1698190238430892346
+      Vorr_21: 8673537180832261358
+      Vorr_22: -5656499164343634667
+      Vorr_23: -6822498753483270965
+      Vorr_24: 5140992861683985422
+      Vorr_25: -9113710624828286667
+      Vorr_26: 2791210092942770460
+      Vorr_27: -7326065202085197891
+      Vorr_28: -4099403536319148964
+      Vorr_29: 8115557018309244430
+      Vorr_3: -8372210417752974953
+      Vorr_30: -5680861394028948982
+      Vorr_31: 3133501359329532341
+      Vorr_32: -2390757072348830901
+      Vorr_33: 5913897849688310921
+      Vorr_34: -1384059929731664948
+      Vorr_35: 5553803119592341986
+      Vorr_4: -1028209928399755806
+      Vorr_5: -1862373463507015201
+      Vorr_6: -6877354614701853201
+      Vorr_7: 8047434521244121633
+      Vorr_8: -2555929793324513419
+      Vorr_9: -4051157314420357148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
