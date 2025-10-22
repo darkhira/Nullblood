@@ -14,95 +14,113 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashDuration = 0.15f;
     [SerializeField] private float dashCooldown = 1f;
 
+    [Header("Configuración de Ataque")]
+    [SerializeField] private float attackDuration = 0.4f;
+
     // Variables de estado
     private bool isDashing = false;
     private bool canDash = true;
-
-    // Estado de ataque
     private bool isAttacking = false;
+    private Vector2 lastMoveDirection = new Vector2(0, -1);
 
-    // **NUEVA VARIABLE: Guarda la última dirección de movimiento válida**
-    private Vector2 lastMoveDirection = new Vector2(0, -1); // Por defecto: mirando hacia abajo
+    // --- NUEVA VARIABLE: Referencia al script de combate ---
+    private CombateCaC combateCaC;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        // --- OBTENEMOS LA REFERENCIA AL SCRIPT DE COMBATE ---
+        combateCaC = GetComponent<CombateCaC>();
     }
 
     void Update()
     {
         if (isDashing || isAttacking)
+        {
             return;
+        }
 
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
+        HandleMovementInput();
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            StartCoroutine(AttackCoroutine());
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && moveInput.sqrMagnitude > 0.1f)
+        {
+            StartCoroutine(DashCoroutine());
+        }
+    }
+
+    private void HandleMovementInput()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
         moveInput = new Vector2(moveX, moveY).normalized;
 
-        // **CAMBIO 1: Actualizar la última dirección solo cuando hay movimiento**
-        if (moveInput.sqrMagnitude > 0.01f)
+        if (moveInput.sqrMagnitude > 0.1f)
         {
             lastMoveDirection = moveInput;
         }
 
-        // --- INPUT DE ATAQUE ---
-        if (Input.GetMouseButtonDown(0))
+        if (moveInput.sqrMagnitude > 0.1f)
         {
-            StartCoroutine(Golpe());
-            return;
+            animator.SetFloat("Horizontal", moveInput.x);
+            animator.SetFloat("Vertical", moveInput.y);
+        }
+        else
+        {
+            animator.SetFloat("Horizontal", lastMoveDirection.x);
+            animator.SetFloat("Vertical", lastMoveDirection.y);
         }
 
-        // Actualizar animaciones de movimiento (usa moveX, moveY)
-        animator.SetFloat("Horizontal", moveX);
-        animator.SetFloat("Vertical", moveY);
         animator.SetFloat("Speed", moveInput.sqrMagnitude);
-
-        // Detectar input para Dash (ejemplo: tecla Shift izquierda)
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-        {
-            if (moveInput != Vector2.zero)
-            {
-                StartCoroutine(Dash());
-            }
-        }
     }
 
     private void FixedUpdate()
     {
         if (isDashing || isAttacking)
+        {
             return;
+        }
 
-        // Movimiento base
         rb.MovePosition(rb.position + moveInput * speed * Time.fixedDeltaTime);
     }
 
-    private IEnumerator Golpe()
+    private IEnumerator AttackCoroutine()
     {
         isAttacking = true;
 
-        // **CAMBIO 2: Forzar los parámetros del Blend Tree con la última dirección**
-        // Esto asegura que la animación de ataque se dirija correctamente antes de activarse.
         animator.SetFloat("Horizontal", lastMoveDirection.x);
         animator.SetFloat("Vertical", lastMoveDirection.y);
+        animator.SetBool("isAttacking", true);
 
-        animator.SetTrigger("Golpe");
+        // --- LLAMADA A LA LÓGICA DE DAÑO ---
+        // Esperamos un pequeño instante para que la animación comience...
+        yield return new WaitForSeconds(0.1f);
+        // ...y luego le ordenamos a CombateCaC que aplique el daño.
+        if (combateCaC != null)
+        {
+            combateCaC.EjecutarGolpe();
+        }
 
-        // Esperar el tiempo de la animación de ataque.
-        yield return new WaitForSeconds(0.4f);
+        // Esperamos el resto de la duración de la animación.
+        yield return new WaitForSeconds(attackDuration - 0.1f);
 
-        // Restablecer el estado de ataque
+        animator.SetBool("isAttacking", false);
         isAttacking = false;
     }
 
-    private IEnumerator Dash()
+    private IEnumerator DashCoroutine()
     {
-        // ... (Tu código de Dash)
         canDash = false;
         isDashing = true;
-
         Vector2 dashDirection = moveInput;
-
         float startTime = Time.time;
+
         while (Time.time < startTime + dashDuration)
         {
             rb.MovePosition(rb.position + dashDirection * dashSpeed * Time.fixedDeltaTime);
@@ -110,9 +128,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         isDashing = false;
-
         yield return new WaitForSeconds(dashCooldown);
-
         canDash = true;
     }
 }
