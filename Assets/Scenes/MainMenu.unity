@@ -1904,8 +1904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db665a2b0566fe04b9d2ab334056ae3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarraDeVidaUI
-  sliderBarraDeVida: {fileID: 776130880}
-  healthText: {fileID: 76443563}
+  healthSlider: {fileID: 776130880}
 --- !u!114 &776130880
 MonoBehaviour:
   m_ObjectHideFlags: 0
