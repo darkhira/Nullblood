@@ -1,48 +1,45 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class BarraDeVidaUI : MonoBehaviour
 {
-    [SerializeField] private Slider sliderBarraDeVida;
-    // Opcional: Si quieres mostrar la vida en texto (ej. "80/100")
-    [SerializeField] private TextMeshProUGUI healthText;
+    [SerializeField] private Slider healthSlider;
 
-    private void OnEnable()
+    // Se llama cuando el script se carga.
+    private void Awake()
     {
-        // --- CAMBIO: Nos suscribimos al único evento correcto: OnStatsChanged ---
-        PlayerStats.OnStatsChanged += ActualizarUI;
-    }
-
-    private void OnDisable()
-    {
-        // --- CAMBIO: Nos desuscribimos del mismo evento ---
-        if (PlayerStats.Instance != null)
+        // Si no has arrastrado el Slider en el Inspector, intenta encontrarlo en este mismo objeto.
+        if (healthSlider == null)
         {
-            PlayerStats.OnStatsChanged -= ActualizarUI;
+            healthSlider = GetComponent<Slider>();
         }
     }
 
-    // Se llama una vez al inicio para configurar la barra
-    private void Start()
+    // Se llama cuando el objeto se activa.
+    private void OnEnable()
     {
-        // Forzamos una actualización inicial
-        ActualizarUI();
+        // Se suscribe al evento para recibir actualizaciones de vida.
+        PlayerStats.OnStatsChanged += UpdateHealthBar;
+        UpdateHealthBar(); // Llama una vez para tener el valor inicial correcto.
     }
 
-    private void ActualizarUI()
+    // Se llama cuando el objeto se desactiva.
+    private void OnDisable()
     {
+        // Se desuscribe del evento para evitar errores.
         if (PlayerStats.Instance != null)
         {
-            // Actualizamos el slider
-            sliderBarraDeVida.maxValue = PlayerStats.Instance.maxHealth;
-            sliderBarraDeVida.value = PlayerStats.Instance.currentHealth;
+            PlayerStats.OnStatsChanged -= UpdateHealthBar;
+        }
+    }
 
-            // Actualizamos el texto (si lo tienes asignado)
-            if (healthText != null)
-            {
-                healthText.text = $"{PlayerStats.Instance.currentHealth} / {PlayerStats.Instance.maxHealth}";
-            }
+    // Método que actualiza la barra de vida visualmente.
+    private void UpdateHealthBar()
+    {
+        if (PlayerStats.Instance != null && healthSlider != null)
+        {
+            healthSlider.maxValue = PlayerStats.Instance.maxHealth;
+            healthSlider.value = PlayerStats.Instance.currentHealth;
         }
     }
 }
