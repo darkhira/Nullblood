@@ -44,26 +44,26 @@ public class RangedTurret : MonoBehaviour
     }
 
     private void Disparar(Vector2 direction)
-    {
-        if (projectilePrefab == null || shootPoint == null) return;
+{
+    if (projectilePrefab == null || shootPoint == null) return;
 
         GameObject proj = Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
-        Vector2 dir = (jugador.position - shootPoint.position).normalized;
-        Rigidbody2D rb = proj.GetComponent<Rigidbody2D>();
+    Projectile bulletRb = proj.GetComponent<Projectile>();
+    Rigidbody2D rb = proj.GetComponent<Rigidbody2D>();
 
         if (rb != null)
             rb.linearVelocity = direction * projectileSpeed;
-
-        Projectile p = proj.GetComponent<Projectile>();
-        if (p != null)
+        if (bulletRb != null)
         {
-            p.SetDirection(dir);
-            p.ownerTag = gameObject.tag;
-            p.damage = projectileDamage;
-            p.ownerTag = "Enemy";
+            bulletRb.Initialize(direction);
         }
-        
+    if (bulletRb != null)
+    {
+        bulletRb.ownerTag = "Enemigo";
+        bulletRb.damage = projectileDamage;
     }
+}
+
 
     public void SetPuedeDisparar(bool value)
     {

@@ -8,9 +8,13 @@ public class Enemigo : MonoBehaviour
     [SerializeField] private float vidaMaxima = 200f;
     [SerializeField] private float tiempoParaDesaparecer = 1f;
     [SerializeField] private EnemyHealthBar EnemyHealthBar;
+
+    [Header("Turret Settings")]
+    [SerializeField] private string turretTag = "EnemyTurret"; // ðŸ‘ˆ tag to search for
+    private RangedTurret torreta;
     private Animator anim;
 
-    // --- CAMBIO 1: Añadimos la bandera para controlar el estado de muerte ---
+    // --- CAMBIO 1: Aï¿½adimos la bandera para controlar el estado de muerte ---
     private bool isDead = false;
 
     private void Start()
@@ -22,6 +26,15 @@ public class Enemigo : MonoBehaviour
         {
             parentRoom = GetComponentInParent<Room>();
         }
+        GameObject turretObj = GameObject.FindGameObjectWithTag(turretTag);
+        if (turretObj != null)
+        {
+            torreta = turretObj.GetComponent<RangedTurret>();
+        }
+        else
+        {
+            Debug.LogWarning($"[RangedEnemy] No RangedTurret found with tag '{turretTag}'");
+        }
     }
 
     public void SetParentRoom(Room room)
@@ -29,13 +42,13 @@ public class Enemigo : MonoBehaviour
         parentRoom = room;
     }
 
-    public void TomarDaño(float daño)
+    public void TomarDaÃ±o(float daÃ±o)
     {
-        // --- CAMBIO 2: Si el enemigo ya está muerto, no hacemos nada ---
+        // --- CAMBIO 2: Si el enemigo ya estï¿½ muerto, no hacemos nada ---
         if (isDead) return;
 
-        vidaActual -= daño;
-        Debug.Log($"[Enemigo] {gameObject.name} ha recibido {daño} de daño. Vida restante: {vidaActual}");
+        vidaActual -= daÃ±o;
+        Debug.Log($"[Enemigo] {gameObject.name} ha recibido {daÃ±o} de daï¿½o. Vida restante: {vidaActual}");
         EnemyHealthBar.UpdateHealthBar(vidaMaxima, vidaActual);
 
         if (vidaActual <= 0)
@@ -48,7 +61,13 @@ public class Enemigo : MonoBehaviour
 
     private void Muerte()
     {
-        // ... (el resto de la función Muerte sigue igual)
+        RangedEnemy movement = GetComponent<RangedEnemy>();
+        if (movement != null)
+            movement.enabled = false;
+        RangedTurret turret = GetComponent<RangedTurret>();
+        if (turret != null)
+            torreta.SetPuedeDisparar(false);
+        // ... (el resto de la funciï¿½n Muerte sigue igual)
         if (anim != null)
         {
             anim.SetTrigger("Muerte");
@@ -59,7 +78,11 @@ public class Enemigo : MonoBehaviour
         }
 
         // ... Desactivar IA, Colliders, etc.
-
+        if (transform.parent != null && transform.parent.gameObject.scene.IsValid() && gameObject.tag != "Player")
+        {
+            Destroy(transform.parent.gameObject, tiempoParaDesaparecer);
+        }
         Destroy(gameObject, tiempoParaDesaparecer);
+        
     }
 }

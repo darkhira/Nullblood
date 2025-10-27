@@ -5,22 +5,27 @@ public class Projectile : MonoBehaviour
     public int damage = 10;
     public float lifeTime = 5f;
     public float speed = 8f;
-    public string ownerTag = "Enemy";
+    public string ownerTag = "Enemigo";
     public LayerMask environmentMask;
     private Rigidbody2D rb;
     private Vector2 direction;
-    private void Awake()
+
+    public void Initialize(Vector2 direction)
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = direction.normalized * speed;
+
+        // Rotar sprite hacia la dirección de disparo
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angle + 90f);
+        
     }
-    private void Start()
+    void Start()
     {
+        //obtener los componentes necesarios
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        // si se sobrepasa la lifetime el projectil es destruido
         Destroy(gameObject, lifeTime);
-    }
-    public void SetDirection(Vector2 dir)
-    {
-        direction = dir.normalized;
-        rb.linearVelocity = direction * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,11 +36,11 @@ public class Projectile : MonoBehaviour
         // Si golpea al jugador
         if (other.CompareTag("Player"))
         {
-            VidaJugador vida = other.GetComponent<VidaJugador>();
-            if (vida != null)
+            if (other.gameObject.TryGetComponent(out PlayerStats playerStats))
             {
-                vida.TomarDaño(damage);
+                playerStats.TakeDamage(damage, gameObject);
             }
+            
 
             Destroy(gameObject);
             return;
@@ -52,7 +57,7 @@ public class Projectile : MonoBehaviour
         }
 
         // En cualquier otro caso, se destruye
-        Destroy(gameObject);
+        // Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

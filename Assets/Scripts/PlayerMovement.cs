@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Animator animator;
 
-    [Header("Configuración de Dash")]
+    [Header("Configuraciï¿½n de Dash")]
     [SerializeField] private float dashSpeed = 10f;
     [SerializeField] private float dashDuration = 0.15f;
     [SerializeField] private float dashCooldown = 1f;
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     // Estado de ataque
     private bool isAttacking = false;
 
-    // **NUEVA VARIABLE: Guarda la última dirección de movimiento válida**
+    // **NUEVA VARIABLE: Guarda la ï¿½ltima direcciï¿½n de movimiento vï¿½lida**
     private Vector2 lastMoveDirection = new Vector2(0, -1); // Por defecto: mirando hacia abajo
 
     void Start()
@@ -39,14 +39,14 @@ public class PlayerMovement : MonoBehaviour
         float moveY = Input.GetAxis("Vertical");
         moveInput = new Vector2(moveX, moveY).normalized;
 
-        // **CAMBIO 1: Actualizar la última dirección solo cuando hay movimiento**
+        // **CAMBIO 1: Actualizar la ï¿½ltima direcciï¿½n solo cuando hay movimiento**
         if (moveInput.sqrMagnitude > 0.01f)
         {
             lastMoveDirection = moveInput;
         }
 
         // --- INPUT DE ATAQUE ---
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)||Input.GetKeyDown(KeyCode.Joystick1Button1) )
         {
             StartCoroutine(Golpe());
             return;
@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", moveInput.sqrMagnitude);
 
         // Detectar input para Dash (ejemplo: tecla Shift izquierda)
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if ((Input.GetKeyDown(KeyCode.LeftShift) ||Input.GetKeyDown(KeyCode.Joystick1Button1)) && canDash)
         {
             if (moveInput != Vector2.zero)
             {
@@ -80,14 +80,14 @@ public class PlayerMovement : MonoBehaviour
     {
         isAttacking = true;
 
-        // **CAMBIO 2: Forzar los parámetros del Blend Tree con la última dirección**
-        // Esto asegura que la animación de ataque se dirija correctamente antes de activarse.
+        // **CAMBIO 2: Forzar los parï¿½metros del Blend Tree con la ï¿½ltima direcciï¿½n**
+        // Esto asegura que la animaciï¿½n de ataque se dirija correctamente antes de activarse.
         animator.SetFloat("Horizontal", lastMoveDirection.x);
         animator.SetFloat("Vertical", lastMoveDirection.y);
 
         animator.SetTrigger("Golpe");
 
-        // Esperar el tiempo de la animación de ataque.
+        // Esperar el tiempo de la animaciï¿½n de ataque.
         yield return new WaitForSeconds(0.4f);
 
         // Restablecer el estado de ataque
@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        // ... (Tu código de Dash)
+        // ... (Tu cï¿½digo de Dash)
         canDash = false;
         isDashing = true;
 

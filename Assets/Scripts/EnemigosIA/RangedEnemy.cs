@@ -6,9 +6,11 @@ public class RangedEnemy : MonoBehaviour
     [Header("Movimiento")]
     [SerializeField] private float velocidad = 2f;
     [SerializeField] private float rangoAtaque = 6f;
-    [SerializeField] private float rangoDeteccion = 24f;
+    [SerializeField] private float retroceso = 6f;
+    [SerializeField] private float rangoDeteccion = 16f;
+    [SerializeField] private float acceleration = 5f;
 
-    private Transform jugador;
+    public Transform Player;
     private Rigidbody2D rb;
     private Animator animator;
 
@@ -18,6 +20,7 @@ public class RangedEnemy : MonoBehaviour
     [Header("Referencia a la torreta")]
     [SerializeField] private RangedTurret torreta; // Asigna el objeto Torreta en el inspector
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,7 +28,7 @@ public class RangedEnemy : MonoBehaviour
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
-            jugador = playerObj.transform;
+            Player = playerObj.transform;
         else
             Debug.LogError("[RangedEnemy] No se encontró un objeto con tag 'Player'.");
 
@@ -35,22 +38,22 @@ public class RangedEnemy : MonoBehaviour
 
     void Update()
     {
-        if (jugador == null) return;
+        if (Player == null) return;
         // Evita que la torreta se invierta visualmente al hacer flip
-    if (torreta != null)
-    {
-        Vector3 scale = torreta.transform.localScale;
-        scale.x = Mathf.Abs(scale.x); // siempre positivo
-        torreta.transform.localScale = scale;
-    }
-        float distancia = Vector2.Distance(transform.position, jugador.position);
+        if (torreta != null)
+        {
+            Vector3 scale = torreta.transform.localScale;
+            scale.x = Mathf.Abs(scale.x); // siempre positivo
+            torreta.transform.localScale = scale;
+        }
+        float distancia = Vector2.Distance(transform.position, Player.position);
 
         if (distancia <= rangoDeteccion)
         {
             // Si está más lejos del rango de ataque, moverse hacia el jugador
             if (distancia > rangoAtaque)
             {
-                Vector2 direccion = (jugador.position - transform.position).normalized;
+                Vector2 direccion = (Player.position - transform.position).normalized;
                 rb.linearVelocity = direccion * velocidad;
 
                 // Mientras se mueve, desactiva el disparo
@@ -66,7 +69,7 @@ public class RangedEnemy : MonoBehaviour
             }
 
             // Flip horizontal
-            bool movingRight = (jugador.position.x > transform.position.x);
+            bool movingRight = (Player.position.x > transform.position.x);
             Flip(movingRight);
         }
         else
@@ -79,19 +82,46 @@ public class RangedEnemy : MonoBehaviour
         // Animación
         animator.SetFloat("Speed", rb.linearVelocity.sqrMagnitude);
     }
+    /*
+    private void FixedUpdate()
+    {
+        if (!enabled || Player == null) return;
+
+        // Dirección al jugador
+        Vector2 toPlayer = Player.position - transform.position;
+        float distance = toPlayer.magnitude;
+        Vector2 dir = toPlayer.normalized;
+
+        Vector2 desiredVelocity = Vector2.zero;
+
+        // Si está lejos, se acerca; si está muy cerca, se aleja
+        if (distance > rangoAtaque)
+            desiredVelocity = dir * velocidad;
+        else if (distance < retroceso)
+            desiredVelocity = -dir * velocidad;
+
+        // Movimiento suave
+        rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, desiredVelocity, acceleration * Time.fixedDeltaTime);
+    }*/
 
     private void Flip(bool movingRight)
 {
-    if (isFacingRight != movingRight)
-    {
-        isFacingRight = movingRight;
+        if (isFacingRight != movingRight)
+        {
+            isFacingRight = movingRight;
 
-        // Invertir todo el enemigo
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
+            // Invertir todo el enemigo
+            Vector3 scale = transform.localScale;
+            scale.x *= 1;
+            transform.localScale = scale;
 
-    }
+        }
+        else
+        {
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
 }
 
 
