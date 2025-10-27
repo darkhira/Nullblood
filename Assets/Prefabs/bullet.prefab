@@ -107,7 +107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   damage: 10
   lifeTime: 5
-  ownerTag: Enemy
+  speed: 8
+  ownerTag: Enemigo
   environmentMask:
     serializedVersion: 2
     m_Bits: 0

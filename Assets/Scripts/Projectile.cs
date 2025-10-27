@@ -4,12 +4,23 @@ public class Projectile : MonoBehaviour
 {
     public int damage = 10;
     public float lifeTime = 5f;
-    public string ownerTag = "Enemy"; 
+    public float speed = 8f;
+    public string ownerTag = "Enemy";
     public LayerMask environmentMask;
-
+    private Rigidbody2D rb;
+    private Vector2 direction;
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
     private void Start()
     {
         Destroy(gameObject, lifeTime);
+    }
+    public void SetDirection(Vector2 dir)
+    {
+        direction = dir.normalized;
+        rb.linearVelocity = direction * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
