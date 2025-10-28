@@ -6,9 +6,7 @@ public class RangedEnemy : MonoBehaviour
     [Header("Movimiento")]
     [SerializeField] private float velocidad = 2f;
     [SerializeField] private float rangoAtaque = 6f;
-    [SerializeField] private float retroceso = 6f;
     [SerializeField] private float rangoDeteccion = 16f;
-    [SerializeField] private float acceleration = 5f;
 
     public Transform Player;
     private Rigidbody2D rb;
