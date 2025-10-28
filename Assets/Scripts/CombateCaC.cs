@@ -5,26 +5,50 @@ public class CombateCaC : MonoBehaviour
     [SerializeField] private Transform controladorGolpe;
     [SerializeField] private float radioGolpe;
 
+    // --- CAMBIO 1: Eliminamos las variables que ahora estï¿½n en PlayerStats ---
+    // [SerializeField] private float daï¿½oGolpe;
+    // [SerializeField] private float tiempoEntreAtaques;
+
+    private float tiempoSiguienteAtaque;
+    private Animator anim;
+
+    // --- CAMBIO 2: Aï¿½adimos una referencia a PlayerStats ---
     private PlayerStats playerStats;
 
     private void Start()
     {
-        // Obtenemos la referencia a las estad�sticas del jugador
+        anim = GetComponent<Animator>();
+        // Asumimos que este script y PlayerStats estï¿½n en el mismo objeto (el Jugador)
         playerStats = GetComponent<PlayerStats>();
     }
 
-    // --- M�TODO P�BLICO ---
-    // Este m�todo ser� llamado por PlayerMovement para ejecutar el ataque.
-    public void EjecutarGolpe()
+    private void Update()
     {
-        // Detectamos a los enemigos en el �rea de golpe
+        if (tiempoSiguienteAtaque > 0)
+        {
+            tiempoSiguienteAtaque -= Time.deltaTime;
+        }
+
+        if (Input.GetButtonDown("Fire1") && tiempoSiguienteAtaque <= 0)
+        {
+            Golpe();
+            // --- CAMBIO 3: Calculamos el cooldown basado en el attackSpeed de PlayerStats ---
+            // attackSpeed es "ataques por segundo", asï¿½ que el tiempo entre ataques es 1 / attackSpeed
+            tiempoSiguienteAtaque = 1f / playerStats.attackSpeed;
+        }
+    }
+
+    private void Golpe()
+    {
+        // Detectamos a los enemigos en el área de golpe
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
 
         foreach (Collider2D colisionador in objetos)
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDa�o(playerStats.baseDamage);
+                // --- CAMBIO 4: Usamos el baseDamage de PlayerStats para el daï¿½o ---
+                colisionador.transform.GetComponent<Enemigo>().TomarDaÃ±o(playerStats.baseDamage);
             }
         }
     }
