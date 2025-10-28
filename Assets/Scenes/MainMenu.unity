@@ -1904,8 +1904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db665a2b0566fe04b9d2ab334056ae3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarraDeVidaUI
-  sliderBarraDeVida: {fileID: 776130880}
-  healthText: {fileID: 76443563}
+  healthSlider: {fileID: 776130880}
 --- !u!114 &776130880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3614,11 +3613,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2519889305973351982, guid: 3af9faf87cc160444b2365affcb5bd9d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 2519889305973351982, guid: 3af9faf87cc160444b2365affcb5bd9d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.41
       objectReference: {fileID: 0}
     - target: {fileID: 2519889305973351982, guid: 3af9faf87cc160444b2365affcb5bd9d, type: 3}
       propertyPath: m_LocalPosition.z

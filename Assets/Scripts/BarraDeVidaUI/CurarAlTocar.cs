@@ -6,9 +6,11 @@ public class CurarAlTocar : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.TryGetComponent(out VidaJugador vidaJugador))
+        // Buscamos el componente PlayerStats en lugar de VidaJugador
+        if (col.TryGetComponent(out PlayerStats playerStats))
         {
-            vidaJugador.CurarVida(cantidadCuracion);
+            // Usamos el método Heal de PlayerStats
+            playerStats.Heal(cantidadCuracion);
             Destroy(gameObject);
         }
     }
