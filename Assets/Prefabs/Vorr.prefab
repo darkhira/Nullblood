@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   vidaActual: 40
   vidaMaxima: 40
-  tiempoParaDesaparecer: 1
+  tiempoParaDesaparecer: 0
   EnemyHealthBar: {fileID: 1883586870565501134}
 --- !u!114 &383357790366564361
 MonoBehaviour:

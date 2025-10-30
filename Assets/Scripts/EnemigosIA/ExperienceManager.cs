@@ -1,4 +1,4 @@
-using System; // <--- ¡ASEGÚRATE DE TENER ESTA LÍNEA!
+using System; //
 using UnityEngine;
 
 public class ExperienceManager : MonoBehaviour
@@ -6,8 +6,8 @@ public class ExperienceManager : MonoBehaviour
     public static ExperienceManager Instance;
 
     // --- NUEVO EVENTO ---
-    // Este evento notificará a los suscriptores (como la UI) cuando la XP cambie.
-    // Envía la experiencia actual y la necesaria para el siguiente nivel.
+    // Este evento notificarï¿½ a los suscriptores (como la UI) cuando la XP cambie.
+    // Envï¿½a la experiencia actual y la necesaria para el siguiente nivel.
     public static event Action<int, int> OnExperienceChanged;
 
     [Tooltip("Enemigos que se deben derrotar para subir de nivel.")]
@@ -30,7 +30,7 @@ public class ExperienceManager : MonoBehaviour
 
     private void Start()
     {
-        // --- NUEVA LÍNEA ---
+        // --- NUEVA Lï¿½NEA ---
         // Al empezar, notifica a la UI los valores iniciales (0 de 10, por ejemplo).
         OnExperienceChanged?.Invoke(currentExperience, experienceToLevelUp);
     }
@@ -40,17 +40,17 @@ public class ExperienceManager : MonoBehaviour
         currentExperience++;
         Debug.Log($"[XP Manager] Enemigo derrotado. Progreso: {currentExperience}/{experienceToLevelUp}");
 
-        // --- NUEVA LÍNEA ---
+        // --- NUEVA Lï¿½NEA ---
         // Notificamos a todos los suscriptores del cambio en la experiencia.
         OnExperienceChanged?.Invoke(currentExperience, experienceToLevelUp);
 
         if (currentExperience >= experienceToLevelUp)
         {
             currentExperience = 0;
-            Debug.Log("[XP Manager] ¡NIVEL ALCANZADO! Solicitando subida de nivel al GameManager.");
+            Debug.Log("[XP Manager] ï¿½NIVEL ALCANZADO! Solicitando subida de nivel al GameManager.");
             GameManager.Instance.TriggerLevelUp();
 
-            // --- NUEVA LÍNEA ---
+            // --- NUEVA Lï¿½NEA ---
             // Notificamos de nuevo para que la barra se resetee a cero.
             OnExperienceChanged?.Invoke(currentExperience, experienceToLevelUp);
         }

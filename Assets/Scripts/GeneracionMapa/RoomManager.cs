@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Linq; // Necesario para OrderBy
 
 public class RoomManager : MonoBehaviour
 {
     [Header("Configuración de generación")]
-    [SerializeField] private GameObject roomPrefab;
+    // --- CAMBIO 1: Reemplazamos el prefab único por una lista ---
+    [SerializeField] private List<GameObject> roomPrefabs;
+    [SerializeField] private GameObject initialRoomPrefab; // Prefab especial para la primera sala
     [SerializeField] private int maxRooms = 15;
     [SerializeField] private int minRooms = 10;
 
@@ -22,6 +25,13 @@ public class RoomManager : MonoBehaviour
 
     private void Start()
     {
+        // --- CAMBIO 2: Verificación de prefabs ---
+        if (roomPrefabs == null || roomPrefabs.Count == 0 || initialRoomPrefab == null)
+        {
+            Debug.LogError("[RoomManager] ¡No hay prefabs de sala asignados en el Inspector! Asigna al menos un 'InitialRoomPrefab' y un prefab en 'RoomPrefabs'.");
+            return;
+        }
+
         roomGrid = new int[gridSizeX, gridSizeY];
         Vector2Int initialRoomIndex = new Vector2Int(gridSizeX / 2, gridSizeY / 2);
         StartRoomGenerationFromRoom(initialRoomIndex);
@@ -49,7 +59,7 @@ public class RoomManager : MonoBehaviour
         {
             Debug.Log($"Generación completada, {roomCount} salas creadas.");
             generationComplete = true;
-            ConnectAllDoors(); // conecta automáticamente los DoorTeleport
+            ConnectAllDoors();
         }
     }
 
@@ -62,8 +72,9 @@ public class RoomManager : MonoBehaviour
         roomGrid[x, y] = 1;
         roomCount++;
 
-        var initialRoom = Instantiate(roomPrefab, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
-        initialRoom.name = $"Room-{roomCount}";
+        // --- CAMBIO 3: Usamos el prefab de la sala inicial ---
+        var initialRoom = Instantiate(initialRoomPrefab, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
+        initialRoom.name = $"Room-Start"; // Nombre especial para la sala inicial
         initialRoom.GetComponent<Room>().RoomIndex = roomIndex;
         roomObjects.Add(initialRoom);
     }
@@ -88,7 +99,10 @@ public class RoomManager : MonoBehaviour
         roomGrid[x, y] = 1;
         roomCount++;
 
-        var newRoom = Instantiate(roomPrefab, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
+        // --- CAMBIO 4: Elegimos un prefab ALEATORIO de la lista ---
+        GameObject randomRoomPrefab = roomPrefabs[Random.Range(0, roomPrefabs.Count)];
+
+        var newRoom = Instantiate(randomRoomPrefab, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
         newRoom.GetComponent<Room>().RoomIndex = roomIndex;
         newRoom.name = $"Room-{roomCount}";
         roomObjects.Add(newRoom);
@@ -108,6 +122,9 @@ public class RoomManager : MonoBehaviour
         Vector2Int initialRoomIndex = new Vector2Int(gridSizeX / 2, gridSizeY / 2);
         StartRoomGenerationFromRoom(initialRoomIndex);
     }
+
+    // ... (El resto de tus métodos: ConnectAllDoors, TryConnect, IsInsideGrid, etc.
+    // ... no necesitan cambios)
 
     private void ConnectAllDoors()
     {

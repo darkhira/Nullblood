@@ -1,0 +1,899 @@
+fileFormatVersion: 2
+guid: 76e4eee4c52c8254cbb6c709181689e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 779148364402352913
+    second: tilesets pasillos _0
+  - first:
+      213: 8014037845312278116
+    second: tilesets pasillos _1
+  - first:
+      213: -4634819809151100912
+    second: tilesets pasillos _2
+  - first:
+      213: 5369549472376970745
+    second: tilesets pasillos _3
+  - first:
+      213: 6604402419581676381
+    second: tilesets pasillos _4
+  - first:
+      213: 1926475397348415977
+    second: tilesets pasillos _5
+  - first:
+      213: 8851480755717582682
+    second: tilesets pasillos _6
+  - first:
+      213: 7570208547189371980
+    second: tilesets pasillos _7
+  - first:
+      213: 3509226744243884177
+    second: tilesets pasillos _8
+  - first:
+      213: -1958603009897457967
+    second: tilesets pasillos _9
+  - first:
+      213: 4726705169493066782
+    second: tilesets pasillos _10
+  - first:
+      213: 7356573937639662611
+    second: tilesets pasillos _11
+  - first:
+      213: -1886080438064988566
+    second: tilesets pasillos _12
+  - first:
+      213: 6324837267727871200
+    second: tilesets pasillos _13
+  - first:
+      213: 7172606029584981800
+    second: tilesets pasillos _14
+  - first:
+      213: 4908263750309518323
+    second: tilesets pasillos _15
+  - first:
+      213: 7368096064125776251
+    second: tilesets pasillos _16
+  - first:
+      213: 3139008537889001492
+    second: tilesets pasillos _17
+  - first:
+      213: 8316606815064411623
+    second: tilesets pasillos _18
+  - first:
+      213: -1849975826821618898
+    second: tilesets pasillos _19
+  - first:
+      213: 482892367031371555
+    second: tilesets pasillos _20
+  - first:
+      213: 5654240096614968645
+    second: tilesets pasillos _21
+  - first:
+      213: -6978290785555526135
+    second: tilesets pasillos _22
+  - first:
+      213: 5937832307225351609
+    second: tilesets pasillos _23
+  - first:
+      213: -3320377541359108217
+    second: tilesets pasillos _24
+  - first:
+      213: 1527891767227515654
+    second: tilesets pasillos _25
+  - first:
+      213: -696312547644303304
+    second: tilesets pasillos _26
+  - first:
+      213: -1186231840372118774
+    second: tilesets pasillos _27
+  - first:
+      213: -7799140367113005967
+    second: tilesets pasillos _28
+  - first:
+      213: 9122705777095333415
+    second: tilesets pasillos _29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tilesets pasillos _0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 977
+        width: 121
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113678f2f4710da00800000000000000
+      internalID: 779148364402352913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 979
+        width: 104
+        height: 134
+      alignment: 9
+      pivot: {x: 0.54201096, y: 0.48971957}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e006ac5f4973f60800000000000000
+      internalID: 8014037845312278116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 977
+        width: 124
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018da9d90ffcdafb0800000000000000
+      internalID: -4634819809151100912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _3
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 990
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd5ae8cbc8748a40800000000000000
+      internalID: 5369549472376970745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 990
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b65ec420d87ab50800000000000000
+      internalID: 6604402419581676381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _5
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 990
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e95b7fba273cba10800000000000000
+      internalID: 1926475397348415977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _6
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 990
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fa0c4a9d6c6da70800000000000000
+      internalID: 8851480755717582682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 787
+        width: 45
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4439d2a098ce0960800000000000000
+      internalID: 7570208547189371980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 789
+        width: 43
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19015f6912743b030800000000000000
+      internalID: 3509226744243884177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _9
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 866
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d61d0b80f4a1d4e0800000000000000
+      internalID: -1958603009897457967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _10
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 866
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1403a9fe41a89140800000000000000
+      internalID: 4726705169493066782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _11
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 866
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314a8ecf40dc71660800000000000000
+      internalID: 7356573937639662611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _12
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 866
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6eb25f95db43d5e0800000000000000
+      internalID: -1886080438064988566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _13
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 609
+        width: 128
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec621d0cf556c750800000000000000
+      internalID: 6324837267727871200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _14
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 698
+        width: 133
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fdc3b8e273a8360800000000000000
+      internalID: 7172606029584981800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _15
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 752
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb102530e7ad1440800000000000000
+      internalID: 4908263750309518323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _16
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 761
+        width: 86
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71bb2d155cb04660800000000000000
+      internalID: 7368096064125776251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _17
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 733
+        width: 154
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410dacf42afff8b20800000000000000
+      internalID: 3139008537889001492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _18
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 609
+        width: 117
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7edc184c5d58a6370800000000000000
+      internalID: 8316606815064411623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _19
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 609
+        width: 247
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23ec3f79c09356e0800000000000000
+      internalID: -1849975826821618898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _20
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 563
+        width: 133
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32707a1ac0493b600800000000000000
+      internalID: 482892367031371555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _21
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 626
+        width: 63
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d61811965e77e40800000000000000
+      internalID: 5654240096614968645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _22
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 427
+        width: 121
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ec49bc081282f90800000000000000
+      internalID: -6978290785555526135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _23
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 432
+        width: 94
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b55100060b676250800000000000000
+      internalID: 5937832307225351609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _24
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 427
+        width: 124
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ffa1fd736abe1d0800000000000000
+      internalID: -3320377541359108217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _25
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 237
+        width: 47
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60307d89779243510800000000000000
+      internalID: 1527891767227515654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _26
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 239
+        width: 43
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83893095d633656f0800000000000000
+      internalID: -696312547644303304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _27
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 59
+        width: 117
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bac551d68a98fe0800000000000000
+      internalID: -1186231840372118774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _28
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 59
+        width: 247
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174d1d06823e3c390800000000000000
+      internalID: -7799140367113005967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets pasillos _29
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 59
+        width: 128
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726db22f19c5a9e70800000000000000
+      internalID: 9122705777095333415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a342812890ad57e478ba5a707a76f0a9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      tilesets pasillos _0: 779148364402352913
+      tilesets pasillos _1: 8014037845312278116
+      tilesets pasillos _10: 4726705169493066782
+      tilesets pasillos _11: 7356573937639662611
+      tilesets pasillos _12: -1886080438064988566
+      tilesets pasillos _13: 6324837267727871200
+      tilesets pasillos _14: 7172606029584981800
+      tilesets pasillos _15: 4908263750309518323
+      tilesets pasillos _16: 7368096064125776251
+      tilesets pasillos _17: 3139008537889001492
+      tilesets pasillos _18: 8316606815064411623
+      tilesets pasillos _19: -1849975826821618898
+      tilesets pasillos _2: -4634819809151100912
+      tilesets pasillos _20: 482892367031371555
+      tilesets pasillos _21: 5654240096614968645
+      tilesets pasillos _22: -6978290785555526135
+      tilesets pasillos _23: 5937832307225351609
+      tilesets pasillos _24: -3320377541359108217
+      tilesets pasillos _25: 1527891767227515654
+      tilesets pasillos _26: -696312547644303304
+      tilesets pasillos _27: -1186231840372118774
+      tilesets pasillos _28: -7799140367113005967
+      tilesets pasillos _29: 9122705777095333415
+      tilesets pasillos _3: 5369549472376970745
+      tilesets pasillos _4: 6604402419581676381
+      tilesets pasillos _5: 1926475397348415977
+      tilesets pasillos _6: 8851480755717582682
+      tilesets pasillos _7: 7570208547189371980
+      tilesets pasillos _8: 3509226744243884177
+      tilesets pasillos _9: -1958603009897457967
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
