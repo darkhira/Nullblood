@@ -62,13 +62,21 @@ public class RangedEnemy : MonoBehaviour
             {
                 // Detenerse y activar disparo
                 rb.linearVelocity = Vector2.zero;
-                puedeDisparar = true;
+                if (enabled != false)
+                {
+                    puedeDisparar = true;
+                }
+                else
+                {
+                    puedeDisparar = false;
+                }
+
                 if (torreta != null) torreta.SetPuedeDisparar(true);
             }
 
             // Flip horizontal
             bool movingRight = (Player.position.x > transform.position.x);
-            Flip(movingRight);
+            //Flip(movingRight);
         }
         else
         {
@@ -100,10 +108,10 @@ public class RangedEnemy : MonoBehaviour
 
         // Movimiento suave
         rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, desiredVelocity, acceleration * Time.fixedDeltaTime);
-    }*/
+    }
 
-    private void Flip(bool movingRight)
-{
+
+    private void Flip(bool movingRight){
         if (isFacingRight != movingRight)
         {
             isFacingRight = movingRight;
@@ -120,7 +128,7 @@ public class RangedEnemy : MonoBehaviour
             scale.x *= -1;
             transform.localScale = scale;
         }
-}
+    }*/
 
 
     // Llamado por Enemigo cuando muere

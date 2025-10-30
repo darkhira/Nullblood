@@ -10,8 +10,8 @@ public class Enemigo : MonoBehaviour
     [SerializeField] private EnemyHealthBar EnemyHealthBar;
 
     [Header("Turret Settings")]
-    [SerializeField] private string turretTag = "EnemyTurret"; // 👈 tag to search for
-    private RangedTurret torreta;
+    private string turretTag = "EnemyTurret"; // 👈 tag to search for
+    [SerializeField] private RangedTurret torreta;
     private Animator anim;
 
     // --- CAMBIO 1: A�adimos la bandera para controlar el estado de muerte ---

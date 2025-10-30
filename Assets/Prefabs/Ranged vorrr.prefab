@@ -322,3 +322,4 @@ MonoBehaviour:
   vidaMaxima: 40
   tiempoParaDesaparecer: 2
   EnemyHealthBar: {fileID: 727754353528567659}
+  torreta: {fileID: 63051107739925921}
