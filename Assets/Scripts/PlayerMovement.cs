@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
+    private CombateCaC combateCaC;
 
     [Header("Configuraciï¿½n de Dash")]
     [SerializeField] private float dashSpeed = 10f;
@@ -29,9 +30,6 @@ public class PlayerMovement : MonoBehaviour
     private bool canDash = true;
     private bool isAttacking = false;
     private Vector2 lastMoveDirection = new Vector2(0, -1); // Por defecto mirando abajo
-
-    // **NUEVA VARIABLE: Guarda la ï¿½ltima direcciï¿½n de movimiento vï¿½lida**
-    private Vector2 lastMoveDirection = new Vector2(0, -1); // Por defecto: mirando hacia abajo
 
     void Start()
     {
@@ -138,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (combateCaC != null)
             {
-                combateCaC.EjecutarGolpe(); // Llama al script de combate CaC
+                combateCaC.Golpe(); // Llama al script de combate CaC
             }
         }
         else // Lanzar bumerán

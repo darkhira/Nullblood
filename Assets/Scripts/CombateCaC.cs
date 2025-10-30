@@ -38,7 +38,7 @@ public class CombateCaC : MonoBehaviour
         }
     }
 
-    private void Golpe()
+    public void Golpe()
     {
         // Detectamos a los enemigos en el área de golpe
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
@@ -48,9 +48,15 @@ public class CombateCaC : MonoBehaviour
             if (colisionador.CompareTag("Enemigo"))
             {
                 // --- CAMBIO 4: Usamos el baseDamage de PlayerStats para el daï¿½o ---
-                colisionador.transform.GetComponent<Enemigo>().TomarDaÃ±o(playerStats.baseDamage);
+                colisionador.transform.GetComponent<Enemigo>().TomarDaño(playerStats.baseDamage);
             }
         }
+    }
+
+    // Método público que expone la funcionalidad de golpe para otros scripts (por ejemplo PlayerMovement)
+    public void EjecutarGolpe()
+    {
+        Golpe();
     }
 
     private void OnDrawGizmos()
