@@ -3,15 +3,18 @@ using UnityEngine;
 public class Enemigo : MonoBehaviour
 {
     private Room parentRoom;
+    private float vidaOriginal= 0;
+    private bool tieneEscudo = false;
 
     [SerializeField] private float vidaActual = 100f;
     [SerializeField] private float vidaMaxima = 200f;
     [SerializeField] private float tiempoParaDesaparecer = 1f;
     [SerializeField] private EnemyHealthBar EnemyHealthBar;
+    
 
     [Header("Turret Settings")]
-    private string turretTag = "EnemyTurret"; // 👈 tag to search for
-    [SerializeField] private RangedTurret torreta;
+    [SerializeField] private string turretTag = "EnemyTurret"; // 👈 tag to search for
+    private RangedTurret torreta;
     private Animator anim;
 
     // --- CAMBIO 1: A�adimos la bandera para controlar el estado de muerte ---
@@ -19,6 +22,7 @@ public class Enemigo : MonoBehaviour
 
     private void Start()
     {
+        vidaOriginal = vidaActual;
         // ... (el resto del Start sigue igual)
         EnemyHealthBar.UpdateHealthBar(vidaMaxima, vidaActual);
         anim = GetComponent<Animator>();
@@ -36,6 +40,32 @@ public class Enemigo : MonoBehaviour
             Debug.LogWarning($"[RangedEnemy] No RangedTurret found with tag '{turretTag}'");
         }
     }
+    public void ApplyShield(float amount, bool shield)
+    {
+        if (shield)
+        {
+            tieneEscudo = true;
+            // Aquí podrías activar un sprite o animación de escudo
+        }
+        else
+        {
+            vidaActual += amount;
+        }
+    }
+    public void RemoveShield(float amount, bool shield)
+    {
+        if (shield)
+        {
+            tieneEscudo = false;
+            // Desactivar visual del escudo si existía
+        }
+        else
+        {
+            // Evitar que baje por debajo del original
+            vidaActual = Mathf.Max(vidaOriginal, vidaActual - amount);
+        }
+    }
+
 
     public void SetParentRoom(Room room)
     {
@@ -46,6 +76,11 @@ public class Enemigo : MonoBehaviour
     {
         // --- CAMBIO 2: Si el enemigo ya est� muerto, no hacemos nada ---
         if (isDead) return;
+        if (tieneEscudo)
+        {
+            // Escudo absorbe el daño
+            daño *= 0.5f; // por ejemplo, reduce a la mitad
+        }
 
         vidaActual -= daño;
         Debug.Log($"[Enemigo] {gameObject.name} ha recibido {daño} de da�o. Vida restante: {vidaActual}");
@@ -61,6 +96,14 @@ public class Enemigo : MonoBehaviour
 
     private void Muerte()
     {
+        // Si este enemigo es un SupportEnemy, delegamos la muerte a su lógica especial
+        SupportEnemy support = GetComponent<SupportEnemy>();
+        if (support != null)
+        {
+            support.OnDeath();
+            parentRoom.EnemyWasDefeated();
+            return; // No ejecutar la muerte estándar aquí
+        }
         RangedEnemy movement = GetComponent<RangedEnemy>();
         if (movement != null)
             movement.enabled = false;
