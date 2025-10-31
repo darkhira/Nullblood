@@ -1,5 +1,4 @@
-﻿// Script: Room.cs
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 public class Room : MonoBehaviour
@@ -10,28 +9,22 @@ public class Room : MonoBehaviour
     public GameObject LeftDoor;
     public GameObject RightDoor;
 
+    [Header("Tipo de Sala")]
+    [Tooltip("Marca esto si es la Sala del Jefe. Sus puertas no se abrirán hasta que se desbloquee.")]
+    public bool isBossRoom = false;
+
     [HideInInspector] public Vector2Int RoomIndex;
 
     private GenerarEnemigos generadorEnemigos;
     private bool playerHasEntered = false;
 
     private int activeEnemiesCount = 0;
-
-    // Lista para almacenar SOLO las referencias de las puertas conectadas.
     private List<GameObject> connectedDoors = new List<GameObject>();
 
     private void Start()
     {
         generadorEnemigos = GetComponent<GenerarEnemigos>();
-
-        // ⭐ CAMBIO: Quitamos CloseAllDoors() de Start(). 
-        // Las puertas DEBEN estar cerradas por defecto en el prefab, 
-        // y el RoomManager abrirá (SetActive(true)) solo las conectadas.
     }
-
-    //
-    // --- LÓGICA DE COMBATE Y ENEMIGOS ---
-    //
 
     public bool HasActiveEnemies()
     {
@@ -41,48 +34,43 @@ public class Room : MonoBehaviour
     public void EnemyWasSpawned()
     {
         activeEnemiesCount++;
-        Debug.Log($"[Room {name}] Enemigo Generado. Total: {activeEnemiesCount}");
     }
 
     public void EnemyWasDefeated()
     {
         activeEnemiesCount--;
-        Debug.Log($"[Room {name}] Enemigo Derrotado. Restantes: {activeEnemiesCount}");
 
         if (activeEnemiesCount <= 0)
         {
-            Debug.Log($"[Room {name}] ¡Habitación despejada! Abriendo puertas CONECTADAS.");
-            // Llama a la nueva función que solo abre las puertas válidas.
+            if (!isBossRoom)
+            {
+                if (RoomManager.Instance != null)
+                {
+                    RoomManager.Instance.OnRoomCleared();
+                }
+            }
             OpenConnectedDoors();
         }
     }
 
-    //
-    // --- LÓGICA DE PUERTAS ---
-    //
+    public void UnlockRoom()
+    {
+        if (isBossRoom)
+        {
+            Debug.LogWarning($"¡SALA FINAL {name} DESBLOQUEADA! Abriendo puertas...");
+            OpenConnectedDoors();
+        }
+    }
 
-    // ⭐ CAMBIO CLAVE: Esta función ahora hace 2 cosas:
-    // 1. Abre visualmente la puerta para permitir el paso inicial (si está conectada).
-    // 2. Registra la puerta en la lista 'connectedDoors' para el bloqueo/desbloqueo de combate.
     public void OpenDoor(Vector2Int direction)
     {
-        GameObject doorObject = null;
-
-        if (direction == Vector2Int.up && TopDoor != null)
-            doorObject = TopDoor;
-        else if (direction == Vector2Int.down && BottomDoor != null)
-            doorObject = BottomDoor;
-        else if (direction == Vector2Int.left && LeftDoor != null)
-            doorObject = LeftDoor;
-        else if (direction == Vector2Int.right && RightDoor != null)
-            doorObject = RightDoor;
-
+        GameObject doorObject = GetDoorObject(direction);
         if (doorObject != null)
         {
-            // 1. Apertura Visual Inmediata (para la navegación inicial)
-            doorObject.SetActive(true); // ⭐ RESTAURADO: Abre la puerta al ser conectada.
-
-            // 2. Registro para bloqueo de combate
+            if (!isBossRoom)
+            {
+                doorObject.SetActive(true);
+            }
             if (!connectedDoors.Contains(doorObject))
             {
                 connectedDoors.Add(doorObject);
@@ -90,7 +78,6 @@ public class Room : MonoBehaviour
         }
     }
 
-    // ⭐ NUEVO MÉTODO: Abre solo las puertas que fueron registradas.
     public void OpenConnectedDoors()
     {
         foreach (GameObject door in connectedDoors)
@@ -102,8 +89,14 @@ public class Room : MonoBehaviour
         }
     }
 
-    // ⭐ CAMBIO: Modificado para cerrar SÓLO las puertas que están conectadas (para el bloqueo de combate)
-    public void CloseConnectedDoors()
+    // --- ¡ESTE ES EL MÉTODO QUE FALTABA! ---
+    public void CloseAllDoors()
+    {
+        CloseConnectedDoors();
+    }
+    // ----------------------------------------
+
+    private void CloseConnectedDoors()
     {
         foreach (GameObject door in connectedDoors)
         {
@@ -114,31 +107,22 @@ public class Room : MonoBehaviour
         }
     }
 
-    // El método CloseAllDoors() anterior ya no se usa, pero lo puedes dejar o renombrar.
-    public void CloseAllDoors()
-    {
-        // Esta función ahora solo cierra las conectadas para el bloqueo de combate.
-        CloseConnectedDoors();
-    }
-
-
     public DoorTeleport GetDoorTeleport(Vector2Int direction)
     {
-        if (direction == Vector2Int.up && TopDoor != null)
-            return TopDoor.GetComponentInChildren<DoorTeleport>();
-        if (direction == Vector2Int.down && BottomDoor != null)
-            return BottomDoor.GetComponentInChildren<DoorTeleport>();
-        if (direction == Vector2Int.left && LeftDoor != null)
-            return LeftDoor.GetComponentInChildren<DoorTeleport>();
-        if (direction == Vector2Int.right && RightDoor != null)
-            return RightDoor.GetComponentInChildren<DoorTeleport>();
-
+        GameObject doorObject = GetDoorObject(direction);
+        if (doorObject != null)
+            return doorObject.GetComponentInChildren<DoorTeleport>();
         return null;
     }
 
-    //
-    // --- LÓGICA DE TELETRANSPORTE Y ENTRADA ---
-    //
+    private GameObject GetDoorObject(Vector2Int direction)
+    {
+        if (direction == Vector2Int.up) return TopDoor;
+        if (direction == Vector2Int.down) return BottomDoor;
+        if (direction == Vector2Int.left) return LeftDoor;
+        if (direction == Vector2Int.right) return RightDoor;
+        return null;
+    }
 
     public void TeleportPlayerHere(Vector2Int fromDirection)
     {
@@ -147,38 +131,27 @@ public class Room : MonoBehaviour
 
         Vector3 offset = Vector3.zero;
         float distance = 2f;
-
         if (fromDirection == Vector2Int.up) offset = Vector3.down * distance;
         else if (fromDirection == Vector2Int.down) offset = Vector3.up * distance;
         else if (fromDirection == Vector2Int.left) offset = Vector3.right * distance;
         else if (fromDirection == Vector2Int.right) offset = Vector3.left * distance;
 
         player.transform.position = transform.position + offset;
-
         OnPlayerEnter();
     }
 
     public void OnPlayerEnter()
     {
         if (playerHasEntered) return;
-
-        Debug.Log($"[Room] Jugador entró a {gameObject.name}");
-
         playerHasEntered = true;
 
         if (generadorEnemigos != null)
         {
             generadorEnemigos.Generar();
-
-            // ⭐ IMPORTANTE: Si se generan enemigos, debes bloquear las puertas para iniciar el combate.
             if (activeEnemiesCount > 0)
             {
-                CloseConnectedDoors();
+                CloseAllDoors(); // <- Ahora esta llamada funcionará
             }
-        }
-        else
-        {
-            Debug.LogWarning($"[Room] No hay GenerarEnemigos en {gameObject.name}");
         }
     }
 }

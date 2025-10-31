@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
@@ -7,15 +6,15 @@ public class FollowIA : MonoBehaviour
     [Header("Movimiento")]
     [SerializeField] private float velocidad = 2f;
     private Transform jugador;
-    [SerializeField] private float minDistance = 1.5f;
-
-    // Nueva Referencia
     private Rigidbody2D rb;
 
     [Header("Animaciones")]
     private Animator animator;
     private Vector2 movimiento;
-    private bool isFacingRight = true;
+
+    // --- NUEVA VARIABLE DE ESTADO ---
+    // Otros scripts (como los de ataque) pondrán esto en 'true' para detener al enemigo.
+    private bool isStopped = false;
 
     void Start()
     {
@@ -23,91 +22,69 @@ public class FollowIA : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-
         if (playerObject != null)
         {
             jugador = playerObject.transform;
         }
         else
         {
-            Debug.LogError("No se encontr ningn objeto con el tag 'Player'. La IA no se movera.");
+            Debug.LogError("No se encontró ningún objeto con el tag 'Player'. La IA no se moverá.");
+            isStopped = true; // Detiene la IA si no hay jugador
         }
     }
 
     void Update()
     {
-        if (jugador == null) return;
+        if (jugador == null || isStopped)
+        {
+            // Si está detenido o no hay jugador, nos aseguramos de que la animación esté en 'Idle'.
+            animator.SetFloat("Speed", 0);
+            return;
+        }
 
-        // ... (código existente) ...
-
-        // Calcular direccin hacia el jugador
+        // 1. Calcular dirección hacia el jugador
         Vector2 direccion = (jugador.position - transform.position).normalized;
+        movimiento = direccion;
 
-        // Si el enemigo est muy cerca, se detiene
-        if (Vector2.Distance(transform.position, jugador.position) > minDistance)
-        {
-            movimiento = direccion;
-        }
-        else
-        {
-            movimiento = Vector2.zero;
-            Atacar();
-        }
-
-        // Actualizar animaciones (Blend Tree)
+        // 2. Actualizar animaciones (Blend Tree)
+        // (Nota: Tu Blend Tree usa "MoveX" y "MoveY", lo cual es un poco inusual.
+        // Lo estándar es "Horizontal" y "Vertical", pero respetaré tus nombres)
         animator.SetFloat("MoveX", movimiento.x);
         animator.SetFloat("MoveY", movimiento.y);
         animator.SetFloat("Speed", movimiento.sqrMagnitude);
-
-        // ... (código existente de Flip/Giro si está descomentado) ...
     }
 
     void FixedUpdate()
     {
-        if (jugador == null) return;
+        if (jugador == null || isStopped)
+        {
+            rb.linearVelocity = Vector2.zero; // Asegura que el Rigidbody esté quieto
+            return;
+        }
 
-        // ... (código existente) ...
-        if (movimiento != Vector2.zero)
-        {
-            rb.linearVelocity = movimiento * velocidad;
-        }
-        else
-        {
-            rb.linearVelocity = Vector2.zero;
-        }
+        // Aplicar movimiento
+        rb.linearVelocity = movimiento * velocidad;
     }
 
-    private void Atacar()
+    // --- NUEVOS MÉTODOS PÚBLICOS ---
+    public void StopMovement()
     {
-        //Debug.Log("Atacando al jugador");
+        isStopped = true;
     }
 
-    // **NUEVO MÉTODO:** Detiene el movimiento de la IA
+    public void ResumeMovement()
+    {
+        isStopped = false;
+    }
+
+    // Este método es para la MUERTE, no para los ataques. Lo dejamos como estaba.
     public void DesactivarIA()
     {
-        // 1. Detener el Rigidbody
+        isStopped = true;
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
-            rb.angularVelocity = 0f;
-            // Opcional: Desactivar la gravedad o hacerlo cinemático si es necesario.
-            // rb.isKinematic = true; 
         }
-
-        // 2. Desactivar el script (detiene Update/FixedUpdate)
         enabled = false;
-    }
-
-    // ... (El resto de la funcin Flip permanece igual) ...
-    private void Flip(bool movingRight)
-    {
-        if (isFacingRight != movingRight)
-        {
-            isFacingRight = movingRight;
-
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1;
-            transform.localScale = localScale;
-        }
     }
 }

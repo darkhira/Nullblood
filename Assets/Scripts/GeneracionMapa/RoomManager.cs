@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using System.Linq; // Necesario para OrderBy
+using System.Linq;
 
 public class RoomManager : MonoBehaviour
 {
+    // Singleton para que otros scripts (como Room) puedan llamarlo
+    public static RoomManager Instance;
+
     [Header("Configuración de generación")]
-    // --- CAMBIO 1: Reemplazamos el prefab único por una lista ---
-    [SerializeField] private List<GameObject> roomPrefabs;
-    [SerializeField] private GameObject initialRoomPrefab; // Prefab especial para la primera sala
+    [SerializeField] private List<GameObject> roomPrefabs; // Lista de salas normales
+    [SerializeField] private GameObject initialRoomPrefab; // Sala de inicio (sin enemigos)
+    [SerializeField] private GameObject bossRoomPrefab; // Sala final
     [SerializeField] private int maxRooms = 15;
     [SerializeField] private int minRooms = 10;
 
@@ -17,19 +20,37 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private int gridSizeX = 10;
     [SerializeField] private int gridSizeY = 10;
 
+    // Seguimiento del progreso
+    private int totalCombatRoomsToClear = 0;
+    private int clearedCombatRooms = 0;
+    private Room bossRoomScript; // Referencia a la sala del jefe
+
+    // Variables internas de generación
     private List<GameObject> roomObjects = new List<GameObject>();
     private Queue<Vector2Int> roomQueue = new Queue<Vector2Int>();
     private int[,] roomGrid;
     private int roomCount;
     private bool generationComplete = false;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
-        // --- CAMBIO 2: Verificación de prefabs ---
-        if (roomPrefabs == null || roomPrefabs.Count == 0 || initialRoomPrefab == null)
+        // ¡ESTA ES LA COMPROBACIÓN QUE DETIENE LA GENERACIÓN!
+        if (roomPrefabs == null || roomPrefabs.Count == 0 || initialRoomPrefab == null || bossRoomPrefab == null)
         {
-            Debug.LogError("[RoomManager] ¡No hay prefabs de sala asignados en el Inspector! Asigna al menos un 'InitialRoomPrefab' y un prefab en 'RoomPrefabs'.");
-            return;
+            Debug.LogError("[RoomManager] ¡Faltan prefabs de sala en el Inspector! Asigna 'Initial', 'Boss' y al menos un 'Room Prefab' para continuar.");
+            return; // Detiene la ejecución si falta algo
         }
 
         roomGrid = new int[gridSizeX, gridSizeY];
@@ -63,18 +84,52 @@ public class RoomManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Llamado por GenerarEnemigos cuando crea una sala de combate.
+    /// </summary>
+    public void RegisterCombatRoom()
+    {
+        totalCombatRoomsToClear++;
+        Debug.Log($"[RoomManager] Sala de combate registrada. Total a limpiar: {totalCombatRoomsToClear}");
+    }
+
+    /// <summary>
+    /// Llamado por Room.cs cuando una sala de combate es limpiada.
+    /// </summary>
+    public void OnRoomCleared()
+    {
+        clearedCombatRooms++;
+        Debug.Log($"[RoomManager] Sala limpiada. Progreso: {clearedCombatRooms} / {totalCombatRoomsToClear}");
+
+        // Comprueba si se han limpiado todas las salas de combate
+        if (clearedCombatRooms >= totalCombatRoomsToClear)
+        {
+            UnlockBossRoom();
+        }
+    }
+
+    private void UnlockBossRoom()
+    {
+        if (bossRoomScript != null)
+        {
+            Debug.LogWarning("[RoomManager] ¡TODAS LAS SALAS LIMPIAS! Desbloqueando sala del jefe.");
+            bossRoomScript.UnlockRoom();
+        }
+        else
+        {
+            Debug.LogError("[RoomManager] ¡Se limpiaron todas las salas pero no se encontró la sala del jefe!");
+        }
+    }
+
     private void StartRoomGenerationFromRoom(Vector2Int roomIndex)
     {
         roomQueue.Enqueue(roomIndex);
         int x = roomIndex.x;
         int y = roomIndex.y;
-
         roomGrid[x, y] = 1;
         roomCount++;
-
-        // --- CAMBIO 3: Usamos el prefab de la sala inicial ---
         var initialRoom = Instantiate(initialRoomPrefab, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
-        initialRoom.name = $"Room-Start"; // Nombre especial para la sala inicial
+        initialRoom.name = $"Room-Start";
         initialRoom.GetComponent<Room>().RoomIndex = roomIndex;
         roomObjects.Add(initialRoom);
     }
@@ -84,28 +139,43 @@ public class RoomManager : MonoBehaviour
         int x = roomIndex.x;
         int y = roomIndex.y;
 
-        if (x < 0 || x >= gridSizeX || y < 0 || y >= gridSizeY)
-            return false;
-        if (roomCount >= maxRooms)
-            return false;
-        if (roomGrid[x, y] != 0)
-            return false;
-        if (Random.value < 0.5f)
-            return false;
-        if (CountAdjacentRooms(roomIndex) > 1)
-            return false;
+        if (x < 0 || x >= gridSizeX || y < 0 || y >= gridSizeY) return false;
+        if (roomCount >= maxRooms) return false;
+        if (roomGrid[x, y] != 0) return false;
+
+        float spawnChance = 0.5f;
+        if (CountAdjacentRooms(roomIndex) > 1) spawnChance = 0.1f;
+        if (Random.value > spawnChance) return false;
 
         roomQueue.Enqueue(roomIndex);
         roomGrid[x, y] = 1;
         roomCount++;
 
-        // --- CAMBIO 4: Elegimos un prefab ALEATORIO de la lista ---
-        GameObject randomRoomPrefab = roomPrefabs[Random.Range(0, roomPrefabs.Count)];
+        GameObject prefabToSpawn;
+        string roomName;
 
-        var newRoom = Instantiate(randomRoomPrefab, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
-        newRoom.GetComponent<Room>().RoomIndex = roomIndex;
-        newRoom.name = $"Room-{roomCount}";
+        if (roomCount == maxRooms) // Si es la ÚLTIMA sala, es la del jefe
+        {
+            prefabToSpawn = bossRoomPrefab;
+            roomName = $"Room-BOSS";
+        }
+        else // Si no, es una sala aleatoria normal
+        {
+            prefabToSpawn = roomPrefabs[Random.Range(0, roomPrefabs.Count)];
+            roomName = $"Room-{roomCount}";
+        }
+
+        var newRoom = Instantiate(prefabToSpawn, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
+        Room newRoomScript = newRoom.GetComponent<Room>();
+        newRoomScript.RoomIndex = roomIndex;
+        newRoom.name = roomName;
         roomObjects.Add(newRoom);
+
+        if (newRoomScript.isBossRoom)
+        {
+            bossRoomScript = newRoomScript;
+            Debug.Log($"[RoomManager] Sala del jefe instanciada: {roomName}");
+        }
 
         return true;
     }
@@ -117,14 +187,14 @@ public class RoomManager : MonoBehaviour
         roomGrid = new int[gridSizeX, gridSizeY];
         roomQueue.Clear();
         roomCount = 0;
+        totalCombatRoomsToClear = 0;
+        clearedCombatRooms = 0;
+        bossRoomScript = null;
         generationComplete = false;
 
         Vector2Int initialRoomIndex = new Vector2Int(gridSizeX / 2, gridSizeY / 2);
         StartRoomGenerationFromRoom(initialRoomIndex);
     }
-
-    // ... (El resto de tus métodos: ConnectAllDoors, TryConnect, IsInsideGrid, etc.
-    // ... no necesitan cambios)
 
     private void ConnectAllDoors()
     {
@@ -134,13 +204,11 @@ public class RoomManager : MonoBehaviour
             Vector2Int index = roomScript.RoomIndex;
             int x = index.x;
             int y = index.y;
-
             TryConnect(roomScript, new Vector2Int(x - 1, y), Vector2Int.left);
             TryConnect(roomScript, new Vector2Int(x + 1, y), Vector2Int.right);
             TryConnect(roomScript, new Vector2Int(x, y - 1), Vector2Int.down);
             TryConnect(roomScript, new Vector2Int(x, y + 1), Vector2Int.up);
         }
-
         Debug.Log("Puertas conectadas y sincronizadas correctamente.");
     }
 
@@ -148,7 +216,6 @@ public class RoomManager : MonoBehaviour
     {
         if (!IsInsideGrid(neighborIndex)) return;
         if (roomGrid[neighborIndex.x, neighborIndex.y] == 0) return;
-
         Room neighborRoom = GetRoomScriptAt(neighborIndex);
         if (neighborRoom == null) return;
 
@@ -162,51 +229,21 @@ public class RoomManager : MonoBehaviour
         {
             doorA.targetDoor = doorB;
             doorB.targetDoor = doorA;
-
             doorA.parentRoom = currentRoom;
             doorB.parentRoom = neighborRoom;
         }
     }
 
-    private bool IsInsideGrid(Vector2Int index)
-    {
-        return index.x >= 0 && index.x < gridSizeX && index.y >= 0 && index.y < gridSizeY;
-    }
+    private bool IsInsideGrid(Vector2Int index) { return index.x >= 0 && index.x < gridSizeX && index.y >= 0 && index.y < gridSizeY; }
+    private Room GetRoomScriptAt(Vector2Int index) { GameObject roomObject = roomObjects.Find(r => r.GetComponent<Room>().RoomIndex == index); return roomObject != null ? roomObject.GetComponent<Room>() : null; }
+    private int CountAdjacentRooms(Vector2Int roomIndex) { int x = roomIndex.x; int y = roomIndex.y; int count = 0; if (x > 0 && roomGrid[x - 1, y] != 0) count++; if (x < gridSizeX - 1 && roomGrid[x + 1, y] != 0) count++; if (y > 0 && roomGrid[x, y - 1] != 0) count++; if (y < gridSizeY - 1 && roomGrid[x, y + 1] != 0) count++; return count; }
+    private Vector3 GetPositionFromGridIndex(Vector2Int gridIndex) { int gridX = gridIndex.x; int gridY = gridIndex.y; return new Vector3(roomWidth * (gridX - gridSizeX / 2), roomHeight * (gridY - gridSizeY / 2), 0f); }
 
-    private Room GetRoomScriptAt(Vector2Int index)
-    {
-        GameObject roomObject = roomObjects.Find(r => r.GetComponent<Room>().RoomIndex == index);
-        return roomObject != null ? roomObject.GetComponent<Room>() : null;
-    }
-
-    private int CountAdjacentRooms(Vector2Int roomIndex)
-    {
-        int x = roomIndex.x;
-        int y = roomIndex.y;
-        int count = 0;
-
-        if (x > 0 && roomGrid[x - 1, y] != 0) count++;
-        if (x < gridSizeX - 1 && roomGrid[x + 1, y] != 0) count++;
-        if (y > 0 && roomGrid[x, y - 1] != 0) count++;
-        if (y < gridSizeY - 1 && roomGrid[x, y + 1] != 0) count++;
-
-        return count;
-    }
-
-    private Vector3 GetPositionFromGridIndex(Vector2Int gridIndex)
-    {
-        int gridX = gridIndex.x;
-        int gridY = gridIndex.y;
-        return new Vector3(roomWidth * (gridX - gridSizeX / 2),
-                           roomHeight * (gridY - gridSizeY / 2),
-                           0f);
-    }
-
+    // OnDrawGizmos no necesita cambios
     private void OnDrawGizmos()
     {
         Color gizmoColor = new Color(0, 1, 1, 0.05f);
         Gizmos.color = gizmoColor;
-
         for (int x = 0; x < gridSizeX; x++)
         {
             for (int y = 0; y < gridSizeY; y++)
