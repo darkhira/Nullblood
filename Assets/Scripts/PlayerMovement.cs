@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -50,21 +50,21 @@ public class PlayerMovement : MonoBehaviour
         HandleMovementInput();
 
         // Input de Ataque Cuerpo a Cuerpo (Clic izquierdo)
-        if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.JoystickButton1))
+        if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.JoystickButton3))
         {
             StartCoroutine(AttackCoroutine(true)); // true indica que es ataque melee
             return; // Sale del Update para evitar procesar otros inputs en el mismo frame
         }
 
         // Input de Lanzar Bumerán (Tecla R) y comprobación del cooldown
-        if ((Input.GetKeyDown(KeyCode.R)|| Input.GetKeyDown(KeyCode.Joystick1Button3)) && canThrowBoomerang)
+        if ((Input.GetKeyDown(KeyCode.R)|| Input.GetKeyDown(KeyCode.Joystick1Button2)) && canThrowBoomerang)
         {
             StartCoroutine(AttackCoroutine(false)); // false indica que es lanzar bumerán
             return; // Sale del Update
         }
 
         // Input de Dash (Shift Izquierdo)
-        if ((Input.GetKeyDown(KeyCode.LeftShift)||Input.GetKeyDown(KeyCode.Joystick1Button2)) && canDash && moveInput.sqrMagnitude > 0.1f)
+        if ((Input.GetKeyDown(KeyCode.LeftShift)||Input.GetKeyDown(KeyCode.Joystick1Button1)) && canDash && moveInput.sqrMagnitude > 0.1f)
         {
             StartCoroutine(DashCoroutine());
         }

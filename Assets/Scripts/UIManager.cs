@@ -3,18 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    [Tooltip("Arrastra aquí el objeto StatsPanel desde la jerarquía")]
+    [Tooltip("Arrastra aquï¿½ el objeto StatsPanel desde la jerarquï¿½a")]
     [SerializeField] private GameObject statsPanel;
 
-    // --- NUEVAS LÍNEAS ---
-    [Tooltip("Arrastra aquí el objeto PauseMenuPanel desde la jerarquía")]
+    // --- NUEVAS Lï¿½NEAS ---
+    [Tooltip("Arrastra aquï¿½ el objeto PauseMenuPanel desde la jerarquï¿½a")]
     [SerializeField] private GameObject pauseMenuPanel;
     private bool isPaused = false;
     // --------------------
 
     void Update()
     {
-        // Toggle para el panel de estadísticas
+        // Toggle para el panel de estadï¿½sticas
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (statsPanel != null)
@@ -23,15 +23,16 @@ public class UIManager : MonoBehaviour
             }
         }
 
-        // --- NUEVA LÓGICA PARA LA PAUSA ---
-        // Toggle para el menú de pausa
+        // --- NUEVA Lï¿½GICA PARA LA PAUSA ---
+        // Toggle para el menï¿½ de pausa
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePause();
+            StopTime();
         }
     }
 
-    // --- NUEVO MÉTODO PÚBLICO ---
+    // --- NUEVO Mï¿½TODO Pï¿½BLICO ---
     public void TogglePause()
     {
         isPaused = !isPaused; // Invierte el estado de pausa
@@ -42,6 +43,10 @@ public class UIManager : MonoBehaviour
         }
 
         // Pausa o reanuda el tiempo del juego
+        
+    }
+    public void StopTime()
+    {
         Time.timeScale = isPaused ? 0f : 1f;
     }
 
@@ -50,10 +55,10 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    // --- NUEVO MÉTODO PÚBLICO ---
+    // --- NUEVO Mï¿½TODO Pï¿½BLICO ---
     public void QuitGame()
     {
         Debug.Log("SALIENDO DEL JUEGO..."); // Mensaje para el editor
-        Application.Quit(); // Cierra la aplicación (solo funciona en el juego compilado)
+        Application.Quit(); // Cierra la aplicaciï¿½n (solo funciona en el juego compilado)
     }
 }
