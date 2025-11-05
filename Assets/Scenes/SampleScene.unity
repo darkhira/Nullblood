@@ -2135,6 +2135,7 @@ GameObject:
   - component: {fileID: 963642279}
   - component: {fileID: 963642278}
   - component: {fileID: 963642277}
+  - component: {fileID: 963642280}
   m_Layer: 5
   m_Name: Reanudar
   m_TagString: Untagged
@@ -2256,6 +2257,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963642275}
   m_CullTransparentMesh: 1
+--- !u!114 &963642280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963642275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecf713fd8928644eb7ac165488a392b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHighlighter
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  selectedScale: {x: 1.2, y: 1.2, z: 1}
 --- !u!1 &971082026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,6 +2284,7 @@ GameObject:
   - component: {fileID: 971082030}
   - component: {fileID: 971082029}
   - component: {fileID: 971082028}
+  - component: {fileID: 971082031}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -2389,6 +2406,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971082026}
   m_CullTransparentMesh: 1
+--- !u!114 &971082031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971082026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecf713fd8928644eb7ac165488a392b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHighlighter
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  selectedScale: {x: 1.2, y: 1.2, z: 1}
 --- !u!1 &998113379
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,6 +2433,7 @@ GameObject:
   - component: {fileID: 998113383}
   - component: {fileID: 998113382}
   - component: {fileID: 998113381}
+  - component: {fileID: 998113384}
   m_Layer: 5
   m_Name: Salir_Escritorio
   m_TagString: Untagged
@@ -2522,6 +2555,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998113379}
   m_CullTransparentMesh: 1
+--- !u!114 &998113384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998113379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecf713fd8928644eb7ac165488a392b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHighlighter
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  selectedScale: {x: 1.2, y: 1.2, z: 1}
 --- !u!1 &1118962127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,6 +2746,7 @@ GameObject:
   - component: {fileID: 1148844783}
   - component: {fileID: 1148844782}
   - component: {fileID: 1148844781}
+  - component: {fileID: 1148844784}
   m_Layer: 5
   m_Name: Salir_Menu
   m_TagString: Untagged
@@ -2819,6 +2868,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148844779}
   m_CullTransparentMesh: 1
+--- !u!114 &1148844784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148844779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecf713fd8928644eb7ac165488a392b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHighlighter
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  selectedScale: {x: 1.2, y: 1.2, z: 1}
 --- !u!1 &1197520939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,6 +2893,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1197520941}
   - component: {fileID: 1197520940}
+  - component: {fileID: 1197520943}
+  - component: {fileID: 1197520942}
   m_Layer: 0
   m_Name: ManagerUI
   m_TagString: Untagged
@@ -2864,6 +2930,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1197520942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197520939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 5dc0b713f782cde4ca2c8a507ad09d92, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: ui
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 519420031}
+--- !u!114 &1197520943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197520939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97fd6a191c418548bd977fada6c9644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuGamepadController
+  firstSelectedButton: {fileID: 963642275}
 --- !u!1 &1371639647
 GameObject:
   m_ObjectHideFlags: 0
