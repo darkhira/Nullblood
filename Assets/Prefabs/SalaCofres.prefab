@@ -259,14 +259,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GenerarEnemigos
   gruposDeEnemigos:
   - enemigoPrefab: {fileID: 2353133341636038742, guid: 28b0beca9ecf39e4f888882eabd13a06, type: 3}
-    minCantidad: 0
-    maxCantidad: 0
+    minCantidad: 3
+    maxCantidad: 3
   - enemigoPrefab: {fileID: 893183041423461361, guid: cd88506202f4d1b47bc0b37b6f8d371c, type: 3}
-    minCantidad: 0
-    maxCantidad: 0
-  - enemigoPrefab: {fileID: 442422260076906217, guid: bf68efb0767473b48810019805ad7ba3, type: 3}
-    minCantidad: 1
-    maxCantidad: 1
+    minCantidad: 3
+    maxCantidad: 3
   puntosDeSpawn:
   - {fileID: 2925971352819386914}
   - {fileID: 3604868046535584435}

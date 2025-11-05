@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: 974c3e03ecb3b984a812543425b573a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3527991523497754751
+    second: BOOMERANG-trasero_0
+  - first:
+      213: 4232674470400649411
+    second: BOOMERANG-trasero_1
+  - first:
+      213: 938405238103458933
+    second: BOOMERANG-trasero_2
+  - first:
+      213: 8398336079365017765
+    second: BOOMERANG-trasero_3
+  - first:
+      213: 8357688127993727215
+    second: BOOMERANG-trasero_4
+  - first:
+      213: -7813334481145989243
+    second: BOOMERANG-trasero_5
+  - first:
+      213: 2819340912560750826
+    second: BOOMERANG-trasero_6
+  - first:
+      213: 2315913526336374539
+    second: BOOMERANG-trasero_7
+  - first:
+      213: 9161920155804498185
+    second: BOOMERANG-trasero_8
+  - first:
+      213: -4045466712280715877
+    second: BOOMERANG-trasero_9
+  - first:
+      213: 4324538892792648729
+    second: BOOMERANG-trasero_10
+  - first:
+      213: 1394897672117223298
+    second: BOOMERANG-trasero_11
+  - first:
+      213: 1958358919891080513
+    second: BOOMERANG-trasero_12
+  - first:
+      213: 1466587353958431948
+    second: BOOMERANG-trasero_13
+  - first:
+      213: -1388678758021474898
+    second: BOOMERANG-trasero_14
+  - first:
+      213: 3036582003757647000
+    second: BOOMERANG-trasero_15
+  - first:
+      213: 7640496856210908272
+    second: BOOMERANG-trasero_16
+  - first:
+      213: -4763168294810857177
+    second: BOOMERANG-trasero_17
+  - first:
+      213: -7704700982877411046
+    second: BOOMERANG-trasero_18
+  - first:
+      213: 931434876920875602
+    second: BOOMERANG-trasero_19
+  - first:
+      213: 8498308664997419436
+    second: BOOMERANG-trasero_20
+  - first:
+      213: -4254651618628728875
+    second: BOOMERANG-trasero_21
+  - first:
+      213: -9123298618939940348
+    second: BOOMERANG-trasero_22
+  - first:
+      213: 3805017570599005423
+    second: BOOMERANG-trasero_23
+  - first:
+      213: 8056355031252339181
+    second: BOOMERANG-trasero_24
+  - first:
+      213: -6632305995359054936
+    second: BOOMERANG-trasero_25
+  - first:
+      213: -2028194373682155899
+    second: BOOMERANG-trasero_26
+  - first:
+      213: -74102122505030086
+    second: BOOMERANG-trasero_27
+  - first:
+      213: 5997091877264332764
+    second: BOOMERANG-trasero_28
+  - first:
+      213: 7184174107308342407
+    second: BOOMERANG-trasero_29
+  - first:
+      213: 6656041438160513124
+    second: BOOMERANG-trasero_30
+  - first:
+      213: 741230025721462909
+    second: BOOMERANG-trasero_31
+  - first:
+      213: -7453782767820294306
+    second: BOOMERANG-trasero_32
+  - first:
+      213: -7418748226902425545
+    second: BOOMERANG-trasero_33
+  - first:
+      213: -648776684400575845
+    second: BOOMERANG-trasero_34
+  - first:
+      213: -342374016863274461
+    second: BOOMERANG-trasero_35
+  - first:
+      213: 8361844147056871224
+    second: BOOMERANG-trasero_36
+  - first:
+      213: 7880740097767145458
+    second: BOOMERANG-trasero_37
+  - first:
+      213: -3444968048641662910
+    second: BOOMERANG-trasero_38
+  - first:
+      213: 8291021344929457364
+    second: BOOMERANG-trasero_39
+  - first:
+      213: -868640130112000847
+    second: BOOMERANG-trasero_40
+  - first:
+      213: 8381101286245384471
+    second: BOOMERANG-trasero_41
+  - first:
+      213: -6127677651423780878
+    second: BOOMERANG-trasero_42
+  - first:
+      213: 2699082124874143346
+    second: BOOMERANG-trasero_43
+  - first:
+      213: -4942805560879190459
+    second: BOOMERANG-trasero_44
+  - first:
+      213: 3292194731948760339
+    second: BOOMERANG-trasero_45
+  - first:
+      213: -4804587567670658389
+    second: BOOMERANG-trasero_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_0
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 9
+        width: 46
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f704ca83991f5f030800000000000000
+      internalID: 3527991523497754751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_1
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 72
+        width: 140
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c86812510b7dba30800000000000000
+      internalID: 4232674470400649411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_2
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 143
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574c5889792e50d00800000000000000
+      internalID: 938405238103458933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_3
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 152
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a016eafa22ec8470800000000000000
+      internalID: 8398336079365017765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_4
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 155
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8c09c42197cf370800000000000000
+      internalID: 8357688127993727215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_5
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 147
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5877bfbafa5719390800000000000000
+      internalID: -7813334481145989243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_6
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 120
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0c8e95f9f402720800000000000000
+      internalID: 2819340912560750826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_7
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 132
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b074dcbf417c32020800000000000000
+      internalID: 2315913526336374539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_8
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 125
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909f73bf6dda52f70800000000000000
+      internalID: 9161920155804498185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_9
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 108
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d27df757d9bd7c0800000000000000
+      internalID: -4045466712280715877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_10
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 96
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914544ae539d30c30800000000000000
+      internalID: 4324538892792648729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_11
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 90
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ff094da0cab5310800000000000000
+      internalID: 1394897672117223298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_12
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 78
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14553d2df0d7d2b10800000000000000
+      internalID: 1958358919891080513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_13
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 58
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cccb5c89d6d5a5410800000000000000
+      internalID: 1466587353958431948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_14
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 65
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5dff0f60c6abce0800000000000000
+      internalID: -1388678758021474898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_15
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 9
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89481517e3b142a20800000000000000
+      internalID: 3036582003757647000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 9
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074a0fdd86f780a60800000000000000
+      internalID: 7640496856210908272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 9
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72155661ca3d5edb0800000000000000
+      internalID: -4763168294810857177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_18
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 9
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a192dfef647631590800000000000000
+      internalID: -7704700982877411046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_19
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 9
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a474ae51f1dec00800000000000000
+      internalID: 931434876920875602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 3
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca99bc074be00f570800000000000000
+      internalID: 8498308664997419436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_21
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 9
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7089c15e074f4c0800000000000000
+      internalID: -4254651618628728875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_22
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 9
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402e54e4e38836180800000000000000
+      internalID: -9123298618939940348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_23
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 4
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec6ca312532ec430800000000000000
+      internalID: 3805017570599005423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_24
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 6
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de90a3e673cedcf60800000000000000
+      internalID: 8056355031252339181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_25
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 2
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a31ee036d055f3a0800000000000000
+      internalID: -6632305995359054936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_26
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 4
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58eaa3586f76ad3e0800000000000000
+      internalID: -2028194373682155899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_27
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 5
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a363cfe138cb8fef0800000000000000
+      internalID: -74102122505030086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_28
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 4
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd798b5d943f93350800000000000000
+      internalID: 5997091877264332764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_29
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 4
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c3ca6894053b360800000000000000
+      internalID: 7184174107308342407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_30
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 9
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46866db3c620f5c50800000000000000
+      internalID: 6656041438160513124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_31
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 9
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d704bfbf7c0694a00800000000000000
+      internalID: 741230025721462909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_32
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 9
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57b4238018de8890800000000000000
+      internalID: -7453782767820294306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_33
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 10
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7300c693bcf4b0990800000000000000
+      internalID: -7418748226902425545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_34
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 13
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a7fbbfa051ff6f0800000000000000
+      internalID: -648776684400575845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_35
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 13
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a7a8845a4af3bf0800000000000000
+      internalID: -342374016863274461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_36
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 13
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8370184e2fc3b0470800000000000000
+      internalID: 8361844147056871224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_37
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 15
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff769e6d530e5d60800000000000000
+      internalID: 7880740097767145458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_38
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 14
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240a42edfc30130d0800000000000000
+      internalID: -3444968048641662910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_39
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 14
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4a3b94cff9f0370800000000000000
+      internalID: 8291021344929457364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_40
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 42
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc66076768f1f3f0800000000000000
+      internalID: -868640130112000847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_41
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 14
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711c9310737af4470800000000000000
+      internalID: 8381101286245384471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_42
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 15
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff19c054ad16faa0800000000000000
+      internalID: -6127677651423780878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_43
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 15
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276dab864e0157520800000000000000
+      internalID: 2699082124874143346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_44
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 16
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e68fdc780a76bb0800000000000000
+      internalID: -4942805560879190459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_45
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 16
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31dd7397aa930bd20800000000000000
+      internalID: 3292194731948760339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-trasero_46
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 15
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa7bb0201da25db0800000000000000
+      internalID: -4804587567670658389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BOOMERANG-trasero_0: 3527991523497754751
+      BOOMERANG-trasero_1: 4232674470400649411
+      BOOMERANG-trasero_10: 4324538892792648729
+      BOOMERANG-trasero_11: 1394897672117223298
+      BOOMERANG-trasero_12: 1958358919891080513
+      BOOMERANG-trasero_13: 1466587353958431948
+      BOOMERANG-trasero_14: -1388678758021474898
+      BOOMERANG-trasero_15: 3036582003757647000
+      BOOMERANG-trasero_16: 7640496856210908272
+      BOOMERANG-trasero_17: -4763168294810857177
+      BOOMERANG-trasero_18: -7704700982877411046
+      BOOMERANG-trasero_19: 931434876920875602
+      BOOMERANG-trasero_2: 938405238103458933
+      BOOMERANG-trasero_20: 8498308664997419436
+      BOOMERANG-trasero_21: -4254651618628728875
+      BOOMERANG-trasero_22: -9123298618939940348
+      BOOMERANG-trasero_23: 3805017570599005423
+      BOOMERANG-trasero_24: 8056355031252339181
+      BOOMERANG-trasero_25: -6632305995359054936
+      BOOMERANG-trasero_26: -2028194373682155899
+      BOOMERANG-trasero_27: -74102122505030086
+      BOOMERANG-trasero_28: 5997091877264332764
+      BOOMERANG-trasero_29: 7184174107308342407
+      BOOMERANG-trasero_3: 8398336079365017765
+      BOOMERANG-trasero_30: 6656041438160513124
+      BOOMERANG-trasero_31: 741230025721462909
+      BOOMERANG-trasero_32: -7453782767820294306
+      BOOMERANG-trasero_33: -7418748226902425545
+      BOOMERANG-trasero_34: -648776684400575845
+      BOOMERANG-trasero_35: -342374016863274461
+      BOOMERANG-trasero_36: 8361844147056871224
+      BOOMERANG-trasero_37: 7880740097767145458
+      BOOMERANG-trasero_38: -3444968048641662910
+      BOOMERANG-trasero_39: 8291021344929457364
+      BOOMERANG-trasero_4: 8357688127993727215
+      BOOMERANG-trasero_40: -868640130112000847
+      BOOMERANG-trasero_41: 8381101286245384471
+      BOOMERANG-trasero_42: -6127677651423780878
+      BOOMERANG-trasero_43: 2699082124874143346
+      BOOMERANG-trasero_44: -4942805560879190459
+      BOOMERANG-trasero_45: 3292194731948760339
+      BOOMERANG-trasero_46: -4804587567670658389
+      BOOMERANG-trasero_5: -7813334481145989243
+      BOOMERANG-trasero_6: 2819340912560750826
+      BOOMERANG-trasero_7: 2315913526336374539
+      BOOMERANG-trasero_8: 9161920155804498185
+      BOOMERANG-trasero_9: -4045466712280715877
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -48,14 +48,18 @@ public class Enemigo : MonoBehaviour
 
     private void Muerte()
     {
-        // ... (el resto de la función Muerte sigue igual)
-        if (anim != null)
-        {
-            anim.SetTrigger("Muerte");
-        }
+        // ... (tu código de animación de muerte, etc.)
+
         if (parentRoom != null)
         {
             parentRoom.EnemyWasDefeated();
+        }
+
+        // --- ¡CAMBIO CLAVE AQUÍ! ---
+        // Reemplazamos la llamada al ExperienceManager por la llamada al GameManager.
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnEnemyKilled();
         }
 
         // ... Desactivar IA, Colliders, etc.

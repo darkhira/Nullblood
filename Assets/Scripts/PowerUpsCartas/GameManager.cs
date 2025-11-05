@@ -8,25 +8,55 @@ public class GameManager : MonoBehaviour
     GameState currentState;
     public event Action<GameState> OnStateChanged;
 
+    // --- NUEVAS VARIABLES ---
+    [Header("Conteo de Enemigos")]
+    [Tooltip("Enemigos que se deben derrotar para que aparezcan las cartas.")]
+    [SerializeField] private int enemigosParaCartas = 10;
+
+    private int enemigosDerrotadosContador = 0;
+    // -------------------------
+
     private void Awake()
     {
+        // Nos aseguramos de que el tiempo corra al iniciar esta escena
         Time.timeScale = 1f;
-
         Instance = this;
     }
 
     private void Update()
     {
+        // Mantenemos la tecla 'J' para pruebas.
         if (Input.GetKeyDown(KeyCode.J))
         {
-            TriggerLevelUp();
+            TriggerCardSelection();
         }
     }
 
-    public void TriggerLevelUp()
+    // --- NUEVO MÉTODO PÚBLICO ---
+    /// <summary>
+    /// Llamado por el script 'Enemigo' cada vez que uno muere.
+    /// </summary>
+    public void OnEnemyKilled()
     {
+        enemigosDerrotadosContador++;
+        Debug.Log($"[GameManager] Enemigo derrotado. Progreso: {enemigosDerrotadosContador} / {enemigosParaCartas}");
+
+        // Comprueba si se ha alcanzado el objetivo
+        if (enemigosDerrotadosContador >= enemigosParaCartas)
+        {
+            // Resetea el contador y muestra las cartas
+            enemigosDerrotadosContador = 0;
+            TriggerCardSelection();
+        }
+    }
+
+    // --- NOMBRE CAMBIADO: De 'TriggerLevelUp' a 'TriggerCardSelection' ---
+    public void TriggerCardSelection()
+    {
+        // Seguimos aumentando el nivel para el desbloqueo de cartas, 
+        // pero la función ahora tiene un nombre más claro.
         currentLevel++;
-        Debug.Log("¡NIVEL AUMENTADO A: " + currentLevel + "! Mostrando selección de cartas.");
+        Debug.Log("¡CONTEO ALCANZADO! Mostrando selección de cartas.");
         ChangeState(GameState.CardSelection);
     }
 

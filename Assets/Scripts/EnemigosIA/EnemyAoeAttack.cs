@@ -27,7 +27,7 @@ public class EnemyAoeAttack : MonoBehaviour
 
     void Update()
     {
-        if (playerTarget == null || isCasting) return; // No hace nada si no hay jugador o si está casteando
+        if (playerTarget == null || isCasting) return;
 
         attackTimer -= Time.deltaTime;
         float distanceToPlayer = Vector2.Distance(transform.position, playerTarget.position);
@@ -47,31 +47,29 @@ public class EnemyAoeAttack : MonoBehaviour
         else
         {
             // 3. Si está fuera de rango, REANUDA el movimiento
-            followIA.ResumeMovement();
+            // --- ¡CAMBIO REALIZADO! ---
+            followIA.MoveTowards();
         }
     }
 
     private IEnumerator CastAoe()
     {
         isCasting = true;
-        // (Ya debería estar detenido por el Update, pero lo aseguramos)
         followIA.StopMovement();
 
-        // Inicia la animación de casteo
-        if (animator != null) animator.SetTrigger("Cast"); // Necesitarás un Trigger "Cast"
+        if (animator != null) animator.SetTrigger("Cast");
 
-        // Espera a que termine de castear
         yield return new WaitForSeconds(castTime);
 
-        // Invoca la zona de AOE EN LA POSICIÓN DEL JUGADOR
         if (playerTarget != null)
         {
             GameObject zone = Instantiate(aoeZonePrefab, playerTarget.position, Quaternion.identity);
-            zone.GetComponent<AoeZone>().damage = this.aoeDamage;
+            if (zone.TryGetComponent<AoeZone>(out AoeZone aoeScript))
+            {
+                aoeScript.damage = this.aoeDamage;
+            }
         }
 
         isCasting = false;
-        // No llamamos a ResumeMovement() aquí, el Update() se encargará de decidir
-        // si debe seguir quieto (porque sigue en rango) o volver a moverse.
     }
 }

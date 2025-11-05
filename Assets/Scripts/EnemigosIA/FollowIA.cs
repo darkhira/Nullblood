@@ -12,9 +12,9 @@ public class FollowIA : MonoBehaviour
     private Animator animator;
     private Vector2 movimiento;
 
-    // --- NUEVA VARIABLE DE ESTADO ---
-    // Otros scripts (como los de ataque) pondrán esto en 'true' para detener al enemigo.
-    private bool isStopped = false;
+    // Estado interno de movimiento
+    public enum MovementState { Stopped, Following, Fleeing }
+    private MovementState currentState = MovementState.Following; // Empieza siguiendo
 
     void Start()
     {
@@ -29,26 +29,31 @@ public class FollowIA : MonoBehaviour
         else
         {
             Debug.LogError("No se encontró ningún objeto con el tag 'Player'. La IA no se moverá.");
-            isStopped = true; // Detiene la IA si no hay jugador
+            currentState = MovementState.Stopped;
         }
     }
 
     void Update()
     {
-        if (jugador == null || isStopped)
+        if (jugador == null || currentState == MovementState.Stopped)
         {
-            // Si está detenido o no hay jugador, nos aseguramos de que la animación esté en 'Idle'.
             animator.SetFloat("Speed", 0);
             return;
         }
 
-        // 1. Calcular dirección hacia el jugador
-        Vector2 direccion = (jugador.position - transform.position).normalized;
+        Vector2 direccion;
+        if (currentState == MovementState.Following)
+        {
+            direccion = (jugador.position - transform.position).normalized;
+        }
+        else // Fleeing (Huyendo)
+        {
+            direccion = (transform.position - jugador.position).normalized;
+        }
+
         movimiento = direccion;
 
-        // 2. Actualizar animaciones (Blend Tree)
-        // (Nota: Tu Blend Tree usa "MoveX" y "MoveY", lo cual es un poco inusual.
-        // Lo estándar es "Horizontal" y "Vertical", pero respetaré tus nombres)
+        // Asegúrate de que tus parámetros se llamen "MoveX" y "MoveY"
         animator.SetFloat("MoveX", movimiento.x);
         animator.SetFloat("MoveY", movimiento.y);
         animator.SetFloat("Speed", movimiento.sqrMagnitude);
@@ -56,35 +61,36 @@ public class FollowIA : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (jugador == null || isStopped)
+        if (jugador == null || currentState == MovementState.Stopped)
         {
-            rb.linearVelocity = Vector2.zero; // Asegura que el Rigidbody esté quieto
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
-        // Aplicar movimiento
         rb.linearVelocity = movimiento * velocidad;
     }
 
-    // --- NUEVOS MÉTODOS PÚBLICOS ---
+    // --- ¡MÉTODOS PÚBLICOS DE CONTROL! ---
+
     public void StopMovement()
     {
-        isStopped = true;
+        currentState = MovementState.Stopped;
     }
 
-    public void ResumeMovement()
+    public void MoveTowards() // <-- El método que faltaba para el Tirador
     {
-        isStopped = false;
+        currentState = MovementState.Following;
     }
 
-    // Este método es para la MUERTE, no para los ataques. Lo dejamos como estaba.
+    public void MoveAway() // <-- El método que faltaba para el Tirador
+    {
+        currentState = MovementState.Fleeing;
+    }
+
+    // Este método es para la MUERTE
     public void DesactivarIA()
     {
-        isStopped = true;
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector2.zero;
-        }
+        StopMovement();
         enabled = false;
     }
 }

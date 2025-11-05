@@ -1,0 +1,1755 @@
+fileFormatVersion: 2
+guid: 9009fa2735e1d4d4fb7a4f55b1405150
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6474800944813794137
+    second: BOOMERANG-izquierda_0
+  - first:
+      213: 6693625444890370705
+    second: BOOMERANG-izquierda_1
+  - first:
+      213: 6203482819764601602
+    second: BOOMERANG-izquierda_2
+  - first:
+      213: 945751997353498454
+    second: BOOMERANG-izquierda_3
+  - first:
+      213: 7466228840273768503
+    second: BOOMERANG-izquierda_4
+  - first:
+      213: -7244371070647692176
+    second: BOOMERANG-izquierda_5
+  - first:
+      213: 300640892152594710
+    second: BOOMERANG-izquierda_6
+  - first:
+      213: -7691056012783216036
+    second: BOOMERANG-izquierda_7
+  - first:
+      213: -3989506849224784474
+    second: BOOMERANG-izquierda_8
+  - first:
+      213: 3533092793045509439
+    second: BOOMERANG-izquierda_9
+  - first:
+      213: -1954668688594431878
+    second: BOOMERANG-izquierda_10
+  - first:
+      213: -5986095376624286609
+    second: BOOMERANG-izquierda_11
+  - first:
+      213: -2053907605793764981
+    second: BOOMERANG-izquierda_12
+  - first:
+      213: -2090324887003185397
+    second: BOOMERANG-izquierda_13
+  - first:
+      213: 904718567534343009
+    second: BOOMERANG-izquierda_14
+  - first:
+      213: -3649314291777521044
+    second: BOOMERANG-izquierda_15
+  - first:
+      213: 8758885436091944420
+    second: BOOMERANG-izquierda_16
+  - first:
+      213: 8539890198833283790
+    second: BOOMERANG-izquierda_17
+  - first:
+      213: -2620261013726094119
+    second: BOOMERANG-izquierda_18
+  - first:
+      213: 7856234218472868474
+    second: BOOMERANG-izquierda_19
+  - first:
+      213: -9173242154363325771
+    second: BOOMERANG-izquierda_20
+  - first:
+      213: 8049107669223284172
+    second: BOOMERANG-izquierda_21
+  - first:
+      213: 3306311371520379057
+    second: BOOMERANG-izquierda_22
+  - first:
+      213: -7961588261094549372
+    second: BOOMERANG-izquierda_23
+  - first:
+      213: -2296216691017909550
+    second: BOOMERANG-izquierda_24
+  - first:
+      213: 8663814628476736955
+    second: BOOMERANG-izquierda_25
+  - first:
+      213: 3082048706655187997
+    second: BOOMERANG-izquierda_26
+  - first:
+      213: -1133229374994245750
+    second: BOOMERANG-izquierda_27
+  - first:
+      213: 7763634903678541370
+    second: BOOMERANG-izquierda_28
+  - first:
+      213: -3808452638504565876
+    second: BOOMERANG-izquierda_29
+  - first:
+      213: -1340628970169581984
+    second: BOOMERANG-izquierda_30
+  - first:
+      213: 5843805370092666504
+    second: BOOMERANG-izquierda_31
+  - first:
+      213: -8845623029919317214
+    second: BOOMERANG-izquierda_32
+  - first:
+      213: -1976596668486768635
+    second: BOOMERANG-izquierda_33
+  - first:
+      213: -6645071159313500290
+    second: BOOMERANG-izquierda_34
+  - first:
+      213: -2016306735760516789
+    second: BOOMERANG-izquierda_35
+  - first:
+      213: -1547516194746636689
+    second: BOOMERANG-izquierda_36
+  - first:
+      213: -7982068298253150997
+    second: BOOMERANG-izquierda_37
+  - first:
+      213: -4073080095937190821
+    second: BOOMERANG-izquierda_38
+  - first:
+      213: 6236429559484656194
+    second: BOOMERANG-izquierda_39
+  - first:
+      213: 4848710942003826979
+    second: BOOMERANG-izquierda_40
+  - first:
+      213: -2439156473358672014
+    second: BOOMERANG-izquierda_41
+  - first:
+      213: -4393873958229117823
+    second: BOOMERANG-izquierda_42
+  - first:
+      213: -3600503771624270095
+    second: BOOMERANG-izquierda_43
+  - first:
+      213: -6010014577377545682
+    second: BOOMERANG-izquierda_44
+  - first:
+      213: -1295525287633952579
+    second: BOOMERANG-izquierda_45
+  - first:
+      213: 7217441450790284868
+    second: BOOMERANG-izquierda_46
+  - first:
+      213: 4204339252225252388
+    second: BOOMERANG-izquierda_47
+  - first:
+      213: 1143638671890200682
+    second: BOOMERANG-izquierda_48
+  - first:
+      213: -198602003630000758
+    second: BOOMERANG-izquierda_49
+  - first:
+      213: 6941715389585432123
+    second: BOOMERANG-izquierda_50
+  - first:
+      213: 3705387651833001380
+    second: BOOMERANG-izquierda_51
+  - first:
+      213: 873244944973841850
+    second: BOOMERANG-izquierda_52
+  - first:
+      213: -4175772471052832875
+    second: BOOMERANG-izquierda_53
+  - first:
+      213: 8765220433589270594
+    second: BOOMERANG-izquierda_54
+  - first:
+      213: 3297609786965281367
+    second: BOOMERANG-izquierda_55
+  - first:
+      213: 263847521509192380
+    second: BOOMERANG-izquierda_56
+  - first:
+      213: -8340527468540943667
+    second: BOOMERANG-izquierda_57
+  - first:
+      213: 4121116701150232228
+    second: BOOMERANG-izquierda_58
+  - first:
+      213: -7846205901702852107
+    second: BOOMERANG-izquierda_59
+  - first:
+      213: -5987513879813689947
+    second: BOOMERANG-izquierda_60
+  - first:
+      213: -5147324830415380005
+    second: BOOMERANG-izquierda_61
+  - first:
+      213: 1986709395850812721
+    second: BOOMERANG-izquierda_62
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9536df2872d1bd950800000000000000
+      internalID: 6474800944813794137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192e436b0e884ec50800000000000000
+      internalID: 6693625444890370705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 2
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203ce42d1c2371650800000000000000
+      internalID: 6203482819764601602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6571fd74e6cff1d00800000000000000
+      internalID: 945751997353498454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_4
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7307b4c829f5d9760800000000000000
+      internalID: 7466228840273768503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0749de0c4e2d67b90800000000000000
+      internalID: -7244371070647692176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61146bd6c471c2400800000000000000
+      internalID: 300640892152594710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a9c6a2e41e34590800000000000000
+      internalID: -7691056012783216036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_8
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 2
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a508fe68ac62a8c0800000000000000
+      internalID: -3989506849224784474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_9
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3568f71d21180130800000000000000
+      internalID: 3533092793045509439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_10
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 45
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7010ca1f2f9fd4e0800000000000000
+      internalID: -1954668688594431878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_11
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6483bc78fd1deca0800000000000000
+      internalID: -5986095376624286609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_12
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8980332aed0f73e0800000000000000
+      internalID: -2053907605793764981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_13
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 2
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f340d179cadf2e0800000000000000
+      internalID: -2090324887003185397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_14
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163b5976eb43e8c00800000000000000
+      internalID: 904718567534343009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_15
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 28
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a38dc8cf70b5dc0800000000000000
+      internalID: -3649314291777521044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_16
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed4a96c5efcd8970800000000000000
+      internalID: 8758885436091944420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_17
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 28
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec24c4ab3e8c38670800000000000000
+      internalID: 8539890198833283790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_18
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc1d02ad76f2abd0800000000000000
+      internalID: -2620261013726094119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_19
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 31
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a0858c563f60d60800000000000000
+      internalID: 7856234218472868474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_20
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2f88eccd812b080800000000000000
+      internalID: -9173242154363325771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_21
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 32
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd1de677cc24bf60800000000000000
+      internalID: 8049107669223284172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_22
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b88e40cca062ed20800000000000000
+      internalID: 3306311371520379057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_23
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 26
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4881a89a8a1c28190800000000000000
+      internalID: -7961588261094549372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_24
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dafd8cd5133220e0800000000000000
+      internalID: -2296216691017909550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_25
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb55032708d0c3870800000000000000
+      internalID: 8663814628476736955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_26
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1472a428f2a5ca20800000000000000
+      internalID: 3082048706655187997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_27
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 2
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a871e6633e5f540f0800000000000000
+      internalID: -1133229374994245750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_28
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e5597bfc8fdbb60800000000000000
+      internalID: 7763634903678541370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_29
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 2
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83490ad088a52bc0800000000000000
+      internalID: -3808452638504565876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_30
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 2
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06eb179fd01256de0800000000000000
+      internalID: -1340628970169581984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_31
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 2
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88eb4e4b50e591150800000000000000
+      internalID: 5843805370092666504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_32
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 2
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305ac68b80e3580800000000000000
+      internalID: -8845623029919317214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_33
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 2
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50820ae6dc7b194e0800000000000000
+      internalID: -1976596668486768635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_34
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 2
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77fce9dcf6f7c3a0800000000000000
+      internalID: -6645071159313500290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_35
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 2
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4954c8e4b3a404e0800000000000000
+      internalID: -2016306735760516789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_36
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 2
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6666ff483e168ae0800000000000000
+      internalID: -1547516194746636689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_37
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 2
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4d6bd6c2ff93190800000000000000
+      internalID: -7982068298253150997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_38
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 2
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5423fb9b338977c0800000000000000
+      internalID: -4073080095937190821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_39
+      rect:
+        serializedVersion: 2
+        x: 3340
+        y: 2
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a24df64af3c8650800000000000000
+      internalID: 6236429559484656194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_40
+      rect:
+        serializedVersion: 2
+        x: 3385
+        y: 2
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32110b489e41a4340800000000000000
+      internalID: 4848710942003826979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_41
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 2
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f9cd55c10662ed0800000000000000
+      internalID: -2439156473358672014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_42
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 28
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184f9eb2ae2d503c0800000000000000
+      internalID: -4393873958229117823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_43
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 31
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f691ef55e0780ec0800000000000000
+      internalID: -3600503771624270095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_44
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 28
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22fd749593289ca0800000000000000
+      internalID: -6010014577377545682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_45
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 31
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0ea096d9e550ee0800000000000000
+      internalID: -1295525287633952579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_46
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 31
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ee88582c0892460800000000000000
+      internalID: 7217441450790284868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_47
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 28
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c1e1c3640d85a30800000000000000
+      internalID: 4204339252225252388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_48
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 24
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a683a6510550fdf00800000000000000
+      internalID: 1143638671890200682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_49
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 25
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85f3f9a78c6e3df0800000000000000
+      internalID: -198602003630000758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_50
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 24
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e1a183e5de55060800000000000000
+      internalID: 6941715389585432123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_51
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 22
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5ff96ff6e2c6330800000000000000
+      internalID: 3705387651833001380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_52
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 24
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5421b96a36e1c00800000000000000
+      internalID: 873244944973841850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_53
+      rect:
+        serializedVersion: 2
+        x: 2517
+        y: 23
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f6a00df0dac06c0800000000000000
+      internalID: -4175772471052832875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_54
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 31
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24875125b8154a970800000000000000
+      internalID: 8765220433589270594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_55
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 20
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75acae731a673cd20800000000000000
+      internalID: 3297609786965281367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_56
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 16
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb23c624cef59a300800000000000000
+      internalID: 263847521509192380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_57
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 17
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2aa36157e704c80800000000000000
+      internalID: -8340527468540943667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_58
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 13
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae3df91ec5213930800000000000000
+      internalID: 4121116701150232228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_59
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 20
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f19d6aad4dac1390800000000000000
+      internalID: -7846205901702852107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_60
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 20
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adebf979d318eca0800000000000000
+      internalID: -5987513879813689947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_61
+      rect:
+        serializedVersion: 2
+        x: 3161
+        y: 28
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd12b83a6570198b0800000000000000
+      internalID: -5147324830415380005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOMERANG-izquierda_62
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 19
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d5e936ba5329b10800000000000000
+      internalID: 1986709395850812721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BOOMERANG-izquierda_0: 6474800944813794137
+      BOOMERANG-izquierda_1: 6693625444890370705
+      BOOMERANG-izquierda_10: -1954668688594431878
+      BOOMERANG-izquierda_11: -5986095376624286609
+      BOOMERANG-izquierda_12: -2053907605793764981
+      BOOMERANG-izquierda_13: -2090324887003185397
+      BOOMERANG-izquierda_14: 904718567534343009
+      BOOMERANG-izquierda_15: -3649314291777521044
+      BOOMERANG-izquierda_16: 8758885436091944420
+      BOOMERANG-izquierda_17: 8539890198833283790
+      BOOMERANG-izquierda_18: -2620261013726094119
+      BOOMERANG-izquierda_19: 7856234218472868474
+      BOOMERANG-izquierda_2: 6203482819764601602
+      BOOMERANG-izquierda_20: -9173242154363325771
+      BOOMERANG-izquierda_21: 8049107669223284172
+      BOOMERANG-izquierda_22: 3306311371520379057
+      BOOMERANG-izquierda_23: -7961588261094549372
+      BOOMERANG-izquierda_24: -2296216691017909550
+      BOOMERANG-izquierda_25: 8663814628476736955
+      BOOMERANG-izquierda_26: 3082048706655187997
+      BOOMERANG-izquierda_27: -1133229374994245750
+      BOOMERANG-izquierda_28: 7763634903678541370
+      BOOMERANG-izquierda_29: -3808452638504565876
+      BOOMERANG-izquierda_3: 945751997353498454
+      BOOMERANG-izquierda_30: -1340628970169581984
+      BOOMERANG-izquierda_31: 5843805370092666504
+      BOOMERANG-izquierda_32: -8845623029919317214
+      BOOMERANG-izquierda_33: -1976596668486768635
+      BOOMERANG-izquierda_34: -6645071159313500290
+      BOOMERANG-izquierda_35: -2016306735760516789
+      BOOMERANG-izquierda_36: -1547516194746636689
+      BOOMERANG-izquierda_37: -7982068298253150997
+      BOOMERANG-izquierda_38: -4073080095937190821
+      BOOMERANG-izquierda_39: 6236429559484656194
+      BOOMERANG-izquierda_4: 7466228840273768503
+      BOOMERANG-izquierda_40: 4848710942003826979
+      BOOMERANG-izquierda_41: -2439156473358672014
+      BOOMERANG-izquierda_42: -4393873958229117823
+      BOOMERANG-izquierda_43: -3600503771624270095
+      BOOMERANG-izquierda_44: -6010014577377545682
+      BOOMERANG-izquierda_45: -1295525287633952579
+      BOOMERANG-izquierda_46: 7217441450790284868
+      BOOMERANG-izquierda_47: 4204339252225252388
+      BOOMERANG-izquierda_48: 1143638671890200682
+      BOOMERANG-izquierda_49: -198602003630000758
+      BOOMERANG-izquierda_5: -7244371070647692176
+      BOOMERANG-izquierda_50: 6941715389585432123
+      BOOMERANG-izquierda_51: 3705387651833001380
+      BOOMERANG-izquierda_52: 873244944973841850
+      BOOMERANG-izquierda_53: -4175772471052832875
+      BOOMERANG-izquierda_54: 8765220433589270594
+      BOOMERANG-izquierda_55: 3297609786965281367
+      BOOMERANG-izquierda_56: 263847521509192380
+      BOOMERANG-izquierda_57: -8340527468540943667
+      BOOMERANG-izquierda_58: 4121116701150232228
+      BOOMERANG-izquierda_59: -7846205901702852107
+      BOOMERANG-izquierda_6: 300640892152594710
+      BOOMERANG-izquierda_60: -5987513879813689947
+      BOOMERANG-izquierda_61: -5147324830415380005
+      BOOMERANG-izquierda_62: 1986709395850812721
+      BOOMERANG-izquierda_7: -7691056012783216036
+      BOOMERANG-izquierda_8: -3989506849224784474
+      BOOMERANG-izquierda_9: 3533092793045509439
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
