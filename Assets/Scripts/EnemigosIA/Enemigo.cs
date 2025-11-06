@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
+    public PlayerSoundController playerSoundController;
+
     private Room parentRoom;
 
     [SerializeField] private float vidaActual = 100f;
@@ -10,7 +12,7 @@ public class Enemigo : MonoBehaviour
     [SerializeField] private EnemyHealthBar EnemyHealthBar;
     private Animator anim;
 
-    // --- CAMBIO 1: Añadimos la bandera para controlar el estado de muerte ---
+    // --- CAMBIO 1: Aï¿½adimos la bandera para controlar el estado de muerte ---
     private bool isDead = false;
 
     private void Start()
@@ -18,6 +20,7 @@ public class Enemigo : MonoBehaviour
         // ... (el resto del Start sigue igual)
         EnemyHealthBar.UpdateHealthBar(vidaMaxima, vidaActual);
         anim = GetComponent<Animator>();
+        playerSoundController = GetComponent<PlayerSoundController>();
         if (parentRoom == null)
         {
             parentRoom = GetComponentInParent<Room>();
@@ -29,17 +32,19 @@ public class Enemigo : MonoBehaviour
         parentRoom = room;
     }
 
-    public void TomarDaño(float daño)
+    public void TomarDaÃ±o(float daÃ±o)
     {
-        // --- CAMBIO 2: Si el enemigo ya está muerto, no hacemos nada ---
+        // --- CAMBIO 2: Si el enemigo ya estï¿½ muerto, no hacemos nada ---
         if (isDead) return;
 
-        vidaActual -= daño;
-        Debug.Log($"[Enemigo] {gameObject.name} ha recibido {daño} de daño. Vida restante: {vidaActual}");
+        vidaActual -= daÃ±o;
+        Debug.Log($"[Enemigo] {gameObject.name} ha recibido {daÃ±o} de daï¿½o. Vida restante: {vidaActual}");
         EnemyHealthBar.UpdateHealthBar(vidaMaxima, vidaActual);
 
         if (vidaActual <= 0)
         {
+            playerSoundController.playsonidoMuerteMono();
+
             // --- CAMBIO 3: Marcamos al enemigo como muerto ANTES de llamar a Muerte() ---
             isDead = true;
             Muerte();
@@ -48,14 +53,14 @@ public class Enemigo : MonoBehaviour
 
     private void Muerte()
     {
-        // ... (tu código de animación de muerte, etc.)
+        // ... (tu cï¿½digo de animaciï¿½n de muerte, etc.)
 
         if (parentRoom != null)
         {
             parentRoom.EnemyWasDefeated();
         }
 
-        // --- ¡CAMBIO CLAVE AQUÍ! ---
+        // --- ï¿½CAMBIO CLAVE AQUï¿½! ---
         // Reemplazamos la llamada al ExperienceManager por la llamada al GameManager.
         if (GameManager.Instance != null)
         {

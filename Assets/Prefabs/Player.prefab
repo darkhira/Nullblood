@@ -47,6 +47,8 @@ GameObject:
   - component: {fileID: 2449424167303065384}
   - component: {fileID: 5788985872018004612}
   - component: {fileID: 9087720164842095571}
+  - component: {fileID: 9201648962079504090}
+  - component: {fileID: 5103481961288072543}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -168,7 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ab559612aeeb14b858f13437931995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  playerSoundController: {fileID: 0}
   speed: 3
+  runSpeed: 6
   dashSpeed: 20
   dashDuration: 0.15
   dashCooldown: 1
@@ -258,6 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   controladorGolpe: {fileID: 892959232384710708}
   radioGolpe: 1
+  attackOffset: 1
 --- !u!114 &9087720164842095571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +279,132 @@ MonoBehaviour:
   currentHealth: 100
   baseDamage: 15
   attackSpeed: 1
+  playerSoundController: {fileID: 0}
+--- !u!82 &9201648962079504090
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8139245436863677738}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5103481961288072543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8139245436863677738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334a0447470de924ba5bb35ed3effa9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSoundController
+  audioSource: {fileID: 9201648962079504090}
+  sonidoPasillos: {fileID: 0}
+  sonidoMuerte: {fileID: 8300000, guid: 974a3c036526b6c48be7981b87f3ce86, type: 3}
+  sonidoGolpe: {fileID: 8300000, guid: f008a68c65463984cb18b92f3c778730, type: 3}
+  sonidoDash: {fileID: 8300000, guid: 987b6a7f00ed56f4bb2f1c05fef84105, type: 3}
+  sonidoPeleaKopp: {fileID: 0}
+  sonidomuerteVorr: {fileID: 0}
+  sonidoMuerteMono: {fileID: 0}
+  sonidoEspacio: {fileID: 0}
+  sonidoPistolaLaser: {fileID: 0}
+  sonidoPuerta: {fileID: 0}
+  sonidoClipMenu: {fileID: 0}
+  sonidoRecibirDanio: {fileID: 8300000, guid: c24a5a78ae4f1b7408f87221edf992c1, type: 3}
+  sonidoPasillosdescartado: {fileID: 0}
+  sonidoCofreAbierto: {fileID: 0}
+  sonidoBoomerang: {fileID: 8300000, guid: 920ff24462aa96242980cddf7920f960, type: 3}
 --- !u!1 &8675813792929845793
 GameObject:
   m_ObjectHideFlags: 0

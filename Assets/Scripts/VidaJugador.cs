@@ -3,31 +3,39 @@ using UnityEngine;
 
 public class VidaJugador : MonoBehaviour
 {
+    public PlayerSoundController playerSoundController;
     public Action<int> JugadorSeCuro;
-    public Action<int> JugadorTomoDaño;
+    public Action<int> JugadorTomoDaÃ±o;
 
 
     [SerializeField] private int vidaMaxima;
     [SerializeField] private int vidaActual;
 
+    void Start()
+    {
+        playerSoundController = GetComponent<PlayerSoundController>();
+    }
     private void Awake()
     {
+
+
         vidaActual = vidaMaxima;
     }
 
-    public void TomarDaño(int daño)
+    public void TomarDaÃ±o(int daÃ±o)
     {
 
-        int vidaTemporal = vidaActual - daño;
+        int vidaTemporal = vidaActual - daÃ±o;
 
         vidaTemporal = Mathf.Clamp(vidaTemporal, 0, vidaMaxima);
 
         vidaActual = vidaTemporal;
 
-        JugadorTomoDaño?.Invoke(vidaActual);
+        JugadorTomoDaÃ±o?.Invoke(vidaActual);
 
         if (vidaActual <= 0)
         {
+
             DestruirJugador();
         }
     }

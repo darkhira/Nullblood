@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public PlayerSoundController playerSoundController;
+
     [Header("Movimiento Base")]
     [SerializeField] private float speed = 3f;
     [SerializeField] private float runSpeed = 6f;
@@ -10,17 +12,17 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Animator animator;
 
-    [Header("Configuración de Dash")]
+    [Header("Configuraciï¿½n de Dash")]
     [SerializeField] private float dashSpeed = 10f;
     [SerializeField] private float dashDuration = 0.15f;
     [SerializeField] private float dashCooldown = 1f;
 
-    [Header("Configuración de Ataque")]
+    [Header("Configuraciï¿½n de Ataque")]
     [SerializeField] private float attackDuration = 0.4f;
     [SerializeField] private GameObject boomerangPrefab;
-    [SerializeField] private Transform attackPoint; // Punto desde donde se lanza el bumerán/ataque
+    [SerializeField] private Transform attackPoint; // Punto desde donde se lanza el bumerï¿½n/ataque
 
-    [Header("Configuración de Bumerán")]
+    [Header("Configuraciï¿½n de Bumerï¿½n")]
     [SerializeField] private float boomerangCooldown = 5f;
     private bool canThrowBoomerang = true;
     private Coroutine boomerangCooldownCoroutine;
@@ -40,48 +42,52 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         combateCaC = GetComponent<CombateCaC>();
+        playerSoundController = GetComponent<PlayerSoundController>();
     }
 
     void Update()
     {
-        // Si está haciendo dash o atacando, no procesa nuevo input
+        // Si estï¿½ haciendo dash o atacando, no procesa nuevo input
         if (isDashing || isAttacking)
         {
             return;
         }
 
-        // Procesa el input de movimiento y actualiza la animación base
+        // Procesa el input de movimiento y actualiza la animaciï¿½n base
         HandleMovementInput();
 
-        // --- ¡CONTROLES ACTUALIZADOS! ---
+        // --- ï¿½CONTROLES ACTUALIZADOS! ---
 
-        // Input de Ataque Cuerpo a Cuerpo (Clic izquierdo o Botón 'X' de Xbox)
+        // Input de Ataque Cuerpo a Cuerpo (Clic izquierdo o Botï¿½n 'X' de Xbox)
         if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.JoystickButton2))
         {
+            playerSoundController.playsonidoGolpe();
             StartCoroutine(AttackCoroutine(true)); // true indica que es ataque melee
             return;
         }
 
-        // Input de Lanzar Bumerán (Tecla R o Botón 'Y' de Xbox)
+        // Input de Lanzar Bumerï¿½n (Tecla R o Botï¿½n 'Y' de Xbox)
         if ((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton3)) && canThrowBoomerang)
         {
-            StartCoroutine(AttackCoroutine(false)); // false indica que es lanzar bumerán
+            playerSoundController.playsonidoBoomerang();
+            StartCoroutine(AttackCoroutine(false)); // false indica que es lanzar bumerï¿½n
             return;
         }
 
-        // Input de Dash (Barra Espaciadora o Botón 'A' de Xbox)
+        // Input de Dash (Barra Espaciadora o Botï¿½n 'A' de Xbox)
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && canDash && moveInput.sqrMagnitude > 0.1f)
         {
+            playerSoundController.playsonidoDash();
             StartCoroutine(DashCoroutine());
         }
 
-        // Input de Correr (Shift Izquierdo o Botón 'LB' de Xbox)
+        // Input de Correr (Shift Izquierdo o Botï¿½n 'LB' de Xbox)
         isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton4);
         animator.SetBool("isRunning", isRunning);
     }
 
     /// <summary>
-    /// Lee el input de movimiento y actualiza los parámetros del Animator para los Blend Trees.
+    /// Lee el input de movimiento y actualiza los parï¿½metros del Animator para los Blend Trees.
     /// </summary>
     private void HandleMovementInput()
     {
@@ -94,12 +100,12 @@ public class PlayerMovement : MonoBehaviour
             lastMoveDirection = moveInput;
         }
 
-        if (moveInput.sqrMagnitude > 0.1f) // Si se está moviendo
+        if (moveInput.sqrMagnitude > 0.1f) // Si se estï¿½ moviendo
         {
             animator.SetFloat("Horizontal", moveInput.x);
             animator.SetFloat("Vertical", moveInput.y);
         }
-        else // Si está quieto, usa la última dirección
+        else // Si estï¿½ quieto, usa la ï¿½ltima direcciï¿½n
         {
             animator.SetFloat("Horizontal", lastMoveDirection.x);
             animator.SetFloat("Vertical", lastMoveDirection.y);
@@ -109,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Aplica el movimiento al Rigidbody en el ciclo de físicas.
+    /// Aplica el movimiento al Rigidbody en el ciclo de fï¿½sicas.
     /// </summary>
     private void FixedUpdate()
     {
@@ -120,37 +126,37 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Corutina que gestiona la lógica de ataque (animación y ejecución).
+    /// Corutina que gestiona la lï¿½gica de ataque (animaciï¿½n y ejecuciï¿½n).
     /// </summary>
-    /// <param name="isMelee">True si es ataque cuerpo a cuerpo, False si es lanzar bumerán.</param>
+    /// <param name="isMelee">True si es ataque cuerpo a cuerpo, False si es lanzar bumerï¿½n.</param>
     private IEnumerator AttackCoroutine(bool isMelee)
     {
         isAttacking = true; // Flag interno del script para detener el movimiento
 
-        // 1. Apunta la animación
+        // 1. Apunta la animaciï¿½n
         animator.SetFloat("Horizontal", lastMoveDirection.x);
         animator.SetFloat("Vertical", lastMoveDirection.y);
 
         // Espera un frame para que el Animator actualice los floats
         yield return null;
 
-        // 2. Activa la animación y la lógica de daño
+        // 2. Activa la animaciï¿½n y la lï¿½gica de daï¿½o
         if (isMelee)
         {
             animator.SetTrigger("MeleeAttack"); // Activa el Trigger de golpe
-            yield return new WaitForSeconds(0.1f); // Pequeño delay
+            yield return new WaitForSeconds(0.1f); // Pequeï¿½o delay
             if (combateCaC != null)
             {
-                // --- ¡CORRECCIÓN IMPORTANTE! ---
+                // --- ï¿½CORRECCIï¿½N IMPORTANTE! ---
                 // Tu script anterior llamaba a EjecutarGolpe() sin argumentos.
-                // Esta versión le pasa la dirección para que el golpe sea direccional.
+                // Esta versiï¿½n le pasa la direcciï¿½n para que el golpe sea direccional.
                 combateCaC.EjecutarGolpe(lastMoveDirection);
             }
         }
-        else // Lanzar bumerán
+        else // Lanzar bumerï¿½n
         {
-            animator.SetTrigger("BoomerangThrow"); // Activa el Trigger de bumerán
-            yield return new WaitForSeconds(0.1f); // Pequeño delay
+            animator.SetTrigger("BoomerangThrow"); // Activa el Trigger de bumerï¿½n
+            yield return new WaitForSeconds(0.1f); // Pequeï¿½o delay
             if (boomerangPrefab != null && attackPoint != null)
             {
                 GameObject boomerangObj = Instantiate(boomerangPrefab, attackPoint.position, Quaternion.identity);
@@ -161,7 +167,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // 3. Espera a que termine la duración del ataque
+        // 3. Espera a que termine la duraciï¿½n del ataque
         yield return new WaitForSeconds(attackDuration - 0.1f);
 
         // 4. Volver al estado normal
@@ -169,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Corutina que espera el tiempo de cooldown del bumerán.
+    /// Corutina que espera el tiempo de cooldown del bumerï¿½n.
     /// </summary>
     private IEnumerator BoomerangCooldownCoroutine()
     {
@@ -179,7 +185,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Método público llamado por el bumerán para reiniciar el cooldown al ser recogido.
+    /// Mï¿½todo pï¿½blico llamado por el bumerï¿½n para reiniciar el cooldown al ser recogido.
     /// </summary>
     public void ResetBoomerangCooldown()
     {
@@ -189,11 +195,11 @@ public class PlayerMovement : MonoBehaviour
             boomerangCooldownCoroutine = null;
         }
         canThrowBoomerang = true;
-        Debug.Log("¡Bumerán recogido! Cooldown reiniciado.");
+        Debug.Log("ï¿½Bumerï¿½n recogido! Cooldown reiniciado.");
     }
 
     /// <summary>
-    /// Corutina que gestiona la lógica del Dash.
+    /// Corutina que gestiona la lï¿½gica del Dash.
     /// </summary>
     private IEnumerator DashCoroutine()
     {

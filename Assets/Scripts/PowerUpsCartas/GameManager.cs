@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // --- NUEVO MÉTODO PÚBLICO ---
+    // --- NUEVO Mï¿½TODO Pï¿½BLICO ---
     /// <summary>
     /// Llamado por el script 'Enemigo' cada vez que uno muere.
     /// </summary>
@@ -54,9 +54,9 @@ public class GameManager : MonoBehaviour
     public void TriggerCardSelection()
     {
         // Seguimos aumentando el nivel para el desbloqueo de cartas, 
-        // pero la función ahora tiene un nombre más claro.
+        // pero la funciï¿½n ahora tiene un nombre mï¿½s claro.
         currentLevel++;
-        Debug.Log("¡CONTEO ALCANZADO! Mostrando selección de cartas.");
+        Debug.Log("ï¿½CONTEO ALCANZADO! Mostrando selecciï¿½n de cartas.");
         ChangeState(GameState.CardSelection);
     }
 
