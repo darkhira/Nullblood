@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3782987643940881111}
   - component: {fileID: 7019525643192685997}
   - component: {fileID: 7850434191156174974}
-  - component: {fileID: 271098081565482028}
+  - component: {fileID: 6311092949667579415}
   m_Layer: 0
   m_Name: Mono
   m_TagString: Enemigo
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemigo
   vidaActual: 40
   vidaMaxima: 40
-  tiempoParaDesaparecer: 1
+  tiempoParaDesaparecer: 0
   EnemyHealthBar: {fileID: 5965073952440779792}
 --- !u!95 &7019525643192685997
 Animator:
@@ -197,7 +197,7 @@ Animator:
   m_GameObject: {fileID: 893183041423461361}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f35148abcc55874468f02767d3d7b70d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FollowIA
   velocidad: 2
---- !u!114 &271098081565482028
+--- !u!114 &6311092949667579415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,15 +231,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 893183041423461361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c65aca0ea5a3de0418e3f2f28c26a439, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b0850c31fed9554887b56be0b7c6af0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyRangedAttack
-  projectilePrefab: {fileID: 1347573906597008074, guid: d1e10ca0cbdf88248a56811980885c3e, type: 3}
-  firePoint: {fileID: 4024076458287860300}
-  attackRange: 10
-  attackCooldown: 2
-  projectileDamage: 10
-  projectileSpeed: 12
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMeleeAttack
+  attackRange: 1.5
+  attackCooldown: 1.5
+  attackDamage: 20
+  attackRadius: 0.8
+  attackPoint: {fileID: 4024076458287860300}
+  attackPointOffset: 1
 --- !u!1 &3264553589863051766
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4024076458287860300}
   m_Layer: 0
-  m_Name: FirePoint
+  m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,7 +532,7 @@ Transform:
   m_GameObject: {fileID: 8631088326470487006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43, y: -0.29, z: 0}
+  m_LocalPosition: {x: 0, y: -0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: ff5abcfac2097644bbee154ccc6b8f84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5210303771292116301
+    second: Enemigo3Punch_0
+  - first:
+      213: 3670857475830498457
+    second: Enemigo3Punch_1
+  - first:
+      213: -2964542686807860613
+    second: Enemigo3Punch_2
+  - first:
+      213: 7621560834566387556
+    second: Enemigo3Punch_3
+  - first:
+      213: 8675045524994044817
+    second: Enemigo3Punch_4
+  - first:
+      213: -3296168535583228912
+    second: Enemigo3Punch_5
+  - first:
+      213: -1297274317021919276
+    second: Enemigo3Punch_6
+  - first:
+      213: 6478170404286157090
+    second: Enemigo3Punch_7
+  - first:
+      213: 485344465721796111
+    second: Enemigo3Punch_8
+  - first:
+      213: 964315393338149888
+    second: Enemigo3Punch_9
+  - first:
+      213: -8276607668581019545
+    second: Enemigo3Punch_10
+  - first:
+      213: -1883287037060183816
+    second: Enemigo3Punch_11
+  - first:
+      213: 3221166036636685829
+    second: Enemigo3Punch_12
+  - first:
+      213: 8453475237842193727
+    second: Enemigo3Punch_13
+  - first:
+      213: -6687638003091523982
+    second: Enemigo3Punch_14
+  - first:
+      213: 6058417143868377968
+    second: Enemigo3Punch_15
+  - first:
+      213: 7642369267061946374
+    second: Enemigo3Punch_16
+  - first:
+      213: 7673517361193147508
+    second: Enemigo3Punch_17
+  - first:
+      213: 2813598003123790863
+    second: Enemigo3Punch_18
+  - first:
+      213: -4270564645512582848
+    second: Enemigo3Punch_19
+  - first:
+      213: 3176470518152075541
+    second: Enemigo3Punch_20
+  - first:
+      213: 4291626657833404475
+    second: Enemigo3Punch_21
+  - first:
+      213: 5925418797792657536
+    second: Enemigo3Punch_22
+  - first:
+      213: 5773834786882583694
+    second: Enemigo3Punch_23
+  - first:
+      213: -8998468306089318172
+    second: Enemigo3Punch_24
+  - first:
+      213: 2530933768964294863
+    second: Enemigo3Punch_25
+  - first:
+      213: 609904666678810239
+    second: Enemigo3Punch_26
+  - first:
+      213: 4986028678034578511
+    second: Enemigo3Punch_27
+  - first:
+      213: -3236806236510376385
+    second: Enemigo3Punch_28
+  - first:
+      213: 5186725912363129355
+    second: Enemigo3Punch_29
+  - first:
+      213: 3007749439094930443
+    second: Enemigo3Punch_30
+  - first:
+      213: -1587412086233870595
+    second: Enemigo3Punch_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 670
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo3Punch_0
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 3647
+        width: 572
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45aeb3bca7be4840800000000000000
+      internalID: 5210303771292116301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_1
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 3647
+        width: 553
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994c6fbdc6181f230800000000000000
+      internalID: 3670857475830498457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_2
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 3647
+        width: 534
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ad5571224dbd6d0800000000000000
+      internalID: -2964542686807860613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_3
+      rect:
+        serializedVersion: 2
+        x: 3894
+        y: 3647
+        width: 629
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467fb52c23935c960800000000000000
+      internalID: 7621560834566387556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_4
+      rect:
+        serializedVersion: 2
+        x: 5072
+        y: 3647
+        width: 667
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193bc9f41f3f36870800000000000000
+      internalID: 8675045524994044817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_5
+      rect:
+        serializedVersion: 2
+        x: 6326
+        y: 3647
+        width: 629
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01cfdb44e28a142d0800000000000000
+      internalID: -3296168535583228912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_6
+      rect:
+        serializedVersion: 2
+        x: 7466
+        y: 3647
+        width: 705
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7cba5c1e72ffde0800000000000000
+      internalID: -1297274317021919276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_7
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 3647
+        width: 705
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221dcede8a517e950800000000000000
+      internalID: 6478170404286157090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2431
+        width: 667
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06ac09583a4cb600800000000000000
+      internalID: 485344465721796111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_9
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 2431
+        width: 591
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c8c57bdbfe16d00800000000000000
+      internalID: 964315393338149888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_10
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2431
+        width: 667
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76054f04d25932d80800000000000000
+      internalID: -8276607668581019545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_11
+      rect:
+        serializedVersion: 2
+        x: 4008
+        y: 2431
+        width: 591
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f80ee9fa683dd5e0800000000000000
+      internalID: -1883287037060183816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_12
+      rect:
+        serializedVersion: 2
+        x: 5129
+        y: 2431
+        width: 724
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5065840a171e3bc20800000000000000
+      internalID: 3221166036636685829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_13
+      rect:
+        serializedVersion: 2
+        x: 6288
+        y: 2431
+        width: 743
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d052db0f6c05570800000000000000
+      internalID: 8453475237842193727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_14
+      rect:
+        serializedVersion: 2
+        x: 7485
+        y: 2431
+        width: 838
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276b3573bacb033a0800000000000000
+      internalID: -6687638003091523982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_15
+      rect:
+        serializedVersion: 2
+        x: 8872
+        y: 2431
+        width: 591
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b49612b42d31450800000000000000
+      internalID: 6058417143868377968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_16
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1215
+        width: 572
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608f69d7b562f0a60800000000000000
+      internalID: 7642369267061946374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_17
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1215
+        width: 572
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47cd5bb426fcd7a60800000000000000
+      internalID: 7673517361193147508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_18
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 1215
+        width: 496
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0421fc0a78eb0720800000000000000
+      internalID: 2813598003123790863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_19
+      rect:
+        serializedVersion: 2
+        x: 3989
+        y: 1234
+        width: 629
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04961e1d418ebb4c0800000000000000
+      internalID: -4270564645512582848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_20
+      rect:
+        serializedVersion: 2
+        x: 5224
+        y: 1234
+        width: 648
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51994f94b17151c20800000000000000
+      internalID: 3176470518152075541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_21
+      rect:
+        serializedVersion: 2
+        x: 6459
+        y: 1215
+        width: 572
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38c1c015bbee8b30800000000000000
+      internalID: 4291626657833404475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_22
+      rect:
+        serializedVersion: 2
+        x: 7656
+        y: 1234
+        width: 610
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0808adb90015b3250800000000000000
+      internalID: 5925418797792657536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_23
+      rect:
+        serializedVersion: 2
+        x: 8853
+        y: 1234
+        width: 705
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cfde7c528c02050800000000000000
+      internalID: 5773834786882583694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_24
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 667
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e86fe460c40f1380800000000000000
+      internalID: -8998468306089318172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_25
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 0
+        width: 591
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc848297adeaf1320800000000000000
+      internalID: 2530933768964294863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_26
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 0
+        width: 667
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f765e3c1011d67800800000000000000
+      internalID: 609904666678810239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_27
+      rect:
+        serializedVersion: 2
+        x: 3913
+        y: 0
+        width: 591
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c59226aaee13540800000000000000
+      internalID: 4986028678034578511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_28
+      rect:
+        serializedVersion: 2
+        x: 5091
+        y: 0
+        width: 686
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ea70290ed8413d0800000000000000
+      internalID: -3236806236510376385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_29
+      rect:
+        serializedVersion: 2
+        x: 6345
+        y: 0
+        width: 743
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ad7b1acb3faf740800000000000000
+      internalID: 5186725912363129355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_30
+      rect:
+        serializedVersion: 2
+        x: 7485
+        y: 0
+        width: 838
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c32aadd2cadb920800000000000000
+      internalID: 3007749439094930443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo3Punch_31
+      rect:
+        serializedVersion: 2
+        x: 8777
+        y: 0
+        width: 591
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe4ed73e1168f9e0800000000000000
+      internalID: -1587412086233870595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Enemigo3Punch_0: 5210303771292116301
+      Enemigo3Punch_1: 3670857475830498457
+      Enemigo3Punch_10: -8276607668581019545
+      Enemigo3Punch_11: -1883287037060183816
+      Enemigo3Punch_12: 3221166036636685829
+      Enemigo3Punch_13: 8453475237842193727
+      Enemigo3Punch_14: -6687638003091523982
+      Enemigo3Punch_15: 6058417143868377968
+      Enemigo3Punch_16: 7642369267061946374
+      Enemigo3Punch_17: 7673517361193147508
+      Enemigo3Punch_18: 2813598003123790863
+      Enemigo3Punch_19: -4270564645512582848
+      Enemigo3Punch_2: -2964542686807860613
+      Enemigo3Punch_20: 3176470518152075541
+      Enemigo3Punch_21: 4291626657833404475
+      Enemigo3Punch_22: 5925418797792657536
+      Enemigo3Punch_23: 5773834786882583694
+      Enemigo3Punch_24: -8998468306089318172
+      Enemigo3Punch_25: 2530933768964294863
+      Enemigo3Punch_26: 609904666678810239
+      Enemigo3Punch_27: 4986028678034578511
+      Enemigo3Punch_28: -3236806236510376385
+      Enemigo3Punch_29: 5186725912363129355
+      Enemigo3Punch_3: 7621560834566387556
+      Enemigo3Punch_30: 3007749439094930443
+      Enemigo3Punch_31: -1587412086233870595
+      Enemigo3Punch_4: 8675045524994044817
+      Enemigo3Punch_5: -3296168535583228912
+      Enemigo3Punch_6: -1297274317021919276
+      Enemigo3Punch_7: 6478170404286157090
+      Enemigo3Punch_8: 485344465721796111
+      Enemigo3Punch_9: 964315393338149888
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

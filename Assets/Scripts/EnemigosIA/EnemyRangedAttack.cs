@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(FollowIA))]
 public class EnemyRangedAttack : MonoBehaviour
 {
+    // ... (Todas tus variables de Configuración y Comportamiento)
     [Header("Configuración de Ataque")]
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform firePoint;
@@ -10,22 +11,24 @@ public class EnemyRangedAttack : MonoBehaviour
     [SerializeField] private float projectileSpeed = 12f;
 
     [Header("Comportamiento")]
-    [Tooltip("Distancia máxima a la que el enemigo intentará disparar.")]
     [SerializeField] private float attackRange = 10f;
-    [Tooltip("Distancia mínima que el enemigo intentará mantener. Si el jugador se acerca más, retrocederá.")]
     [SerializeField] private float minDistance = 5f;
     [SerializeField] private float attackCooldown = 2f;
 
+
     private Transform playerTarget;
     private Animator animator;
-    private FollowIA followIA; // Referencia al "conductor"
+    private FollowIA followIA;
     private float attackTimer;
+
+    // --- ¡NUEVA VARIABLE "SEGURO"! ---
+    private bool hasFiredThisAttack = false;
 
     void Start()
     {
         playerTarget = GameObject.FindGameObjectWithTag("Player")?.transform;
         animator = GetComponent<Animator>();
-        followIA = GetComponent<FollowIA>(); // Obtenemos la referencia
+        followIA = GetComponent<FollowIA>();
         attackTimer = attackCooldown;
     }
 
@@ -36,21 +39,16 @@ public class EnemyRangedAttack : MonoBehaviour
         attackTimer -= Time.deltaTime;
         float distanceToPlayer = Vector2.Distance(transform.position, playerTarget.position);
 
-        // --- LÓGICA DE DECISIÓN ---
-
         if (distanceToPlayer > attackRange)
         {
-            // 1. Demasiado lejos: Perseguir
             followIA.MoveTowards();
         }
         else if (distanceToPlayer < minDistance)
         {
-            // 2. Demasiado cerca: Retroceder
             followIA.MoveAway();
         }
         else
         {
-            // 3. ¡Distancia perfecta! Detenerse y disparar.
             followIA.StopMovement();
 
             if (attackTimer <= 0)
@@ -61,9 +59,33 @@ public class EnemyRangedAttack : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Inicia el proceso de ataque, resetea el "seguro" y activa la animación.
+    /// </summary>
     private void Shoot()
     {
+        // --- CAMBIO CLAVE: "Armamos" el disparo ---
+        hasFiredThisAttack = false; // Permite que el próximo FireProjectile() funcione
+
         if (animator != null) animator.SetTrigger("Attack");
+    }
+
+    /// <summary>
+    /// Llamado por el Evento de Animación. Dispara la bala SÓLO UNA VEZ.
+    /// </summary>
+    public void FireProjectile()
+    {
+        // --- ¡EL "SEGURO" EN ACCIÓN! ---
+        // Si ya hemos disparado en este ataque, ignoramos las llamadas duplicadas.
+        if (hasFiredThisAttack) return;
+
+        // Si no, ponemos el seguro.
+        hasFiredThisAttack = true;
+        // ---------------------------------
+
+        Debug.LogWarning("+++ FireProjectile() llamado. ¡Disparando BALA ÚNICA! +++");
+
+        if (playerTarget == null) return;
 
         Vector2 direction = (playerTarget.position - firePoint.position).normalized;
         GameObject proj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);

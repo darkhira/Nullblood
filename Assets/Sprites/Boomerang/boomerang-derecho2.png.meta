@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 45e07b7fdadcd74419aeeb50f979632a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1035635032726950430
+    second: boomerang-derecho2_0
+  - first:
+      213: -8011031261038404156
+    second: boomerang-derecho2_1
+  - first:
+      213: 3640576371719233922
+    second: boomerang-derecho2_2
+  - first:
+      213: -7061677615487106783
+    second: boomerang-derecho2_3
+  - first:
+      213: 8845261575356657669
+    second: boomerang-derecho2_4
+  - first:
+      213: -4448319609449459497
+    second: boomerang-derecho2_5
+  - first:
+      213: -6799015630534646511
+    second: boomerang-derecho2_6
+  - first:
+      213: -7867346112001530163
+    second: boomerang-derecho2_7
+  - first:
+      213: 107597703734453479
+    second: boomerang-derecho2_8
+  - first:
+      213: -8971172968561100799
+    second: boomerang-derecho2_9
+  - first:
+      213: -3866327487979929933
+    second: boomerang-derecho2_10
+  - first:
+      213: 8800226186308547994
+    second: boomerang-derecho2_11
+  - first:
+      213: -606773940743034597
+    second: boomerang-derecho2_12
+  - first:
+      213: -9193791177219552802
+    second: boomerang-derecho2_13
+  - first:
+      213: 2233417406034834832
+    second: boomerang-derecho2_14
+  - first:
+      213: 3835774543697905337
+    second: boomerang-derecho2_15
+  - first:
+      213: 2767796248439746397
+    second: boomerang-derecho2_16
+  - first:
+      213: 4409807784538002088
+    second: boomerang-derecho2_17
+  - first:
+      213: -7937901784734411055
+    second: boomerang-derecho2_18
+  - first:
+      213: 2478310116768007844
+    second: boomerang-derecho2_19
+  - first:
+      213: 8007738453669826195
+    second: boomerang-derecho2_20
+  - first:
+      213: -7603824271884990845
+    second: boomerang-derecho2_21
+  - first:
+      213: -3358300170593399489
+    second: boomerang-derecho2_22
+  - first:
+      213: -4955232877156368788
+    second: boomerang-derecho2_23
+  - first:
+      213: -8520903156253504824
+    second: boomerang-derecho2_24
+  - first:
+      213: -6046055495986960823
+    second: boomerang-derecho2_25
+  - first:
+      213: 3790067759874362905
+    second: boomerang-derecho2_26
+  - first:
+      213: 380489216369081832
+    second: boomerang-derecho2_27
+  - first:
+      213: -5398374557579860537
+    second: boomerang-derecho2_28
+  - first:
+      213: 4058863694286032830
+    second: boomerang-derecho2_29
+  - first:
+      213: -2630393960151732027
+    second: boomerang-derecho2_30
+  - first:
+      213: -7606752720377996658
+    second: boomerang-derecho2_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boomerang-derecho2_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12d3a243905f5e00800000000000000
+      internalID: 1035635032726950430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 28
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd9149238913d090800000000000000
+      internalID: -8011031261038404156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 6
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2816106ebece58230800000000000000
+      internalID: 3640576371719233922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 29
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12140928f91effd90800000000000000
+      internalID: -7061677615487106783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 6
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500bb80e98ea0ca70800000000000000
+      internalID: 8845261575356657669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_5
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 28
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d05c5722e46442c0800000000000000
+      internalID: -4448319609449459497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_6
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 6
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11567a78e4b05a1a0800000000000000
+      internalID: -6799015630534646511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_7
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 26
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc62915e46291d290800000000000000
+      internalID: -7867346112001530163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_8
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 6
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e46dbd9a834e7100800000000000000
+      internalID: 107597703734453479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_9
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 28
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108345667bdff7380800000000000000
+      internalID: -8971172968561100799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_10
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 6
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3beb0a562ab085ac0800000000000000
+      internalID: -3866327487979929933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_11
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 27
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95f202471fa02a70800000000000000
+      internalID: 8800226186308547994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_12
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 35
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b192c03d05e4497f0800000000000000
+      internalID: -606773940743034597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_13
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 6
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed945b692a7196080800000000000000
+      internalID: -9193791177219552802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_14
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 24
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09571e13c41befe10800000000000000
+      internalID: 2233417406034834832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_15
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 6
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6899bef986b3530800000000000000
+      internalID: 3835774543697905337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_16
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 20
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fe8e60600396620800000000000000
+      internalID: 2767796248439746397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_17
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 6
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2d32dd0d8c23d30800000000000000
+      internalID: 4409807784538002088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_18
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 21
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d657f23268e6d190800000000000000
+      internalID: -7937901784734411055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_19
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 6
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6c639abe9b46220800000000000000
+      internalID: 2478310116768007844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_20
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 17
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ec93162b3312f60800000000000000
+      internalID: 8007738453669826195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_21
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 6
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3864dcb8c1ac97690800000000000000
+      internalID: -7603824271884990845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_22
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 24
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d85a2b9cbe461d0800000000000000
+      internalID: -3358300170593399489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_23
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 7
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ef1c1c3f97b3bb0800000000000000
+      internalID: -4955232877156368788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_24
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 25
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca410e99bbafb980800000000000000
+      internalID: -8520903156253504824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_25
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 33
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946266d4f88181ca0800000000000000
+      internalID: -6046055495986960823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_26
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 6
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ec8f50c86099430800000000000000
+      internalID: 3790067759874362905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_27
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 6
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8edbb862de4c74500800000000000000
+      internalID: 380489216369081832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_28
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 6
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c522f211fe1515b0800000000000000
+      internalID: -5398374557579860537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_29
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 8
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf06a1760bf35830800000000000000
+      internalID: 4058863694286032830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_30
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 6
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0b2d131a6fe7bd0800000000000000
+      internalID: -2630393960151732027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-derecho2_31
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 23
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a12aff3b26f6690800000000000000
+      internalID: -7606752720377996658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boomerang-derecho2_0: 1035635032726950430
+      boomerang-derecho2_1: -8011031261038404156
+      boomerang-derecho2_10: -3866327487979929933
+      boomerang-derecho2_11: 8800226186308547994
+      boomerang-derecho2_12: -606773940743034597
+      boomerang-derecho2_13: -9193791177219552802
+      boomerang-derecho2_14: 2233417406034834832
+      boomerang-derecho2_15: 3835774543697905337
+      boomerang-derecho2_16: 2767796248439746397
+      boomerang-derecho2_17: 4409807784538002088
+      boomerang-derecho2_18: -7937901784734411055
+      boomerang-derecho2_19: 2478310116768007844
+      boomerang-derecho2_2: 3640576371719233922
+      boomerang-derecho2_20: 8007738453669826195
+      boomerang-derecho2_21: -7603824271884990845
+      boomerang-derecho2_22: -3358300170593399489
+      boomerang-derecho2_23: -4955232877156368788
+      boomerang-derecho2_24: -8520903156253504824
+      boomerang-derecho2_25: -6046055495986960823
+      boomerang-derecho2_26: 3790067759874362905
+      boomerang-derecho2_27: 380489216369081832
+      boomerang-derecho2_28: -5398374557579860537
+      boomerang-derecho2_29: 4058863694286032830
+      boomerang-derecho2_3: -7061677615487106783
+      boomerang-derecho2_30: -2630393960151732027
+      boomerang-derecho2_31: -7606752720377996658
+      boomerang-derecho2_4: 8845261575356657669
+      boomerang-derecho2_5: -4448319609449459497
+      boomerang-derecho2_6: -6799015630534646511
+      boomerang-derecho2_7: -7867346112001530163
+      boomerang-derecho2_8: 107597703734453479
+      boomerang-derecho2_9: -8971172968561100799
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

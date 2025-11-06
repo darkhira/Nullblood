@@ -12,9 +12,8 @@ public class FollowIA : MonoBehaviour
     private Animator animator;
     private Vector2 movimiento;
 
-    // Estado interno de movimiento
     public enum MovementState { Stopped, Following, Fleeing }
-    private MovementState currentState = MovementState.Following; // Empieza siguiendo
+    private MovementState currentState = MovementState.Following;
 
     void Start()
     {
@@ -35,62 +34,56 @@ public class FollowIA : MonoBehaviour
 
     void Update()
     {
-        if (jugador == null || currentState == MovementState.Stopped)
+        if (jugador == null)
         {
             animator.SetFloat("Speed", 0);
             return;
         }
 
-        Vector2 direccion;
-        if (currentState == MovementState.Following)
+        // --- ¡LÓGICA CLAVE! ---
+        // 1. SIEMPRE calculamos la dirección para APUNTAR.
+        Vector2 direccion = (jugador.position - transform.position).normalized;
+
+        // 2. SIEMPRE actualizamos los parámetros del Animator.
+        // Esto permite que el Blend Tree de "Attack" sepa hacia dónde apuntar,
+        // incluso si el enemigo está quieto.
+        animator.SetFloat("MoveX", direccion.x);
+        animator.SetFloat("MoveY", direccion.y);
+        // -------------------------
+
+        // 3. Decidimos el movimiento basándonos en el estado
+        if (currentState == MovementState.Stopped)
         {
-            direccion = (jugador.position - transform.position).normalized;
+            movimiento = Vector2.zero;
         }
-        else // Fleeing (Huyendo)
+        else if (currentState == MovementState.Following)
         {
-            direccion = (transform.position - jugador.position).normalized;
+            movimiento = direccion;
+        }
+        else // Fleeing
+        {
+            movimiento = -direccion;
         }
 
-        movimiento = direccion;
-
-        // Asegúrate de que tus parámetros se llamen "MoveX" y "MoveY"
-        animator.SetFloat("MoveX", movimiento.x);
-        animator.SetFloat("MoveY", movimiento.y);
+        // 4. Actualizamos el 'Speed' para las animaciones de Idle/Walk
         animator.SetFloat("Speed", movimiento.sqrMagnitude);
     }
 
     void FixedUpdate()
     {
-        if (jugador == null || currentState == MovementState.Stopped)
+        if (jugador == null)
         {
             rb.linearVelocity = Vector2.zero;
             return;
         }
 
+        // Aplicamos el movimiento (será Vector2.zero si estamos en estado Stopped)
         rb.linearVelocity = movimiento * velocidad;
     }
 
-    // --- ¡MÉTODOS PÚBLICOS DE CONTROL! ---
-
-    public void StopMovement()
-    {
-        currentState = MovementState.Stopped;
-    }
-
-    public void MoveTowards() // <-- El método que faltaba para el Tirador
-    {
-        currentState = MovementState.Following;
-    }
-
-    public void MoveAway() // <-- El método que faltaba para el Tirador
-    {
-        currentState = MovementState.Fleeing;
-    }
-
-    // Este método es para la MUERTE
-    public void DesactivarIA()
-    {
-        StopMovement();
-        enabled = false;
-    }
+    // --- Métodos de Control (no cambian) ---
+    public void StopMovement() { currentState = MovementState.Stopped; }
+    public void MoveTowards() { currentState = MovementState.Following; }
+    public void MoveAway() { currentState = MovementState.Fleeing; }
+    public void DesactivarIA() { StopMovement(); enabled = false; }
 }

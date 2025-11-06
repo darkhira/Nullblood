@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 82f55c8121844984d8e8b2ff340b2ba4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1853414216828933454
+    second: boomerang-izquierdo1_0
+  - first:
+      213: -4267141556392850135
+    second: boomerang-izquierdo1_1
+  - first:
+      213: -8190466685510187009
+    second: boomerang-izquierdo1_2
+  - first:
+      213: 2504255361020975701
+    second: boomerang-izquierdo1_3
+  - first:
+      213: 5615608327994202309
+    second: boomerang-izquierdo1_4
+  - first:
+      213: -7607539948091562697
+    second: boomerang-izquierdo1_5
+  - first:
+      213: -3401504279847964519
+    second: boomerang-izquierdo1_6
+  - first:
+      213: 200450789474703283
+    second: boomerang-izquierdo1_7
+  - first:
+      213: -6815181722656082229
+    second: boomerang-izquierdo1_8
+  - first:
+      213: 1531220994040267671
+    second: boomerang-izquierdo1_9
+  - first:
+      213: -2994846136463352187
+    second: boomerang-izquierdo1_10
+  - first:
+      213: -2588397158471635950
+    second: boomerang-izquierdo1_11
+  - first:
+      213: 6349293688540282141
+    second: boomerang-izquierdo1_12
+  - first:
+      213: -7141429348264913843
+    second: boomerang-izquierdo1_13
+  - first:
+      213: -5066397251891419408
+    second: boomerang-izquierdo1_14
+  - first:
+      213: 278953950232863126
+    second: boomerang-izquierdo1_15
+  - first:
+      213: 6627968349628234233
+    second: boomerang-izquierdo1_16
+  - first:
+      213: 2753820395736555645
+    second: boomerang-izquierdo1_17
+  - first:
+      213: 3766147361495586563
+    second: boomerang-izquierdo1_18
+  - first:
+      213: 2144009258788522976
+    second: boomerang-izquierdo1_19
+  - first:
+      213: 1862021690571249927
+    second: boomerang-izquierdo1_20
+  - first:
+      213: -6079655532091711349
+    second: boomerang-izquierdo1_21
+  - first:
+      213: 727336383568195724
+    second: boomerang-izquierdo1_22
+  - first:
+      213: 8518366673229258555
+    second: boomerang-izquierdo1_23
+  - first:
+      213: 9129722247213555424
+    second: boomerang-izquierdo1_24
+  - first:
+      213: 2330364404108051563
+    second: boomerang-izquierdo1_25
+  - first:
+      213: 5023999127661242101
+    second: boomerang-izquierdo1_26
+  - first:
+      213: -7611965966732710347
+    second: boomerang-izquierdo1_27
+  - first:
+      213: 5174873535639899948
+    second: boomerang-izquierdo1_28
+  - first:
+      213: -3946166908652349515
+    second: boomerang-izquierdo1_29
+  - first:
+      213: 5230179619659742693
+    second: boomerang-izquierdo1_30
+  - first:
+      213: -6430302919613272134
+    second: boomerang-izquierdo1_31
+  - first:
+      213: -5963599856400437086
+    second: boomerang-izquierdo1_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e455fbf0966a8b910800000000000000
+      internalID: 1853414216828933454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d85ecdc5118c4c0800000000000000
+      internalID: -4267141556392850135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff78e79c1fd955e80800000000000000
+      internalID: -8190466685510187009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ad5849bf6e0c220800000000000000
+      internalID: 2504255361020975701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_4
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8d1d38506aeed40800000000000000
+      internalID: 5615608327994202309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735a86349b69c6690800000000000000
+      internalID: -7607539948091562697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_6
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990f0b121ed6bc0d0800000000000000
+      internalID: -3401504279847964519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_7
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 3
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b716955ee428c200800000000000000
+      internalID: 200450789474703283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 3
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc67955e45c9b61a0800000000000000
+      internalID: -6815181722656082229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_9
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 3
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793046e916dff3510800000000000000
+      internalID: 1531220994040267671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_10
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 46
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e96276e4b2076d0800000000000000
+      internalID: -2994846136463352187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_11
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ceaaf8f7a241cd0800000000000000
+      internalID: -2588397158471635950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_12
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 0
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1db21048f83d1850800000000000000
+      internalID: 6349293688540282141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_13
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 3
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44de1c38db84ec90800000000000000
+      internalID: -7141429348264913843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_14
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f62ff5da8a80b9b0800000000000000
+      internalID: -5066397251891419408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_15
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 29
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6916258c32b0fd300800000000000000
+      internalID: 278953950232863126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_16
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f97f16f8164bfb50800000000000000
+      internalID: 6627968349628234233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_17
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 29
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d706a1f3f09873620800000000000000
+      internalID: 2753820395736555645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_18
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30718b5421b044430800000000000000
+      internalID: 3766147361495586563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_19
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 32
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb0d39bf0d01cd10800000000000000
+      internalID: 2144009258788522976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_20
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7095296bcda37d910800000000000000
+      internalID: 1862021690571249927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_21
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 33
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b806fe44189b0aba0800000000000000
+      internalID: -6079655532091711349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_22
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80bcc65694081a00800000000000000
+      internalID: 727336383568195724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_23
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 27
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f1b586b51573670800000000000000
+      internalID: 8518366673229258555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_24
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee1523330a43be70800000000000000
+      internalID: 9129722247213555424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_25
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 3
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b644318241e175020800000000000000
+      internalID: 2330364404108051563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_26
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 29
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6ee1c9694d8b540800000000000000
+      internalID: 5023999127661242101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_27
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 32
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ea88e784ddc5690800000000000000
+      internalID: -7611965966732710347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_28
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2fc2612018d0d740800000000000000
+      internalID: 5174873535639899948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_29
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 32
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b71061ba166c39c0800000000000000
+      internalID: -3946166908652349515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_30
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 32
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed7e4547a4559840800000000000000
+      internalID: 5230179619659742693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_31
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 29
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf2b465099f2c6a0800000000000000
+      internalID: -6430302919613272134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boomerang-izquierdo1_32
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 25
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a07ea0f6890d3da0800000000000000
+      internalID: -5963599856400437086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boomerang-izquierdo1_0: 1853414216828933454
+      boomerang-izquierdo1_1: -4267141556392850135
+      boomerang-izquierdo1_10: -2994846136463352187
+      boomerang-izquierdo1_11: -2588397158471635950
+      boomerang-izquierdo1_12: 6349293688540282141
+      boomerang-izquierdo1_13: -7141429348264913843
+      boomerang-izquierdo1_14: -5066397251891419408
+      boomerang-izquierdo1_15: 278953950232863126
+      boomerang-izquierdo1_16: 6627968349628234233
+      boomerang-izquierdo1_17: 2753820395736555645
+      boomerang-izquierdo1_18: 3766147361495586563
+      boomerang-izquierdo1_19: 2144009258788522976
+      boomerang-izquierdo1_2: -8190466685510187009
+      boomerang-izquierdo1_20: 1862021690571249927
+      boomerang-izquierdo1_21: -6079655532091711349
+      boomerang-izquierdo1_22: 727336383568195724
+      boomerang-izquierdo1_23: 8518366673229258555
+      boomerang-izquierdo1_24: 9129722247213555424
+      boomerang-izquierdo1_25: 2330364404108051563
+      boomerang-izquierdo1_26: 5023999127661242101
+      boomerang-izquierdo1_27: -7611965966732710347
+      boomerang-izquierdo1_28: 5174873535639899948
+      boomerang-izquierdo1_29: -3946166908652349515
+      boomerang-izquierdo1_3: 2504255361020975701
+      boomerang-izquierdo1_30: 5230179619659742693
+      boomerang-izquierdo1_31: -6430302919613272134
+      boomerang-izquierdo1_32: -5963599856400437086
+      boomerang-izquierdo1_4: 5615608327994202309
+      boomerang-izquierdo1_5: -7607539948091562697
+      boomerang-izquierdo1_6: -3401504279847964519
+      boomerang-izquierdo1_7: 200450789474703283
+      boomerang-izquierdo1_8: -6815181722656082229
+      boomerang-izquierdo1_9: 1531220994040267671
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

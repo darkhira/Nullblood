@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3200184402726881593}
   - component: {fileID: 5213843658201407140}
   - component: {fileID: 2796849974579374372}
-  - component: {fileID: 5375971694497883589}
+  - component: {fileID: 603300643842895794}
   m_Layer: 0
   m_Name: Vorr
   m_TagString: Enemigo
@@ -37,6 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6774703253543467381}
+  - {fileID: 5743295929132002486}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5957672329285638088
@@ -221,7 +222,7 @@ MonoBehaviour:
   vidaMaxima: 40
   tiempoParaDesaparecer: 0
   EnemyHealthBar: {fileID: 1883586870565501134}
---- !u!114 &5375971694497883589
+--- !u!114 &603300643842895794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,14 +231,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 2353133341636038742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b0850c31fed9554887b56be0b7c6af0, type: 3}
+  m_Script: {fileID: 11500000, guid: c65aca0ea5a3de0418e3f2f28c26a439, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMeleeAttack
-  attackRange: 1.5
-  attackCooldown: 1.5
-  attackDamage: 20
-  attackRadius: 0.8
-  attackPoint: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyRangedAttack
+  projectilePrefab: {fileID: 1347573906597008074, guid: d1e10ca0cbdf88248a56811980885c3e, type: 3}
+  firePoint: {fileID: 5743295929132002486}
+  projectileDamage: 10
+  projectileSpeed: 12
+  attackRange: 10
+  minDistance: 5
+  attackCooldown: 2
+--- !u!1 &6321255436757672370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5743295929132002486}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5743295929132002486
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321255436757672370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.161, y: -0.133, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7464889530524838169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7237692497674192953
 GameObject:
   m_ObjectHideFlags: 0
