@@ -53,28 +53,30 @@ public class PlayerMovement : MonoBehaviour
         // Procesa el input de movimiento y actualiza la animación base
         HandleMovementInput();
 
-        // Input de Ataque Cuerpo a Cuerpo (Clic izquierdo)
-        if (Input.GetButtonDown("Fire1"))
+        // --- ¡CONTROLES ACTUALIZADOS! ---
+
+        // Input de Ataque Cuerpo a Cuerpo (Clic izquierdo o Botón 'X' de Xbox)
+        if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.JoystickButton2))
         {
             StartCoroutine(AttackCoroutine(true)); // true indica que es ataque melee
             return;
         }
 
-        // Input de Lanzar Bumerán (Tecla R)
-        if (Input.GetKeyDown(KeyCode.R) && canThrowBoomerang)
+        // Input de Lanzar Bumerán (Tecla R o Botón 'Y' de Xbox)
+        if ((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton3)) && canThrowBoomerang)
         {
             StartCoroutine(AttackCoroutine(false)); // false indica que es lanzar bumerán
             return;
         }
 
-        // Input de Dash (Cualquier Tecla Control)
-        if ((Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl)) && canDash && moveInput.sqrMagnitude > 0.1f)
+        // Input de Dash (Barra Espaciadora o Botón 'A' de Xbox)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && canDash && moveInput.sqrMagnitude > 0.1f)
         {
             StartCoroutine(DashCoroutine());
         }
 
-        // Input de Correr (Shift Izquierdo)
-        isRunning = Input.GetKey(KeyCode.LeftShift);
+        // Input de Correr (Shift Izquierdo o Botón 'LB' de Xbox)
+        isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton4);
         animator.SetBool("isRunning", isRunning);
     }
 
@@ -83,8 +85,8 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     private void HandleMovementInput()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        float moveX = Input.GetAxisRaw("Horizontal"); // Esto ya funciona con mando
+        float moveY = Input.GetAxisRaw("Vertical"); // Esto ya funciona con mando
         moveInput = new Vector2(moveX, moveY).normalized;
 
         if (moveInput.sqrMagnitude > 0.1f)
@@ -139,7 +141,10 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(0.1f); // Pequeño delay
             if (combateCaC != null)
             {
-                combateCaC.EjecutarGolpe();
+                // --- ¡CORRECCIÓN IMPORTANTE! ---
+                // Tu script anterior llamaba a EjecutarGolpe() sin argumentos.
+                // Esta versión le pasa la dirección para que el golpe sea direccional.
+                combateCaC.EjecutarGolpe(lastMoveDirection);
             }
         }
         else // Lanzar bumerán

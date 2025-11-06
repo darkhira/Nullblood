@@ -4,34 +4,47 @@ public class CombateCaC : MonoBehaviour
 {
     [SerializeField] private Transform controladorGolpe;
     [SerializeField] private float radioGolpe;
+    [SerializeField]
+    [Tooltip("Distancia desde el centro del jugador a la que se aplica el golpe.")]
+    private float attackOffset = 1.0f;
 
     private PlayerStats playerStats;
 
     private void Start()
     {
-        // Obtenemos la referencia a las estadísticas del jugador
         playerStats = GetComponent<PlayerStats>();
     }
 
-    // --- MÉTODO PÚBLICO ---
-    // Este método será llamado por PlayerMovement para ejecutar el ataque.
-    public void EjecutarGolpe()
+    // --- ¡MÉTODO MODIFICADO! ---
+    // Acepta un argumento Vector2 para saber la dirección del ataque.
+    public void EjecutarGolpe(Vector2 attackDirection)
     {
-        // Detectamos a los enemigos en el área de golpe
+        // 1. Mueve el "controladorGolpe" a la posición correcta ANTES de atacar.
+        if (controladorGolpe != null)
+        {
+            controladorGolpe.localPosition = attackDirection.normalized * attackOffset;
+        }
+
+        // 2. Detecta enemigos en la NUEVA posición del controlador
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
 
         foreach (Collider2D colisionador in objetos)
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(playerStats.baseDamage);
+                if (colisionador.TryGetComponent<Enemigo>(out Enemigo enemigo))
+                {
+                    enemigo.TomarDaño(playerStats.baseDamage);
+                }
             }
         }
     }
 
+    // Dibuja el gizmo en la posición del controlador para depuración
     private void OnDrawGizmos()
     {
         if (controladorGolpe == null) return;
+
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(controladorGolpe.position, radioGolpe);
     }
