@@ -3,18 +3,24 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    [Tooltip("Arrastra aquí el objeto StatsPanel desde la jerarquía")]
+    [Tooltip("Arrastra aquï¿½ el objeto StatsPanel desde la jerarquï¿½a")]
     [SerializeField] private GameObject statsPanel;
 
-    // --- NUEVAS LÍNEAS ---
-    [Tooltip("Arrastra aquí el objeto PauseMenuPanel desde la jerarquía")]
+    // --- NUEVAS Lï¿½NEAS ---
+    [Tooltip("Arrastra aquï¿½ el objeto PauseMenuPanel desde la jerarquï¿½a")]
     [SerializeField] private GameObject pauseMenuPanel;
     private bool isPaused = false;
+    // When true, UIManager should ignore global input like Escape because
+    // another overlay/menu (for example an additive Options scene) is handling it.
+    public static bool InputBlocked = false;
     // --------------------
+    public enum UIMode { Gameplay, MainMenu }
+    [Tooltip("Modo en que se encuentra este UIManager: Gameplay permite toggle de pausa, MainMenu ignora Escape para evitar cerrar el menÃº principal accidentalmente")]
+    [SerializeField] private UIMode mode = UIMode.Gameplay;
 
     void Update()
     {
-        // Toggle para el panel de estadísticas
+        // Toggle para el panel de estadï¿½sticas
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (statsPanel != null)
@@ -23,18 +29,54 @@ public class UIManager : MonoBehaviour
             }
         }
 
-        // --- NUEVA LÓGICA PARA LA PAUSA ---
-        // Toggle para el menú de pausa
+        // --- NUEVA Lï¿½GICA PARA LA PAUSA ---
+        // Toggle para el menï¿½ de pausa
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            TogglePause();
+            // If input is globally blocked by another overlay (e.g. Options scene)
+            // do not process Escape here.
+            if (InputBlocked) return;
+
+            // If this UIManager is running in MainMenu mode, ignore Escape here
+            // to avoid closing/opening the main menu when overlays are active.
+            if (mode == UIMode.MainMenu) return;
+
+            // Only toggle pause if this UIManager actually controls a pause panel
+            // that belongs to the active scene. This avoids toggling pause from
+            // scenes like the main menu or other additive UIs.
+            if (pauseMenuPanel != null && pauseMenuPanel.scene == SceneManager.GetActiveScene())
+            {
+                TogglePause();
+            }
         }
     }
 
-    // --- NUEVO MÉTODO PÚBLICO ---
+    public void SetMode(UIMode newMode)
+    {
+        mode = newMode;
+    }
+
+    public void SetModeMainMenu(bool isMainMenu)
+    {
+        mode = isMainMenu ? UIMode.MainMenu : UIMode.Gameplay;
+    }
+    
+    // Query helper for other scripts
+    public bool IsMainMenuMode()
+    {
+        return mode == UIMode.MainMenu;
+    }
+
+    // --- NUEVO Mï¿½TODO Pï¿½BLICO ---
     public void TogglePause()
     {
-        isPaused = !isPaused; // Invierte el estado de pausa
+        SetPause(!isPaused);
+    }
+
+    // Centraliza la lÃ³gica de pausa para evitar inconsistencias entre scripts
+    public void SetPause(bool paused)
+    {
+        isPaused = paused;
 
         if (pauseMenuPanel != null)
         {
@@ -50,10 +92,10 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    // --- NUEVO MÉTODO PÚBLICO ---
+    // --- NUEVO Mï¿½TODO Pï¿½BLICO ---
     public void QuitGame()
     {
         Debug.Log("SALIENDO DEL JUEGO..."); // Mensaje para el editor
-        Application.Quit(); // Cierra la aplicación (solo funciona en el juego compilado)
+        Application.Quit(); // Cierra la aplicaciï¿½n (solo funciona en el juego compilado)
     }
 }
