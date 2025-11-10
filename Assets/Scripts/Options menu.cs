@@ -33,6 +33,16 @@ public class Optionsmenu : MonoBehaviour
         // Before loading, disable interaction on canvases from other loaded scenes
         // so their buttons can't be selected while options overlay is open.
         disabledCanvasGroups.Clear();
+        // If we have a UIManager and we're not in main menu mode, explicitly
+        // hide the pause UI so the Options overlay doesn't show the pause
+        // buttons behind it. Use SetPause(false) instead of TogglePause to
+        // avoid flipping state unexpectedly.
+        if (UIManager != null && !UIManager.IsMainMenuMode())
+        {
+            UIManager.SetPause(false);
+            // also pre-block input so other UIManagers won't react to Escape
+            UIManager.InputBlocked = true;
+        }
         for (int i = 0; i < SceneManager.sceneCount; i++)
         {
             var sc = SceneManager.GetSceneAt(i);
@@ -73,14 +83,8 @@ public class Optionsmenu : MonoBehaviour
         }
 
         SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
-        // Block the main UI so it doesn't react to Escape while this additive
-        // options scene is open. Use SetPause(true) to pause if a UIManager
-        // is provided (safer than TogglePause which toggles state).
-        if (UIManager != null)
-        {
-            UIManager.InputBlocked = true;
-            UIManager.SetPause(true);
-        }
+        // The UIManager was already told to stop showing the pause UI above
+        // and input was blocked. Nothing else to do here.
     }
     public void UnloadScene()
     {

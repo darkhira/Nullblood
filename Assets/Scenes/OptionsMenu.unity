@@ -1288,8 +1288,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1167326571}
   m_HandleRect: {fileID: 1167326570}
   m_Direction: 0
-  m_Value: -0.000074906784
-  m_Size: 0.98101056
+  m_Value: -0.00085171784
+  m_Size: 0.9607058
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1773,7 +1773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.500824, y: 0}
+  m_AnchoredPosition: {x: 5.509369, y: 0}
   m_SizeDelta: {x: 580, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1061554841
@@ -2805,7 +2805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231791e00371e744aa8dbab228b87504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuGamepadController
-  firstSelectedButton: {fileID: 0}
+  firstSelectedButton: {fileID: 392353861}
 --- !u!4 &1612068573
 Transform:
   m_ObjectHideFlags: 0
