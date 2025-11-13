@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93c5d324352e004d81c6b20b29f033f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemigo
+  playerSoundController: {fileID: 0}
   vidaActual: 40
   vidaMaxima: 40
   tiempoParaDesaparecer: 0
@@ -357,8 +358,8 @@ MonoBehaviour:
   sonidoGolpe: {fileID: 0}
   sonidoDash: {fileID: 0}
   sonidoPeleaKopp: {fileID: 0}
-  sonidomuerteVorr: {fileID: 0}
-  sonidoMuerteMono: {fileID: 8300000, guid: d81ad48b024b56d49b4138f6319fc30c, type: 3}
+  sonidoMuerteVorr: {fileID: 0}
+  sonidoMuerteMono: {fileID: 8300000, guid: 8c02b36d49fd0134b85d11316142b55b, type: 3}
   sonidoEspacio: {fileID: 0}
   sonidoPistolaLaser: {fileID: 0}
   sonidoPuerta: {fileID: 0}

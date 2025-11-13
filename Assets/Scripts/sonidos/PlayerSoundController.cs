@@ -8,7 +8,7 @@ public class PlayerSoundController : MonoBehaviour
     public AudioClip sonidoGolpe;
     public AudioClip sonidoDash;
     public AudioClip sonidoPeleaKopp;
-    public AudioClip sonidomuerteVorr;
+    public AudioClip sonidoMuerteVorr;
     public AudioClip sonidoMuerteMono;
     public AudioClip sonidoEspacio;
     public AudioClip sonidoPistolaLaser;
@@ -26,24 +26,44 @@ public class PlayerSoundController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    
+
+
+
+
     public void playsonidoPasillos()
     {
         audioSource.PlayOneShot(sonidoPasillos);
+        
+        audioSource.clip = sonidoPasillos; 
+        audioSource.loop = true;
+        audioSource.playOnAwake = false;
+    
+        audioSource.Play();
+
     }
 
     public void playsonidoMuerte()
+{
+    audioSource.volume = 1.0f;
+    
+    if (sonidoMuerte != null)
     {
-        audioSource.PlayOneShot(sonidoMuerte);
+        
+        AudioSource.PlayClipAtPoint(sonidoMuerte, transform.position);
     }
+}
 
     public void playsonidoGolpe()
     {
         audioSource.PlayOneShot(sonidoGolpe);
+        audioSource.volume = 0.5f;
     }
 
     public void playsonidoDash()
     {
         audioSource.PlayOneShot(sonidoDash);
+        audioSource.volume = 0.5f;
     }
 
     public void playsonidoPeleaKopp()
@@ -51,14 +71,22 @@ public class PlayerSoundController : MonoBehaviour
         audioSource.PlayOneShot(sonidoPeleaKopp);
     }
 
-    public void playsonidomuerteKopp()
+    public void playsonidoMuerteVorr()
     {
-        audioSource.PlayOneShot(sonidomuerteVorr);
+        if (sonidoMuerteVorr != null)
+        {
+        
+        AudioSource.PlayClipAtPoint(sonidoMuerteVorr, transform.position);
+        }
     }
 
     public void playsonidoMuerteMono()
     {
-        audioSource.PlayOneShot(sonidoMuerteMono);
+        if (sonidoMuerteMono != null)
+        {
+        
+        AudioSource.PlayClipAtPoint(sonidoMuerteMono, transform.position);
+        }
     }
 
     public void playsonidoEspacio()
@@ -84,6 +112,7 @@ public class PlayerSoundController : MonoBehaviour
     public void playsonidoRecibirDanio()
     {
         audioSource.PlayOneShot(sonidoRecibirDanio);
+        audioSource.volume = 0.3f;
     }
 
     public void playsonidoPasillosdescartado()
@@ -99,6 +128,7 @@ public class PlayerSoundController : MonoBehaviour
     public void playsonidoBoomerang()
     {
         audioSource.PlayOneShot(sonidoBoomerang);
+        audioSource.volume = 0.2f;
     }
 
     

@@ -11,10 +11,7 @@ public class VidaJugador : MonoBehaviour
     [SerializeField] private int vidaMaxima;
     [SerializeField] private int vidaActual;
 
-    void Start()
-    {
-        playerSoundController = GetComponent<PlayerSoundController>();
-    }
+    
     private void Awake()
     {
 
@@ -25,6 +22,7 @@ public class VidaJugador : MonoBehaviour
     public void TomarDaño(int daño)
     {
 
+        Debug.Log("Empieza muerte");
         int vidaTemporal = vidaActual - daño;
 
         vidaTemporal = Mathf.Clamp(vidaTemporal, 0, vidaMaxima);
@@ -33,9 +31,12 @@ public class VidaJugador : MonoBehaviour
 
         JugadorTomoDaño?.Invoke(vidaActual);
 
+        playerSoundController.playsonidoRecibirDanio();
+
         if (vidaActual <= 0)
         {
-
+            Debug.Log("muerte");
+            playerSoundController?.playsonidoMuerte();
             DestruirJugador();
         }
     }
