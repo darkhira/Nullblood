@@ -15,17 +15,17 @@ public class CombateCaC : MonoBehaviour
         playerStats = GetComponent<PlayerStats>();
     }
 
-    // --- ¡MÉTODO MODIFICADO! ---
-    // Acepta un argumento Vector2 para saber la dirección del ataque.
+    // --- ï¿½Mï¿½TODO MODIFICADO! ---
+    // Acepta un argumento Vector2 para saber la direcciï¿½n del ataque.
     public void EjecutarGolpe(Vector2 attackDirection)
     {
-        // 1. Mueve el "controladorGolpe" a la posición correcta ANTES de atacar.
+        // 1. Mueve el "controladorGolpe" a la posiciï¿½n correcta ANTES de atacar.
         if (controladorGolpe != null)
         {
             controladorGolpe.localPosition = attackDirection.normalized * attackOffset;
         }
 
-        // 2. Detecta enemigos en la NUEVA posición del controlador
+        // 2. Detecta enemigos en la NUEVA posiciï¿½n del controlador
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
 
         foreach (Collider2D colisionador in objetos)
@@ -34,13 +34,13 @@ public class CombateCaC : MonoBehaviour
             {
                 if (colisionador.TryGetComponent<Enemigo>(out Enemigo enemigo))
                 {
-                    enemigo.TomarDaño(playerStats.baseDamage);
+                    enemigo.TomarDaÃ±o(playerStats.baseDamage);
                 }
             }
         }
     }
 
-    // Dibuja el gizmo en la posición del controlador para depuración
+    // Dibuja el gizmo en la posiciï¿½n del controlador para depuraciï¿½n
     private void OnDrawGizmos()
     {
         if (controladorGolpe == null) return;

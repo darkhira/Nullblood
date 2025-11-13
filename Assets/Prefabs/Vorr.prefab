@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 5213843658201407140}
   - component: {fileID: 2796849974579374372}
   - component: {fileID: 603300643842895794}
+  - component: {fileID: 4601387346750285066}
+  - component: {fileID: -4499935987237870605}
   m_Layer: 0
   m_Name: Vorr
   m_TagString: Enemigo
@@ -218,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93c5d324352e004d81c6b20b29f033f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  playerSoundController: {fileID: 0}
   vidaActual: 40
   vidaMaxima: 40
   tiempoParaDesaparecer: 0
@@ -241,6 +244,131 @@ MonoBehaviour:
   attackRange: 10
   minDistance: 5
   attackCooldown: 2
+--- !u!114 &4601387346750285066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353133341636038742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334a0447470de924ba5bb35ed3effa9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSoundController
+  audioSource: {fileID: -4499935987237870605}
+  sonidoPasillos: {fileID: 0}
+  sonidoMuerte: {fileID: 0}
+  sonidoGolpe: {fileID: 0}
+  sonidoDash: {fileID: 0}
+  sonidoPeleaKopp: {fileID: 0}
+  sonidoMuerteVorr: {fileID: 8300000, guid: d81ad48b024b56d49b4138f6319fc30c, type: 3}
+  sonidoMuerteMono: {fileID: 0}
+  sonidoEspacio: {fileID: 0}
+  sonidoPistolaLaser: {fileID: 0}
+  sonidoPuerta: {fileID: 0}
+  sonidoClipMenu: {fileID: 0}
+  sonidoRecibirDanio: {fileID: 0}
+  sonidoPasillosdescartado: {fileID: 0}
+  sonidoCofreAbierto: {fileID: 0}
+  sonidoBoomerang: {fileID: 0}
+--- !u!82 &-4499935987237870605
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353133341636038742}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 49
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6321255436757672370
 GameObject:
   m_ObjectHideFlags: 0
