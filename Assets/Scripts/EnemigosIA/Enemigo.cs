@@ -43,10 +43,12 @@ public class Enemigo : MonoBehaviour
 
         if (vidaActual <= 0)
         {
-            playerSoundController.playsonidoMuerteMono();
+
 
             // --- CAMBIO 3: Marcamos al enemigo como muerto ANTES de llamar a Muerte() ---
             isDead = true;
+            playerSoundController.playsonidoMuerteVorr();
+            playerSoundController.playsonidoMuerteMono();
             Muerte();
         }
     }

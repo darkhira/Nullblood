@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     // ... (Instance, evento y variables como antes) ...
+    public PlayerSoundController playerSoundController;
     public static PlayerStats Instance;
     public static event Action OnStatsChanged;
     public float maxHealth = 100f, currentHealth, baseDamage = 50f, attackSpeed = 1f;
+
 
 
 
@@ -27,6 +29,12 @@ public class PlayerStats : MonoBehaviour
     private void Start()
     {
         OnStatsChanged?.Invoke();
+
+        if (playerSoundController == null)
+        {
+            Debug.LogWarning("PlayerSoundController no está asignado en PlayerStats");
+            
+        }
         
 
     }
@@ -36,12 +44,20 @@ public class PlayerStats : MonoBehaviour
     {
         Debug.LogError($"JUGADOR RECIBE {damage} DE DA�O DESDE ---> {damageSource.name}");
 
+        if (playerSoundController != null)
+        {
+            playerSoundController.playsonidoRecibirDanio(); 
+        }
+        
+
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         OnStatsChanged?.Invoke();
+        
 
         if (currentHealth <= 0)
         {
+            playerSoundController.playsonidoRecibirDanio(); 
             Die();
         }
     }
@@ -76,6 +92,10 @@ public class PlayerStats : MonoBehaviour
     // --- M�TODOS PRIVADOS ---
     private void Die()
     {
+        if (playerSoundController != null)
+        {
+            playerSoundController.playsonidoMuerte(); 
+        }
         Debug.Log("El jugador ha muerto.");
         gameObject.SetActive(false);
     }
