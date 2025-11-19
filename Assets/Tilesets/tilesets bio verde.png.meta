@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 2b72d28c832b32449a389723cd1147e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2099910940770341414
+    second: tilesets bio verde_0
+  - first:
+      213: 3608652107655689168
+    second: tilesets bio verde_1
+  - first:
+      213: 4771429858446031487
+    second: tilesets bio verde_2
+  - first:
+      213: -7661738639445798086
+    second: tilesets bio verde_3
+  - first:
+      213: -5999075874785219542
+    second: tilesets bio verde_4
+  - first:
+      213: -5495815271260812612
+    second: tilesets bio verde_5
+  - first:
+      213: -5331512463873753971
+    second: tilesets bio verde_6
+  - first:
+      213: 5511976144660073522
+    second: tilesets bio verde_7
+  - first:
+      213: -8598845505771734252
+    second: tilesets bio verde_8
+  - first:
+      213: -367125947037471777
+    second: tilesets bio verde_9
+  - first:
+      213: -8647538258953071971
+    second: tilesets bio verde_10
+  - first:
+      213: -6506079320983326356
+    second: tilesets bio verde_11
+  - first:
+      213: 5268362883562270730
+    second: tilesets bio verde_12
+  - first:
+      213: -8422087016581656527
+    second: tilesets bio verde_13
+  - first:
+      213: 8672364739385893198
+    second: tilesets bio verde_14
+  - first:
+      213: -4351268494772601076
+    second: tilesets bio verde_15
+  - first:
+      213: 7042025112305067180
+    second: tilesets bio verde_16
+  - first:
+      213: -5161592048759815733
+    second: tilesets bio verde_17
+  - first:
+      213: -3130698071079089110
+    second: tilesets bio verde_18
+  - first:
+      213: -7328108918005129716
+    second: tilesets bio verde_19
+  - first:
+      213: -1167577800432214356
+    second: tilesets bio verde_20
+  - first:
+      213: -1789661640314758266
+    second: tilesets bio verde_21
+  - first:
+      213: 5122045216613288505
+    second: tilesets bio verde_22
+  - first:
+      213: 7873525518777425328
+    second: tilesets bio verde_23
+  - first:
+      213: 4453082335355874399
+    second: tilesets bio verde_24
+  - first:
+      213: -8005083599182821127
+    second: tilesets bio verde_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tilesets bio verde_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 976
+        width: 123
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6229294ffd1642d10800000000000000
+      internalID: 2099910940770341414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 978
+        width: 102
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d338c2f8f1841230800000000000000
+      internalID: 3608652107655689168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_2
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 976
+        width: 126
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a3e571d26873240800000000000000
+      internalID: 4771429858446031487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_3
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 988
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33d2f11d490ca590800000000000000
+      internalID: -7661738639445798086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_4
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 988
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cafceb6400fbca0800000000000000
+      internalID: -5999075874785219542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_5
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 988
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba055df021fab3b0800000000000000
+      internalID: -5495815271260812612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_6
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 988
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cbc3369a9a206b0800000000000000
+      internalID: -5331512463873753971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 786
+        width: 50
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c04e099197e7c40800000000000000
+      internalID: 5511976144660073522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 788
+        width: 44
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41bf2063293caa880800000000000000
+      internalID: -8598845505771734252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_9
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 864
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdba00375e4b7eaf0800000000000000
+      internalID: -367125947037471777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_10
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 864
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92908525c5cdf780800000000000000
+      internalID: -8647538258953071971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_11
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 864
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6136480453c5b5a0800000000000000
+      internalID: -6506079320983326356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_12
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 864
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00f49e212cfc1940800000000000000
+      internalID: 5268362883562270730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 608
+        width: 119
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13098350b7cbe1b80800000000000000
+      internalID: -8422087016581656527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_14
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 608
+        width: 130
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4128b548cd6a5870800000000000000
+      internalID: 8672364739385893198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_15
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 748
+        width: 56
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ffab6ab503d93c0800000000000000
+      internalID: -4351268494772601076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_16
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 749
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4e256878c4ab160800000000000000
+      internalID: 7042025112305067180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_17
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 608
+        width: 249
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1c03201675e58b0800000000000000
+      internalID: -5161592048759815733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_18
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 426
+        width: 123
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c845601b68d84d0800000000000000
+      internalID: -3130698071079089110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_19
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 426
+        width: 243
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e9eead3c35d4a90800000000000000
+      internalID: -7328108918005129716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_20
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 426
+        width: 126
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae1b953d2eebcfe0800000000000000
+      internalID: -1167577800432214356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b55ec5838d927e0800000000000000
+      internalID: -1789661640314758266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_22
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 301
+        width: 90
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a49bb9cf8251740800000000000000
+      internalID: 5122045216613288505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 58
+        width: 119
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd93bc5eb1644d60800000000000000
+      internalID: 7873525518777425328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 56
+        width: 103
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c24726ac68ccd30800000000000000
+      internalID: 4453082335355874399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesets bio verde_25
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 58
+        width: 130
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8076911ea38e090800000000000000
+      internalID: -8005083599182821127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 23f685467c1576b49b4965a7b6296bb2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tilesets bio verde_0: 2099910940770341414
+      tilesets bio verde_1: 3608652107655689168
+      tilesets bio verde_10: -8647538258953071971
+      tilesets bio verde_11: -6506079320983326356
+      tilesets bio verde_12: 5268362883562270730
+      tilesets bio verde_13: -8422087016581656527
+      tilesets bio verde_14: 8672364739385893198
+      tilesets bio verde_15: -4351268494772601076
+      tilesets bio verde_16: 7042025112305067180
+      tilesets bio verde_17: -5161592048759815733
+      tilesets bio verde_18: -3130698071079089110
+      tilesets bio verde_19: -7328108918005129716
+      tilesets bio verde_2: 4771429858446031487
+      tilesets bio verde_20: -1167577800432214356
+      tilesets bio verde_21: -1789661640314758266
+      tilesets bio verde_22: 5122045216613288505
+      tilesets bio verde_23: 7873525518777425328
+      tilesets bio verde_24: 4453082335355874399
+      tilesets bio verde_25: -8005083599182821127
+      tilesets bio verde_3: -7661738639445798086
+      tilesets bio verde_4: -5999075874785219542
+      tilesets bio verde_5: -5495815271260812612
+      tilesets bio verde_6: -5331512463873753971
+      tilesets bio verde_7: 5511976144660073522
+      tilesets bio verde_8: -8598845505771734252
+      tilesets bio verde_9: -367125947037471777
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
