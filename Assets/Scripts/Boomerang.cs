@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
+using System.Linq; // Necesario para usar OrderBy y listas avanzadas
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
@@ -14,9 +14,9 @@ public class Boomerang : MonoBehaviour
     [SerializeField] private float damage = 10f;
 
     [Header("Rebotes")]
-    [SerializeField] private int maxRicochets = 2;
-    [SerializeField] private float ricochetRadius = 8f;
-    [SerializeField] private int maxWallBounces = 1;
+    [SerializeField] private int maxRicochets = 2; // Máximo rebotes entre enemigos
+    [SerializeField] private float ricochetRadius = 8f; // Radio para buscar sig. enemigo
+    [SerializeField] private int maxWallBounces = 3; // Máximo rebotes en paredes
 
     // Estado interno
     private enum BoomerangState { Throwing, Returning }
@@ -24,15 +24,17 @@ public class Boomerang : MonoBehaviour
     private Transform playerTransform;
     private Rigidbody2D rb;
     private int ricochetsLeft;
-    private List<Transform> hitEnemies = new List<Transform>();
     private int wallBouncesLeft;
+    private List<Transform> hitEnemies = new List<Transform>();
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = 0;
-        rb.linearDamping = 0; // Antes drag
+        // Nota: En versiones nuevas de Unity es linearDamping, en viejas es drag.
+        // Si te da error aquí, cámbialo por: rb.drag = 0;
+        rb.linearDamping = 0;
     }
 
     public void Throw(Transform owner, Vector2 direction)
@@ -43,12 +45,13 @@ public class Boomerang : MonoBehaviour
         wallBouncesLeft = maxWallBounces;
         hitEnemies.Clear();
 
-        rb.linearVelocity = direction.normalized * speed; // Antes velocity
+        rb.linearVelocity = direction.normalized * speed; // velocity en versiones viejas
         StartCoroutine(ReturnAfterTime(maxTravelTime));
     }
 
     void FixedUpdate()
     {
+        // Si está en modo retorno, persigue al jugador
         if (currentState == BoomerangState.Returning && playerTransform != null)
         {
             Vector2 directionToPlayer = (playerTransform.position - transform.position).normalized;
@@ -58,24 +61,22 @@ public class Boomerang : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // 1. Lógica de retorno al jugador
+        // 1. LOGICA DE ATRAPAR (Retorno al jugador)
         if (currentState == BoomerangState.Returning && other.transform == playerTransform)
         {
             HandlePlayerCatch(other);
             return;
         }
 
-        // Evitar golpearse a sí mismo o al jugador mientras sale
+        // Evitar chocar con el jugador mientras sale disparado
         if (other.transform == playerTransform) return;
 
-        // 2. Lógica de impacto contra Entidades (Enemigos o Boss)
-        // Usamos un flag para saber si golpeamos algo válido
+        // 2. LOGICA DE IMPACTO CON ENTIDADES (Enemigo o Jefe)
         bool hitValidTarget = false;
 
-        // A) ¿Es un enemigo normal?
+        // Intentar obtener componente Enemigo (Mobs normales)
         if (other.TryGetComponent<Enemigo>(out Enemigo enemigo))
         {
-            // Evitar golpear al mismo enemigo dos veces
             if (!hitEnemies.Contains(other.transform))
             {
                 enemigo.TomarDaño(damage);
@@ -83,7 +84,7 @@ public class Boomerang : MonoBehaviour
                 hitValidTarget = true;
             }
         }
-        // B) ¿Es el Jefe Kopp?
+        // Intentar obtener componente BossKopp (El Jefe)
         else if (other.TryGetComponent<BossKopp>(out BossKopp jefe))
         {
             if (!hitEnemies.Contains(other.transform))
@@ -94,41 +95,81 @@ public class Boomerang : MonoBehaviour
             }
         }
 
-        // Si golpeamos cualquiera de los dos, calculamos rebote
+        // Si golpeamos a alguien válido...
         if (hitValidTarget)
         {
             if (ricochetsLeft > 0)
             {
                 ricochetsLeft--;
                 Transform nextTarget = FindNextTarget();
+
                 if (nextTarget != null)
                 {
+                    // Apuntar al siguiente enemigo
                     Vector2 direction = (nextTarget.position - transform.position).normalized;
                     rb.linearVelocity = direction * speed;
                 }
                 else
                 {
+                    // Si no hay nadie más cerca, volver.
                     StartReturning();
                 }
             }
             else
             {
+                // Se acabaron los rebotes
                 StartReturning();
             }
         }
-        // 3. Lógica de rebote en paredes
-        else if (!other.isTrigger && currentState == BoomerangState.Throwing)
+        // 3. LOGICA DE REBOTE EN PAREDES (Por Tag)
+        // Verificamos si el objeto tiene el Tag "Paredes" y estamos lanzando
+        else if (other.CompareTag("Paredes") && currentState == BoomerangState.Throwing)
         {
-            if (wallBouncesLeft > 0)
+            HandleWallBounce(other);
+        }
+    }
+
+    /// <summary>
+    /// Calcula el rebote físico usando un Raycast inverso porque el objeto es un Trigger.
+    /// </summary>
+    private void HandleWallBounce(Collider2D wallCollider)
+    {
+        if (wallBouncesLeft > 0)
+        {
+            wallBouncesLeft--;
+
+            // TÉCNICA DEL RAYCAST INVERSO
+            // Como somos un Trigger, ya entramos en la pared.
+            // Lanzamos un rayo hacia ATRÁS (desde donde veníamos) para encontrar el punto de entrada y la normal.
+
+            Vector2 currentVelocity = rb.linearVelocity;
+            Vector2 backDirection = -currentVelocity.normalized;
+
+            // Buscamos colisión en Default o Paredes (ajusta la máscara según tus Layers si es necesario)
+            // El rayo sale desde el centro del bumerán hacia atrás.
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, backDirection, 2f, LayerMask.GetMask("Default", "Paredes", "Obstaculos"));
+
+            // NOTA: Si tus paredes están en la capa "Default", esto funcionará. 
+            // Si están en una capa propia, añade el nombre en GetMask.
+
+            if (hit.collider != null)
             {
-                wallBouncesLeft--;
-                // El rebote físico lo maneja el PhysicsMaterial2D si lo tienes, 
-                // pero aquí aseguramos que no se detenga.
+                // Calculamos el vector de rebote matemático
+                Vector2 newDirection = Vector2.Reflect(currentVelocity.normalized, hit.normal);
+
+                // Aplicamos la nueva velocidad
+                rb.linearVelocity = newDirection * speed;
             }
             else
             {
+                // Si el Raycast falla (ej. esquina muy fina), intentamos volver para no quedarnos atascados
                 StartReturning();
             }
+        }
+        else
+        {
+            // Se acabaron los rebotes de pared
+            StartReturning();
         }
     }
 
@@ -136,9 +177,8 @@ public class Boomerang : MonoBehaviour
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, ricochetRadius);
 
-        // Buscamos objetos con Tag Enemigo que no hayamos golpeado ya
         var potentialTargets = hits
-            .Where(hit => hit.CompareTag("Enemigo") && !hitEnemies.Contains(hit.transform))
+            .Where(hit => (hit.CompareTag("Enemigo") || hit.GetComponent<BossKopp>() != null) && !hitEnemies.Contains(hit.transform))
             .OrderBy(hit => Vector2.Distance(transform.position, hit.transform.position));
 
         return potentialTargets.FirstOrDefault()?.transform;

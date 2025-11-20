@@ -109,7 +109,7 @@ MonoBehaviour:
   speed: 10
   returnSpeed: 12
   maxTravelTime: 2
-  damage: 10
+  damage: 500
   maxRicochets: 2
   ricochetRadius: 8
   maxWallBounces: 3

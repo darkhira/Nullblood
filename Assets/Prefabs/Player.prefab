@@ -281,6 +281,7 @@ MonoBehaviour:
   currentHealth: 100
   baseDamage: 15
   attackSpeed: 1
+  damageInvulnerabilityTime: 1
 --- !u!82 &9201648962079504090
 AudioSource:
   m_ObjectHideFlags: 0

@@ -53,7 +53,7 @@ MonoBehaviour:
   - {fileID: 952639245175825673, guid: 20f472e5c2416a540b64c8936acba9b6, type: 3}
   - {fileID: 952639245175825673, guid: b40bc994333bdf243b3eee456d9cd42e, type: 3}
   initialRoomPrefab: {fileID: 952639245175825673, guid: 3fd4ddc8c33fdc146b266081ad05a02f, type: 3}
-  bossRoomPrefab: {fileID: 0}
+  bossRoomPrefab: {fileID: 952639245175825673, guid: 60fc923f4414ce94490d037366ae7ff8, type: 3}
   maxRooms: 20
   minRooms: 10
   roomWidth: 30
