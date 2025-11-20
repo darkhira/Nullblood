@@ -361,6 +361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5326817899693025151, guid: 86b7e520d10fce545a0a63a32287815c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2341,7 +2345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f68e1763cddae9498bf7b50ff124478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExperienceBar
-  experienceSlider: {fileID: 0}
 --- !u!4 &1197520941
 Transform:
   m_ObjectHideFlags: 0
