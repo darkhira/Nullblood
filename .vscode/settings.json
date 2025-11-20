@@ -66,5 +66,6 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
+    "Nullblood_shield.sln=======dotnet.defaultSolution": "Nullblood_main.sln>>>>>>>eaba42a82d87594317f36e29f77f2d11405b0327",
     "dotnet.defaultSolution": "Nullblood_shield.sln"
 }

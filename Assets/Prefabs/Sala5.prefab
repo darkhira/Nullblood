@@ -178,7 +178,7 @@ Transform:
   m_GameObject: {fileID: 813323731311563488}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.97, y: 8.85, z: 0}
+  m_LocalPosition: {x: -1.15, y: 8.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -632,7 +632,7 @@ Transform:
   m_GameObject: {fileID: 1832045502198848247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.91, y: -9.85, z: 0}
+  m_LocalPosition: {x: -10.7, y: -5.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -937,7 +937,7 @@ Transform:
   m_GameObject: {fileID: 2568540089418448585}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.83, y: 0, z: 0}
+  m_LocalPosition: {x: 9.81, y: -4.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6436,7 +6436,7 @@ GameObject:
   - component: {fileID: 8199821278488174138}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Paredes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7344,7 +7344,7 @@ Transform:
   m_GameObject: {fileID: 5933545790105105274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.94, y: 8.79, z: 0}
+  m_LocalPosition: {x: -10.31, y: 5.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
