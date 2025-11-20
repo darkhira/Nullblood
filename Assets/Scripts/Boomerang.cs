@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq; // Necesario para OrderBy
+using System.Linq;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
@@ -14,9 +14,9 @@ public class Boomerang : MonoBehaviour
     [SerializeField] private float damage = 10f;
 
     [Header("Rebotes")]
-    [SerializeField] private int maxRicochets = 2; // Máximo rebotes entre enemigos
-    [SerializeField] private float ricochetRadius = 8f; // Radio para buscar sig. enemigo
-    [SerializeField] private int maxWallBounces = 1; // Máximo rebotes en paredes
+    [SerializeField] private int maxRicochets = 2;
+    [SerializeField] private float ricochetRadius = 8f;
+    [SerializeField] private int maxWallBounces = 1;
 
     // Estado interno
     private enum BoomerangState { Throwing, Returning }
@@ -32,17 +32,18 @@ public class Boomerang : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = 0;
-        rb.linearDamping = 0;
+        rb.linearDamping = 0; // Antes drag
     }
 
-    public void Throw(Transform thrower, Vector2 direction)
+    public void Throw(Transform owner, Vector2 direction)
     {
-        playerTransform = thrower;
-        ricochetsLeft = maxRicochets;
-        wallBouncesLeft = maxWallBounces; // Inicializa rebotes de pared
-        hitEnemies.Clear();
+        playerTransform = owner;
         currentState = BoomerangState.Throwing;
-        rb.linearVelocity = direction.normalized * speed;
+        ricochetsLeft = maxRicochets;
+        wallBouncesLeft = maxWallBounces;
+        hitEnemies.Clear();
+
+        rb.linearVelocity = direction.normalized * speed; // Antes velocity
         StartCoroutine(ReturnAfterTime(maxTravelTime));
     }
 
@@ -53,120 +54,95 @@ public class Boomerang : MonoBehaviour
             Vector2 directionToPlayer = (playerTransform.position - transform.position).normalized;
             rb.linearVelocity = directionToPlayer * returnSpeed;
         }
-        transform.Rotate(0, 0, 720 * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Solo procesamos colisiones si está en estado "Throwing"
-        if (currentState == BoomerangState.Throwing)
-        {
-            // Prioridad 1: Paredes
-            if (other.CompareTag("Paredes"))
-            {
-                HandleWallBounce(other);
-            }
-            // Prioridad 2: Enemigos
-            else if (other.CompareTag("Enemigo"))
-            {
-                HandleEnemyHit(other);
-            }
-        }
-        // Lógica para atrapar el bumerán (cuando está "Returning")
-        else if (currentState == BoomerangState.Returning && other.CompareTag("Player"))
+        // 1. Lógica de retorno al jugador
+        if (currentState == BoomerangState.Returning && other.transform == playerTransform)
         {
             HandlePlayerCatch(other);
-        }
-    }
-
-    /// <summary>
-    /// Gestiona el rebote contra una pared.
-    /// </summary>
-    private void HandleWallBounce(Collider2D wallCollider)
-    {
-        if (wallBouncesLeft <= 0)
-        {
-            StartReturning(); // Si no quedan rebotes de pared, vuelve
             return;
         }
 
-        StopAllCoroutines(); // Detiene el temporizador de retorno por tiempo
+        // Evitar golpearse a sí mismo o al jugador mientras sale
+        if (other.transform == playerTransform) return;
 
-        // Intenta obtener la normal precisa usando Raycast
-        RaycastHit2D hit = Physics2D.Raycast(transform.position - (Vector3)rb.linearVelocity.normalized * 0.1f, rb.linearVelocity.normalized, 0.2f, LayerMask.GetMask("Default")); // Ajusta LayerMask si es necesario
+        // 2. Lógica de impacto contra Entidades (Enemigos o Boss)
+        // Usamos un flag para saber si golpeamos algo válido
+        bool hitValidTarget = false;
 
-        Vector2 hitNormal;
-        if (hit.collider != null)
+        // A) ¿Es un enemigo normal?
+        if (other.TryGetComponent<Enemigo>(out Enemigo enemigo))
         {
-            hitNormal = hit.normal;
-        }
-        else
-        {
-            // Aproximación si el Raycast falla
-            hitNormal = (transform.position - wallCollider.bounds.ClosestPoint(transform.position)).normalized;
-        }
-
-        // Refleja la velocidad
-        Vector2 reflectedVelocity = Vector2.Reflect(rb.linearVelocity, hitNormal);
-        rb.linearVelocity = reflectedVelocity.normalized * speed; // Mantiene la velocidad
-        wallBouncesLeft--;
-
-        // Reinicia el temporizador de retorno
-        StartCoroutine(ReturnAfterTime(maxTravelTime));
-    }
-
-    /// <summary>
-    /// Gestiona el golpe a un enemigo y decide si rebotar o volver.
-    /// </summary>
-    private void HandleEnemyHit(Collider2D enemyCollider)
-    {
-        // Ignora si ya golpeó a este enemigo
-        if (hitEnemies.Contains(enemyCollider.transform)) return;
-
-        StopAllCoroutines(); // Detiene el temporizador de retorno por tiempo
-
-        // Registra, daña y reduce rebotes de enemigo
-        hitEnemies.Add(enemyCollider.transform);
-        enemyCollider.GetComponent<Enemigo>()?.TomarDaño(damage);
-        ricochetsLeft--;
-
-        // Comprueba si quedan rebotes de enemigo
-        if (ricochetsLeft >= 0)
-        {
-            Transform nextTarget = FindNextTarget(); // Busca el siguiente objetivo
-            if (nextTarget != null)
+            // Evitar golpear al mismo enemigo dos veces
+            if (!hitEnemies.Contains(other.transform))
             {
-                // Rebota hacia el siguiente objetivo
-                Vector2 direction = (nextTarget.position - transform.position).normalized;
-                rb.linearVelocity = direction * speed;
-                // Reinicia el temporizador de retorno
-                StartCoroutine(ReturnAfterTime(maxTravelTime));
+                enemigo.TomarDaño(damage);
+                hitEnemies.Add(other.transform);
+                hitValidTarget = true;
+            }
+        }
+        // B) ¿Es el Jefe Kopp?
+        else if (other.TryGetComponent<BossKopp>(out BossKopp jefe))
+        {
+            if (!hitEnemies.Contains(other.transform))
+            {
+                jefe.TomarDaño(damage);
+                hitEnemies.Add(other.transform);
+                hitValidTarget = true;
+            }
+        }
+
+        // Si golpeamos cualquiera de los dos, calculamos rebote
+        if (hitValidTarget)
+        {
+            if (ricochetsLeft > 0)
+            {
+                ricochetsLeft--;
+                Transform nextTarget = FindNextTarget();
+                if (nextTarget != null)
+                {
+                    Vector2 direction = (nextTarget.position - transform.position).normalized;
+                    rb.linearVelocity = direction * speed;
+                }
+                else
+                {
+                    StartReturning();
+                }
             }
             else
             {
-                // No encontró otro enemigo cercano, empieza a volver
                 StartReturning();
             }
         }
-        else
+        // 3. Lógica de rebote en paredes
+        else if (!other.isTrigger && currentState == BoomerangState.Throwing)
         {
-            // Se acabaron los rebotes de enemigo permitidos, empieza a volver
-            StartReturning();
+            if (wallBouncesLeft > 0)
+            {
+                wallBouncesLeft--;
+                // El rebote físico lo maneja el PhysicsMaterial2D si lo tienes, 
+                // pero aquí aseguramos que no se detenga.
+            }
+            else
+            {
+                StartReturning();
+            }
         }
     }
 
-    /// <summary>
-    /// Busca el enemigo más cercano dentro del radio que no haya sido golpeado aún.
-    /// </summary>
     private Transform FindNextTarget()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, ricochetRadius);
+
+        // Buscamos objetos con Tag Enemigo que no hayamos golpeado ya
         var potentialTargets = hits
             .Where(hit => hit.CompareTag("Enemigo") && !hitEnemies.Contains(hit.transform))
             .OrderBy(hit => Vector2.Distance(transform.position, hit.transform.position));
+
         return potentialTargets.FirstOrDefault()?.transform;
     }
-
 
     private void HandlePlayerCatch(Collider2D playerCollider)
     {
@@ -183,14 +159,13 @@ public class Boomerang : MonoBehaviour
         if (currentState == BoomerangState.Throwing)
         {
             currentState = BoomerangState.Returning;
-            StopAllCoroutines(); // Detiene cualquier temporizador pendiente
+            StopAllCoroutines();
         }
     }
 
     private IEnumerator ReturnAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
-        // Si después del tiempo sigue en modo "Throwing", forzamos el retorno
         StartReturning();
     }
 }
