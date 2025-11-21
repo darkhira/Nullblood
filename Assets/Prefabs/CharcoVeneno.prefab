@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5613759256662384725}
   - component: {fileID: 842317462494413177}
-  - component: {fileID: 8741955039231594557}
   - component: {fileID: 2049361722202754078}
+  - component: {fileID: 289929929870131759}
   m_Layer: 0
   m_Name: CharcoVeneno
   m_TagString: Untagged
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 7470607643276329601}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.15, y: -0.02, z: 0}
-  m_LocalScale: {x: 3.2274, y: 3.2274, z: 3.2274}
+  m_LocalPosition: {x: 2, y: -5.8803, z: 0}
+  m_LocalScale: {x: 0.67536366, y: 1.059394, z: 1.059394}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -2586012050676295223, guid: 08cac7998f4b4ff448f2618bc9190d36, type: 3}
   m_Color: {r: 0, g: 1, b: 0.06773448, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,8 +92,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8741955039231594557
-BoxCollider2D:
+--- !u!114 &2049361722202754078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470607643276329601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb8fd7732baad354c8ba123cd49a7d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcidPool
+  damagePerSecond: 10
+  duration: 5
+--- !u!58 &289929929870131759
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -126,29 +140,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &2049361722202754078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7470607643276329601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8fd7732baad354c8ba123cd49a7d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AcidPool
-  damagePerSecond: 10
-  duration: 5
+  m_Offset: {x: 0, y: -0.14994381}
+  m_Radius: 9.0703125
