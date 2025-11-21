@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class BossKopp : MonoBehaviour
@@ -127,6 +128,12 @@ public class BossKopp : MonoBehaviour
         // ...o usa el método que realmente corresponde (puedes crear uno exclusivo si lo prefieres):
         // playerSoundController.playsonidoMuerteKopp();
     }
+         if (MusicManagerGlobal.instance != null)
+    {
+        MusicManagerGlobal.instance.GetComponent<AudioSource>().Stop();
+        // O bien: MusicManagerGlobal.instance.audioSource.Stop(); si lo tienes público.
+    }
+        SceneManager.LoadScene("Outro");
         Destroy(gameObject);
     }
 
