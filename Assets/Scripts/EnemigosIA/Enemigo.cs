@@ -5,6 +5,7 @@ public class Enemigo : MonoBehaviour
     public PlayerSoundController playerSoundController;
 
     private Room parentRoom;
+    public bool esEnemigoEscudo = false;
 
     [SerializeField] private float vidaActual = 100f;
     [SerializeField] private float vidaMaxima = 200f;
@@ -32,23 +33,30 @@ public class Enemigo : MonoBehaviour
         parentRoom = room;
     }
 
-    public void TomarDaño(float daño)
+    public virtual void TomarDaño(float daño)
     {
         // --- CAMBIO 2: Si el enemigo ya est� muerto, no hacemos nada ---
         if (isDead) return;
+        if (GameManager.Instance.escudoActivo && !esEnemigoEscudo)
+        {
+            Debug.Log($"[Enemigo] {gameObject.name} está protegido por el enemigo de escudo.");
+            return;
+        }
 
         vidaActual -= daño;
-        Debug.Log($"[Enemigo] {gameObject.name} ha recibido {daño} de da�o. Vida restante: {vidaActual}");
-        EnemyHealthBar.UpdateHealthBar(vidaMaxima, vidaActual);
-
+        if (EnemyHealthBar != null)
+{
+    EnemyHealthBar.UpdateHealthBar(vidaMaxima, vidaActual);
+}
         if (vidaActual <= 0)
         {
-
-
             // --- CAMBIO 3: Marcamos al enemigo como muerto ANTES de llamar a Muerte() ---
             isDead = true;
-            playerSoundController.playsonidoMuerteVorr();
-            playerSoundController.playsonidoMuerteMono();
+            if (playerSoundController != null)
+    {
+        playerSoundController.playsonidoMuerteVorr();
+        playerSoundController.playsonidoMuerteMono();
+    }
             Muerte();
         }
     }

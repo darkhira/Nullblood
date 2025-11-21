@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public bool escudoActivo = false;
     int currentLevel = 0;
     GameState currentState;
     public event Action<GameState> OnStateChanged;
@@ -22,6 +23,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         Instance = this;
     }
+    public void ActivarEscudoGlobal()
+{
+    escudoActivo = true;
+}
+public void DesactivarEscudoGlobal()
+{
+    escudoActivo = false;
+}
 
     private void Update()
     {
