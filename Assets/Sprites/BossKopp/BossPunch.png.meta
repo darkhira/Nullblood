@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 7af39177c65d40541b0d5ff804616216
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7801351388048622117
+    second: BossPunch_0
+  - first:
+      213: 3070342489550382857
+    second: BossPunch_1
+  - first:
+      213: -7699668233293650145
+    second: BossPunch_2
+  - first:
+      213: 7777879621059567065
+    second: BossPunch_3
+  - first:
+      213: 235049056928819490
+    second: BossPunch_4
+  - first:
+      213: -5774718989584545842
+    second: BossPunch_5
+  - first:
+      213: -643807895637371715
+    second: BossPunch_6
+  - first:
+      213: -4188025744011054998
+    second: BossPunch_7
+  - first:
+      213: 2553109153111364619
+    second: BossPunch_8
+  - first:
+      213: 2105882269626710569
+    second: BossPunch_9
+  - first:
+      213: 5156513340812032415
+    second: BossPunch_10
+  - first:
+      213: 7061674106586494056
+    second: BossPunch_11
+  - first:
+      213: 5163486855146245687
+    second: BossPunch_12
+  - first:
+      213: -2751209577282671928
+    second: BossPunch_13
+  - first:
+      213: -1101775180680610543
+    second: BossPunch_14
+  - first:
+      213: 6614196418701463168
+    second: BossPunch_15
+  - first:
+      213: -1841432768460664759
+    second: BossPunch_16
+  - first:
+      213: 645983809648058324
+    second: BossPunch_17
+  - first:
+      213: -6022564366454155170
+    second: BossPunch_18
+  - first:
+      213: -3974190017855526384
+    second: BossPunch_19
+  - first:
+      213: -856157831951194939
+    second: BossPunch_20
+  - first:
+      213: 2545924403112243310
+    second: BossPunch_21
+  - first:
+      213: -5732344095126522808
+    second: BossPunch_22
+  - first:
+      213: 5304930526969245670
+    second: BossPunch_23
+  - first:
+      213: -4202536265897950289
+    second: BossPunch_24
+  - first:
+      213: -3056152105628253327
+    second: BossPunch_25
+  - first:
+      213: 1634712784063555099
+    second: BossPunch_26
+  - first:
+      213: -3316167755486693919
+    second: BossPunch_27
+  - first:
+      213: -7956752750417042035
+    second: BossPunch_28
+  - first:
+      213: -6928617432461839030
+    second: BossPunch_29
+  - first:
+      213: 9192854193674108940
+    second: BossPunch_30
+  - first:
+      213: 7602272773920119543
+    second: BossPunch_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossPunch_0
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 3647
+        width: 610
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd7c53fe380cb390800000000000000
+      internalID: -7801351388048622117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_1
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 3647
+        width: 553
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90760741a3c0c9a20800000000000000
+      internalID: 3070342489550382857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_2
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 3647
+        width: 534
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f172c225988452590800000000000000
+      internalID: -7699668233293650145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_3
+      rect:
+        serializedVersion: 2
+        x: 4008
+        y: 3647
+        width: 515
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd510f6e4490fb60800000000000000
+      internalID: 7777879621059567065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_4
+      rect:
+        serializedVersion: 2
+        x: 5224
+        y: 3647
+        width: 515
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22968073fdf034300800000000000000
+      internalID: 235049056928819490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_5
+      rect:
+        serializedVersion: 2
+        x: 6440
+        y: 3647
+        width: 515
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec74c1cbca31cdfa0800000000000000
+      internalID: -5774718989584545842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_6
+      rect:
+        serializedVersion: 2
+        x: 7656
+        y: 3647
+        width: 515
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db451f4412cb017f0800000000000000
+      internalID: -643807895637371715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_7
+      rect:
+        serializedVersion: 2
+        x: 8872
+        y: 3647
+        width: 515
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60b70266c421e5c0800000000000000
+      internalID: -4188025744011054998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2431
+        width: 496
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0450007f377e6320800000000000000
+      internalID: 2553109153111364619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_9
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 2431
+        width: 515
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ab4eb44c8993d10800000000000000
+      internalID: 2105882269626710569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_10
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 2431
+        width: 534
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99f9a6209d9f8740800000000000000
+      internalID: 5156513340812032415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_11
+      rect:
+        serializedVersion: 2
+        x: 4008
+        y: 2431
+        width: 534
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86479a28f2b100260800000000000000
+      internalID: 7061674106586494056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_12
+      rect:
+        serializedVersion: 2
+        x: 5148
+        y: 2431
+        width: 572
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e046bffe368a740800000000000000
+      internalID: 5163486855146245687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_13
+      rect:
+        serializedVersion: 2
+        x: 6307
+        y: 2431
+        width: 629
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cae96b477db1d9d0800000000000000
+      internalID: -2751209577282671928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_14
+      rect:
+        serializedVersion: 2
+        x: 7542
+        y: 2431
+        width: 610
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11db0358f45b5b0f0800000000000000
+      internalID: -1101775180680610543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_15
+      rect:
+        serializedVersion: 2
+        x: 8872
+        y: 2431
+        width: 534
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e8c5b69985acb50800000000000000
+      internalID: 6614196418701463168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1215
+        width: 610
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940532647aae176e0800000000000000
+      internalID: -1841432768460664759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_17
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1215
+        width: 572
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfd9b03adef6f800800000000000000
+      internalID: 645983809648058324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_18
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 1215
+        width: 534
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58139c1e9d8b6ca0800000000000000
+      internalID: -6022564366454155170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_19
+      rect:
+        serializedVersion: 2
+        x: 3989
+        y: 1234
+        width: 553
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a61d32c37d8d8c0800000000000000
+      internalID: -3974190017855526384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_20
+      rect:
+        serializedVersion: 2
+        x: 5224
+        y: 1234
+        width: 534
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c461eaecf05e14f0800000000000000
+      internalID: -856157831951194939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_21
+      rect:
+        serializedVersion: 2
+        x: 6459
+        y: 1215
+        width: 515
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60f08871c0f45320800000000000000
+      internalID: 2545924403112243310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_22
+      rect:
+        serializedVersion: 2
+        x: 7656
+        y: 1234
+        width: 534
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844fcafaa6f9270b0800000000000000
+      internalID: -5732344095126522808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_23
+      rect:
+        serializedVersion: 2
+        x: 8853
+        y: 1234
+        width: 553
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6efa0222536ee9940800000000000000
+      internalID: 5304930526969245670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_24
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 496
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3c47b38879da5c0800000000000000
+      internalID: -4202536265897950289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_25
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 0
+        width: 515
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17347742add5695d0800000000000000
+      internalID: -3056152105628253327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_26
+      rect:
+        serializedVersion: 2
+        x: 2754
+        y: 0
+        width: 534
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16e5e3bd9aafa610800000000000000
+      internalID: 1634712784063555099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_27
+      rect:
+        serializedVersion: 2
+        x: 3970
+        y: 0
+        width: 534
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e57c960ffa9af1d0800000000000000
+      internalID: -3316167755486693919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_28
+      rect:
+        serializedVersion: 2
+        x: 5224
+        y: 0
+        width: 572
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85a7c9b78fe39190800000000000000
+      internalID: -7956752750417042035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_29
+      rect:
+        serializedVersion: 2
+        x: 6440
+        y: 0
+        width: 610
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a457881972b98df90800000000000000
+      internalID: -6928617432461839030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_30
+      rect:
+        serializedVersion: 2
+        x: 7656
+        y: 0
+        width: 591
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00c7edee24939f70800000000000000
+      internalID: 9192854193674108940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossPunch_31
+      rect:
+        serializedVersion: 2
+        x: 8834
+        y: 0
+        width: 534
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fad12f2fc2b08960800000000000000
+      internalID: 7602272773920119543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BossPunch_0: -7801351388048622117
+      BossPunch_1: 3070342489550382857
+      BossPunch_10: 5156513340812032415
+      BossPunch_11: 7061674106586494056
+      BossPunch_12: 5163486855146245687
+      BossPunch_13: -2751209577282671928
+      BossPunch_14: -1101775180680610543
+      BossPunch_15: 6614196418701463168
+      BossPunch_16: -1841432768460664759
+      BossPunch_17: 645983809648058324
+      BossPunch_18: -6022564366454155170
+      BossPunch_19: -3974190017855526384
+      BossPunch_2: -7699668233293650145
+      BossPunch_20: -856157831951194939
+      BossPunch_21: 2545924403112243310
+      BossPunch_22: -5732344095126522808
+      BossPunch_23: 5304930526969245670
+      BossPunch_24: -4202536265897950289
+      BossPunch_25: -3056152105628253327
+      BossPunch_26: 1634712784063555099
+      BossPunch_27: -3316167755486693919
+      BossPunch_28: -7956752750417042035
+      BossPunch_29: -6928617432461839030
+      BossPunch_3: 7777879621059567065
+      BossPunch_30: 9192854193674108940
+      BossPunch_31: 7602272773920119543
+      BossPunch_4: 235049056928819490
+      BossPunch_5: -5774718989584545842
+      BossPunch_6: -643807895637371715
+      BossPunch_7: -4188025744011054998
+      BossPunch_8: 2553109153111364619
+      BossPunch_9: 2105882269626710569
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
