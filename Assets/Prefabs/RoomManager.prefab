@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   roomPrefabs:
-  - {fileID: 952639245175825673, guid: 39dd02158c65ea34a9ea8e842615d369, type: 3}
+  - {fileID: 952639245175825673, guid: 25a6b1a236cad874f9334c3ddd0ad6d6, type: 3}
   - {fileID: 952639245175825673, guid: 28c33fd07a503a94f8305fa90f8434c3, type: 3}
   - {fileID: 952639245175825673, guid: c508934716b1f804c8486156af5b9a3c, type: 3}
   - {fileID: 952639245175825673, guid: f1a3e88e995c8544b875976069cd8203, type: 3}

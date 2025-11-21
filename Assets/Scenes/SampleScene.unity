@@ -696,46 +696,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: maxRooms
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: minRooms
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: roomPrefabs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: 'roomPrefabs.Array.data[0]'
-      value: 
-      objectReference: {fileID: 952639245175825673, guid: 25a6b1a236cad874f9334c3ddd0ad6d6, type: 3}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: 'roomPrefabs.Array.data[1]'
-      value: 
-      objectReference: {fileID: 952639245175825673, guid: c508934716b1f804c8486156af5b9a3c, type: 3}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: 'roomPrefabs.Array.data[2]'
-      value: 
-      objectReference: {fileID: 952639245175825673, guid: f1a3e88e995c8544b875976069cd8203, type: 3}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: 'roomPrefabs.Array.data[3]'
-      value: 
-      objectReference: {fileID: 952639245175825673, guid: 34b9d7fe6962a8d4b9930c1e39ecbb43, type: 3}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: 'roomPrefabs.Array.data[4]'
-      value: 
-      objectReference: {fileID: 952639245175825673, guid: 20f472e5c2416a540b64c8936acba9b6, type: 3}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: 'roomPrefabs.Array.data[5]'
-      value: 
-      objectReference: {fileID: 952639245175825673, guid: b40bc994333bdf243b3eee456d9cd42e, type: 3}
-    - target: {fileID: 3918811711869981562, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
-      propertyPath: 'roomPrefabs.Array.data[6]'
-      value: 
-      objectReference: {fileID: 952639245175825673, guid: b40bc994333bdf243b3eee456d9cd42e, type: 3}
     - target: {fileID: 4312804241083903969, guid: 37618bbf8e186174b8b3c5f3855946ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.18706
@@ -1739,6 +1699,8 @@ GameObject:
   - component: {fileID: 668861976}
   - component: {fileID: 668861975}
   - component: {fileID: 668861974}
+  - component: {fileID: 668861978}
+  - component: {fileID: 668861977}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1807,6 +1769,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &668861977
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668861973}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.4613338, y: 8.35}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &668861978
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668861973}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9026879ca13b09f4cb50c56ced3e82de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &704462835
 GameObject:
   m_ObjectHideFlags: 0

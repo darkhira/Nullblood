@@ -202,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8309ea3baca194b87c2188d3dea181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  escudoActivo: 0
   enemigosParaCartas: 10
 --- !u!4 &71561590
 Transform:
@@ -2014,6 +2015,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: OptionsMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2031152292359947468, guid: 12261766fb332c44495970b7a2332bfa, type: 3}
+      propertyPath: musicaDeFondo
+      value: 
+      objectReference: {fileID: 1005246097}
     - target: {fileID: 5528792448219430597, guid: 12261766fb332c44495970b7a2332bfa, type: 3}
       propertyPath: m_Pivot.x
       value: 0

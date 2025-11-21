@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2100443137996625728}
   - component: {fileID: 5760179043640953136}
   - component: {fileID: 7347681002588186393}
+  - component: {fileID: 8814591418865951920}
   m_Layer: 0
   m_Name: Kopp
   m_TagString: Enemigo
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 936800394922271151, guid: a3fc853caf291284d88931f4c8c56d10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -155,17 +156,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.01554817}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 1.0922668, y: 1.6700001}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1, y: 1.626845}
   m_EdgeRadius: 0
 --- !u!114 &7347681002588186393
 MonoBehaviour:
@@ -179,15 +180,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28b17aa360a8ff47badbc0e5dc46caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossKopp
-  rangoDeteccion: 10
-  estaActivo: 0
+  bossName: Kopp, el Corruptor
   maxHealth: 2000
   currentHealth: 0
   moveSpeed: 2
-  contactDamage: 50
-  bossName: Kopp, el Corruptor
+  contactDamage: 5
+  rangoAtaqueMelee: 1.2
+  cooldownAtaque: 2
+  estaActivo: 0
+  rangoDeteccion: 10
   acidPoolPrefab: {fileID: 7470607643276329601, guid: b48c9f6ef2ecac141b2ed48a1abbf007, type: 3}
   initialAcidInterval: 4
+--- !u!95 &8814591418865951920
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087896847573703914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: efcf19ab870e5dd42bbdf0f72e7c111d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5334765040428990876
 GameObject:
   m_ObjectHideFlags: 0
