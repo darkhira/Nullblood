@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: 258b6c45c36ac894a8cc6c1eee56279c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7505858338791505303
+    second: sobras tileset_0
+  - first:
+      213: 790968853345906878
+    second: sobras tileset_1
+  - first:
+      213: -2544125158663144846
+    second: sobras tileset_2
+  - first:
+      213: 6876235384842262435
+    second: sobras tileset_3
+  - first:
+      213: -6092068105779183231
+    second: sobras tileset_4
+  - first:
+      213: -5217440296157456851
+    second: sobras tileset_5
+  - first:
+      213: 5158380967787952386
+    second: sobras tileset_6
+  - first:
+      213: 645108008551196902
+    second: sobras tileset_7
+  - first:
+      213: -8137506553292035828
+    second: sobras tileset_8
+  - first:
+      213: -3925836689728172874
+    second: sobras tileset_9
+  - first:
+      213: -650766614225290090
+    second: sobras tileset_10
+  - first:
+      213: -2515641183846581776
+    second: sobras tileset_11
+  - first:
+      213: 6118314249552659453
+    second: sobras tileset_12
+  - first:
+      213: 7881150543884002596
+    second: sobras tileset_13
+  - first:
+      213: 939431392609022153
+    second: sobras tileset_14
+  - first:
+      213: 6564606535838662989
+    second: sobras tileset_15
+  - first:
+      213: 5056666229016443448
+    second: sobras tileset_16
+  - first:
+      213: -2090711496311261044
+    second: sobras tileset_17
+  - first:
+      213: 630886133847317136
+    second: sobras tileset_18
+  - first:
+      213: -2845483197780936275
+    second: sobras tileset_19
+  - first:
+      213: -8952123268671757094
+    second: sobras tileset_20
+  - first:
+      213: 459102252021562171
+    second: sobras tileset_21
+  - first:
+      213: -8401004975224961945
+    second: sobras tileset_22
+  - first:
+      213: -5052363232072858811
+    second: sobras tileset_23
+  - first:
+      213: 1617065770159007671
+    second: sobras tileset_24
+  - first:
+      213: -7879621803946544943
+    second: sobras tileset_25
+  - first:
+      213: -2843747678914704640
+    second: sobras tileset_26
+  - first:
+      213: 3694112674289078191
+    second: sobras tileset_27
+  - first:
+      213: 7514683558811501557
+    second: sobras tileset_28
+  - first:
+      213: 8681762548724757725
+    second: sobras tileset_29
+  - first:
+      213: 4203133334989080212
+    second: sobras tileset_30
+  - first:
+      213: -4696068516314602291
+    second: sobras tileset_31
+  - first:
+      213: -225630134442540699
+    second: sobras tileset_32
+  - first:
+      213: 2849519087643645344
+    second: sobras tileset_33
+  - first:
+      213: 5046220014515391398
+    second: sobras tileset_34
+  - first:
+      213: -7630588454318451232
+    second: sobras tileset_35
+  - first:
+      213: -4530872979818026741
+    second: sobras tileset_36
+  - first:
+      213: -2147088070292169565
+    second: sobras tileset_37
+  - first:
+      213: 3856958704199205469
+    second: sobras tileset_38
+  - first:
+      213: 3810134536493912096
+    second: sobras tileset_39
+  - first:
+      213: -1852945223654096157
+    second: sobras tileset_40
+  - first:
+      213: 1173396059183359296
+    second: sobras tileset_41
+  - first:
+      213: -1885473561645984356
+    second: sobras tileset_42
+  - first:
+      213: 5213688005719636392
+    second: sobras tileset_43
+  - first:
+      213: -3575930365477420916
+    second: sobras tileset_44
+  - first:
+      213: 1592796623156582480
+    second: sobras tileset_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sobras tileset_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 976
+        width: 123
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962cdedcb95d5d790800000000000000
+      internalID: -7505858338791505303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 978
+        width: 105
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0b41c3bf51afa00800000000000000
+      internalID: 790968853345906878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_2
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 976
+        width: 126
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27abfb5c5a371bcd0800000000000000
+      internalID: -2544125158663144846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_3
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 975
+        width: 134
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a79e7196ab4d6f50800000000000000
+      internalID: 6876235384842262435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_4
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 975
+        width: 134
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1818b8fb550a47ba0800000000000000
+      internalID: -6092068105779183231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_5
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 974
+        width: 134
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26d9be91bde797b0800000000000000
+      internalID: -5217440296157456851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_6
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 974
+        width: 134
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209f221f820469740800000000000000
+      internalID: 5158380967787952386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_7
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 974
+        width: 134
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8247bd052e3f800800000000000000
+      internalID: 645108008551196902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_8
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 974
+        width: 134
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c096d9577e4c11f80800000000000000
+      internalID: -8137506553292035828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_9
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 786
+        width: 49
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc8e86a450a489c0800000000000000
+      internalID: -3925836689728172874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_10
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 788
+        width: 46
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cfa67563308f6f0800000000000000
+      internalID: -650766614225290090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_11
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 837
+        width: 136
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f93b76fba5a61dd0800000000000000
+      internalID: -2515641183846581776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_12
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 837
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df30cccc46e98e450800000000000000
+      internalID: 6118314249552659453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_13
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 837
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425259dd9a87f5d60800000000000000
+      internalID: 7881150543884002596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_14
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 837
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0bf4fcfd7890d00800000000000000
+      internalID: 939431392609022153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_15
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 837
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d410fd21dda2a1b50800000000000000
+      internalID: 6564606535838662989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_16
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 837
+        width: 133
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a3d38d423ec2640800000000000000
+      internalID: 5056666229016443448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_17
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 608
+        width: 119
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88ba8e98fc4cf2e0800000000000000
+      internalID: -2090711496311261044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_18
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 610
+        width: 105
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a50bd989b51c800800000000000000
+      internalID: 630886133847317136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_19
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 608
+        width: 130
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9bced8b10d288d0800000000000000
+      internalID: -2845483197780936275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_20
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 699
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4af49415ba3c380800000000000000
+      internalID: -8952123268671757094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_21
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 699
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bb357d01f0f5600800000000000000
+      internalID: 459102252021562171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_22
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 696
+        width: 134
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7644d674c72a96b80800000000000000
+      internalID: -8401004975224961945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_23
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 699
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5438d04b86662e9b0800000000000000
+      internalID: -5052363232072858811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_24
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 699
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b765c810c8f07610800000000000000
+      internalID: 1617065770159007671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_25
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 699
+        width: 133
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0f753a7b5f5a290800000000000000
+      internalID: -7879621803946544943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_26
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 423
+        width: 123
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b82778d8af888d0800000000000000
+      internalID: -2843747678914704640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_27
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 423
+        width: 243
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafc44fa7ef144330800000000000000
+      internalID: 3694112674289078191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_28
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 423
+        width: 126
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f38d6ad1e4894860800000000000000
+      internalID: 7514683558811501557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_29
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 560
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd477054a01db7870800000000000000
+      internalID: 8681762548724757725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_30
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 560
+        width: 135
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49680afbf77845a30800000000000000
+      internalID: 4203133334989080212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_31
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 558
+        width: 134
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc42c24b09634deb0800000000000000
+      internalID: -4696068516314602291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_32
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 560
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561cde196966edcf0800000000000000
+      internalID: -225630134442540699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_33
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 560
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5d1b743868b8720800000000000000
+      internalID: 2849519087643645344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_34
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 560
+        width: 133
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab08affd56c70640800000000000000
+      internalID: 5046220014515391398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_35
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 420
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5d629ba34ba1690800000000000000
+      internalID: -7630588454318451232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_36
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 420
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09e78bc70b1f11c0800000000000000
+      internalID: -4530872979818026741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_37
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 416
+        width: 134
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac91cc96c20432e0800000000000000
+      internalID: -2147088070292169565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_38
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 420
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d520525a18ba68530800000000000000
+      internalID: 3856958704199205469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_39
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 420
+        width: 135
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020da2a8c2150e430800000000000000
+      internalID: 3810134536493912096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_40
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 420
+        width: 133
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e247dbe2240946e0800000000000000
+      internalID: -1852945223654096157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 293
+        width: 92
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045a778bf7db84010800000000000000
+      internalID: 1173396059183359296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_42
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 240
+        width: 93
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9553bc09c375d5e0800000000000000
+      internalID: -1885473561645984356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_43
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 55
+        width: 119
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a932ae2e9dba5840800000000000000
+      internalID: 5213688005719636392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_44
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 55
+        width: 249
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c808f28574ebf5ec0800000000000000
+      internalID: -3575930365477420916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sobras tileset_45
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 55
+        width: 130
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05890baf610ca1610800000000000000
+      internalID: 1592796623156582480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e71980d06b23bcc4192cac9c0aa288e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sobras tileset_0: -7505858338791505303
+      sobras tileset_1: 790968853345906878
+      sobras tileset_10: -650766614225290090
+      sobras tileset_11: -2515641183846581776
+      sobras tileset_12: 6118314249552659453
+      sobras tileset_13: 7881150543884002596
+      sobras tileset_14: 939431392609022153
+      sobras tileset_15: 6564606535838662989
+      sobras tileset_16: 5056666229016443448
+      sobras tileset_17: -2090711496311261044
+      sobras tileset_18: 630886133847317136
+      sobras tileset_19: -2845483197780936275
+      sobras tileset_2: -2544125158663144846
+      sobras tileset_20: -8952123268671757094
+      sobras tileset_21: 459102252021562171
+      sobras tileset_22: -8401004975224961945
+      sobras tileset_23: -5052363232072858811
+      sobras tileset_24: 1617065770159007671
+      sobras tileset_25: -7879621803946544943
+      sobras tileset_26: -2843747678914704640
+      sobras tileset_27: 3694112674289078191
+      sobras tileset_28: 7514683558811501557
+      sobras tileset_29: 8681762548724757725
+      sobras tileset_3: 6876235384842262435
+      sobras tileset_30: 4203133334989080212
+      sobras tileset_31: -4696068516314602291
+      sobras tileset_32: -225630134442540699
+      sobras tileset_33: 2849519087643645344
+      sobras tileset_34: 5046220014515391398
+      sobras tileset_35: -7630588454318451232
+      sobras tileset_36: -4530872979818026741
+      sobras tileset_37: -2147088070292169565
+      sobras tileset_38: 3856958704199205469
+      sobras tileset_39: 3810134536493912096
+      sobras tileset_4: -6092068105779183231
+      sobras tileset_40: -1852945223654096157
+      sobras tileset_41: 1173396059183359296
+      sobras tileset_42: -1885473561645984356
+      sobras tileset_43: 5213688005719636392
+      sobras tileset_44: -3575930365477420916
+      sobras tileset_45: 1592796623156582480
+      sobras tileset_5: -5217440296157456851
+      sobras tileset_6: 5158380967787952386
+      sobras tileset_7: 645108008551196902
+      sobras tileset_8: -8137506553292035828
+      sobras tileset_9: -3925836689728172874
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

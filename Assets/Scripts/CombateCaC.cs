@@ -15,37 +15,39 @@ public class CombateCaC : MonoBehaviour
         playerStats = GetComponent<PlayerStats>();
     }
 
-    // --- �M�TODO MODIFICADO! ---
-    // Acepta un argumento Vector2 para saber la direcci�n del ataque.
+    // Acepta un argumento Vector2 para saber la dirección del ataque.
     public void EjecutarGolpe(Vector2 attackDirection)
     {
-        // 1. Mueve el "controladorGolpe" a la posici�n correcta ANTES de atacar.
+        // 1. Mueve el "controladorGolpe" a la posición correcta ANTES de atacar.
         if (controladorGolpe != null)
         {
             controladorGolpe.localPosition = attackDirection.normalized * attackOffset;
         }
 
-        // 2. Detecta enemigos en la NUEVA posici�n del controlador
+        // 2. Detecta colisionadores en la zona
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
 
         foreach (Collider2D colisionador in objetos)
         {
-            if (colisionador.CompareTag("Enemigo"))
+            // Verificamos si es un enemigo estándar
+            if (colisionador.TryGetComponent<Enemigo>(out Enemigo enemigo))
             {
-                if (colisionador.TryGetComponent<Enemigo>(out Enemigo enemigo))
-                {
-                    enemigo.TomarDaño(playerStats.baseDamage);
-                }
+                enemigo.TomarDaño(playerStats.baseDamage);
+            }
+            // --- NUEVO: Verificamos si es el Jefe Kopp ---
+            else if (colisionador.TryGetComponent<BossKopp>(out BossKopp jefe))
+            {
+                jefe.TomarDaño(playerStats.baseDamage);
             }
         }
     }
 
-    // Dibuja el gizmo en la posici�n del controlador para depuraci�n
     private void OnDrawGizmos()
     {
-        if (controladorGolpe == null) return;
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(controladorGolpe.position, radioGolpe);
+        if (controladorGolpe != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(controladorGolpe.position, radioGolpe);
+        }
     }
 }

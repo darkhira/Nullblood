@@ -46,8 +46,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   roomPrefabs:
   - {fileID: 952639245175825673, guid: 39dd02158c65ea34a9ea8e842615d369, type: 3}
-  initialRoomPrefab: {fileID: 952639245175825673, guid: 7b696254e49e2f54e97c4e9ea1e306ee, type: 3}
-  bossRoomPrefab: {fileID: 952639245175825673, guid: e833549a41a2c0948a8167fc0f740262, type: 3}
+  - {fileID: 952639245175825673, guid: 28c33fd07a503a94f8305fa90f8434c3, type: 3}
+  - {fileID: 952639245175825673, guid: c508934716b1f804c8486156af5b9a3c, type: 3}
+  - {fileID: 952639245175825673, guid: f1a3e88e995c8544b875976069cd8203, type: 3}
+  - {fileID: 952639245175825673, guid: 34b9d7fe6962a8d4b9930c1e39ecbb43, type: 3}
+  - {fileID: 952639245175825673, guid: 20f472e5c2416a540b64c8936acba9b6, type: 3}
+  - {fileID: 952639245175825673, guid: b40bc994333bdf243b3eee456d9cd42e, type: 3}
+  initialRoomPrefab: {fileID: 952639245175825673, guid: 3fd4ddc8c33fdc146b266081ad05a02f, type: 3}
+  bossRoomPrefab: {fileID: 952639245175825673, guid: 60fc923f4414ce94490d037366ae7ff8, type: 3}
   maxRooms: 20
   minRooms: 10
   roomWidth: 30

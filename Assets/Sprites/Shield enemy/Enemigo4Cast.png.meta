@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: a06741d4ac682934a9eb1b8645286a76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7598497152008167927
+    second: Enemigo4Cast_0
+  - first:
+      213: -5834547209804050544
+    second: Enemigo4Cast_1
+  - first:
+      213: -1321384575438407246
+    second: Enemigo4Cast_2
+  - first:
+      213: 6386347590102541497
+    second: Enemigo4Cast_3
+  - first:
+      213: 5634972799643107149
+    second: Enemigo4Cast_4
+  - first:
+      213: 2479661732823655064
+    second: Enemigo4Cast_5
+  - first:
+      213: 8472527434145404759
+    second: Enemigo4Cast_6
+  - first:
+      213: -2241630043062688099
+    second: Enemigo4Cast_7
+  - first:
+      213: -2516479013906060018
+    second: Enemigo4Cast_8
+  - first:
+      213: 3790293532661909802
+    second: Enemigo4Cast_9
+  - first:
+      213: -8318025311865317991
+    second: Enemigo4Cast_10
+  - first:
+      213: 7017460162715429653
+    second: Enemigo4Cast_11
+  - first:
+      213: 8579386210423020536
+    second: Enemigo4Cast_12
+  - first:
+      213: -8280481102139753959
+    second: Enemigo4Cast_13
+  - first:
+      213: -2336969262090588776
+    second: Enemigo4Cast_14
+  - first:
+      213: -3972930458861608456
+    second: Enemigo4Cast_15
+  - first:
+      213: -8435782014380122514
+    second: Enemigo4Cast_16
+  - first:
+      213: 57629921041774952
+    second: Enemigo4Cast_17
+  - first:
+      213: -6672073122600089456
+    second: Enemigo4Cast_18
+  - first:
+      213: -1647693082549795911
+    second: Enemigo4Cast_19
+  - first:
+      213: -1809917052606078219
+    second: Enemigo4Cast_20
+  - first:
+      213: -3077822593347469388
+    second: Enemigo4Cast_21
+  - first:
+      213: -4674679687402300225
+    second: Enemigo4Cast_22
+  - first:
+      213: -3357394903867102241
+    second: Enemigo4Cast_23
+  - first:
+      213: 3596735475904728699
+    second: Enemigo4Cast_24
+  - first:
+      213: 1225391076232189492
+    second: Enemigo4Cast_25
+  - first:
+      213: 3929828363749857058
+    second: Enemigo4Cast_26
+  - first:
+      213: 4435027291727508051
+    second: Enemigo4Cast_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 750
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo4Cast_0
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 4223
+        width: 706
+        height: 1058
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e5cbb4917bc8690800000000000000
+      internalID: -7598497152008167927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_1
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 4223
+        width: 706
+        height: 1058
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f0266b936870fa0800000000000000
+      internalID: -5834547209804050544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_2
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 4223
+        width: 706
+        height: 1058
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b93059cabf79ade0800000000000000
+      internalID: -1321384575438407246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_3
+      rect:
+        serializedVersion: 2
+        x: 4531
+        y: 4223
+        width: 794
+        height: 1058
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4eb300c4dd0a850800000000000000
+      internalID: 6386347590102541497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_4
+      rect:
+        serializedVersion: 2
+        x: 5785
+        y: 4223
+        width: 1102
+        height: 1058
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f37b9e7e1733e40800000000000000
+      internalID: 5634972799643107149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_5
+      rect:
+        serializedVersion: 2
+        x: 7215
+        y: 4223
+        width: 1058
+        height: 1058
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892651c4537896220800000000000000
+      internalID: 2479661732823655064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_6
+      rect:
+        serializedVersion: 2
+        x: 8755
+        y: 4223
+        width: 794
+        height: 1058
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7571dfddfc6749570800000000000000
+      internalID: 8472527434145404759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2815
+        width: 662
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96a76d3a5124e0e0800000000000000
+      internalID: -2241630043062688099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_8
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 2815
+        width: 574
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d67637baba31dd0800000000000000
+      internalID: -2516479013906060018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_9
+      rect:
+        serializedVersion: 2
+        x: 3233
+        y: 2815
+        width: 574
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2906c8d2e3d99430800000000000000
+      internalID: 3790293532661909802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_10
+      rect:
+        serializedVersion: 2
+        x: 4641
+        y: 2815
+        width: 596
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9955f85bc00709c80800000000000000
+      internalID: -8318025311865317991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_11
+      rect:
+        serializedVersion: 2
+        x: 5983
+        y: 2815
+        width: 772
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bab1086d6036160800000000000000
+      internalID: 7017460162715429653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_12
+      rect:
+        serializedVersion: 2
+        x: 7369
+        y: 2815
+        width: 794
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb16278d4a101770800000000000000
+      internalID: 8579386210423020536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_13
+      rect:
+        serializedVersion: 2
+        x: 8865
+        y: 2815
+        width: 640
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91aff993f42d51d80800000000000000
+      internalID: -8280481102139753959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_14
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1407
+        width: 706
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d651286da619fd0800000000000000
+      internalID: -2336969262090588776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_15
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 1407
+        width: 706
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f169321cc05dd8c0800000000000000
+      internalID: -3972930458861608456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_16
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 1407
+        width: 706
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e5e3ed3f41eea80800000000000000
+      internalID: -8435782014380122514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_17
+      rect:
+        serializedVersion: 2
+        x: 4531
+        y: 1407
+        width: 794
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869f02c9b1ebcc000800000000000000
+      internalID: 57629921041774952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_18
+      rect:
+        serializedVersion: 2
+        x: 5785
+        y: 1407
+        width: 1102
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0988dfb58d80863a0800000000000000
+      internalID: -6672073122600089456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_19
+      rect:
+        serializedVersion: 2
+        x: 7215
+        y: 1407
+        width: 1058
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b340cb0fd73229e0800000000000000
+      internalID: -1647693082549795911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_20
+      rect:
+        serializedVersion: 2
+        x: 8777
+        y: 1407
+        width: 750
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f22e7ea702e1e6e0800000000000000
+      internalID: -1809917052606078219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_21
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 0
+        width: 662
+        height: 1079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf3ad988a06945d0800000000000000
+      internalID: -3077822593347469388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_22
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 0
+        width: 574
+        height: 1079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcd6a18793302fb0800000000000000
+      internalID: -4674679687402300225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_23
+      rect:
+        serializedVersion: 2
+        x: 3233
+        y: 0
+        width: 574
+        height: 1079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb6b488f132861d0800000000000000
+      internalID: -3357394903867102241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_24
+      rect:
+        serializedVersion: 2
+        x: 4619
+        y: 0
+        width: 596
+        height: 1079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ec858ebdb2ae130800000000000000
+      internalID: 3596735475904728699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_25
+      rect:
+        serializedVersion: 2
+        x: 5917
+        y: 0
+        width: 772
+        height: 1079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436d0c101b6710110800000000000000
+      internalID: 1225391076232189492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_26
+      rect:
+        serializedVersion: 2
+        x: 7325
+        y: 0
+        width: 794
+        height: 1079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2279091631e898630800000000000000
+      internalID: 3929828363749857058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo4Cast_27
+      rect:
+        serializedVersion: 2
+        x: 8799
+        y: 0
+        width: 640
+        height: 1079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352b494f2d16c8d30800000000000000
+      internalID: 4435027291727508051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Enemigo4Cast_0: -7598497152008167927
+      Enemigo4Cast_1: -5834547209804050544
+      Enemigo4Cast_10: -8318025311865317991
+      Enemigo4Cast_11: 7017460162715429653
+      Enemigo4Cast_12: 8579386210423020536
+      Enemigo4Cast_13: -8280481102139753959
+      Enemigo4Cast_14: -2336969262090588776
+      Enemigo4Cast_15: -3972930458861608456
+      Enemigo4Cast_16: -8435782014380122514
+      Enemigo4Cast_17: 57629921041774952
+      Enemigo4Cast_18: -6672073122600089456
+      Enemigo4Cast_19: -1647693082549795911
+      Enemigo4Cast_2: -1321384575438407246
+      Enemigo4Cast_20: -1809917052606078219
+      Enemigo4Cast_21: -3077822593347469388
+      Enemigo4Cast_22: -4674679687402300225
+      Enemigo4Cast_23: -3357394903867102241
+      Enemigo4Cast_24: 3596735475904728699
+      Enemigo4Cast_25: 1225391076232189492
+      Enemigo4Cast_26: 3929828363749857058
+      Enemigo4Cast_27: 4435027291727508051
+      Enemigo4Cast_3: 6386347590102541497
+      Enemigo4Cast_4: 5634972799643107149
+      Enemigo4Cast_5: 2479661732823655064
+      Enemigo4Cast_6: 8472527434145404759
+      Enemigo4Cast_7: -2241630043062688099
+      Enemigo4Cast_8: -2516479013906060018
+      Enemigo4Cast_9: 3790293532661909802
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

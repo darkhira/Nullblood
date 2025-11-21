@@ -6,6 +6,9 @@ public class MusicManagerGlobal : MonoBehaviour
 {
     // --- Campos para asignar en el Inspector ---
     [Header("Música del Menú")]
+    [Header("Música del Jefe")]
+    public AudioClip musicaDelJefe;
+
     public AudioClip musicaDelMenu;
     public string nombreEscenaMenu = "MainMenu"; // <-- ¡Escribe el nombre de tu escena de Menú!
 
@@ -82,4 +85,10 @@ public class MusicManagerGlobal : MonoBehaviour
         audioSource.clip = nuevaMusica;
         audioSource.Play();
     }
+
+    public void ReproducirMusicaJefe()
+    {
+    CambiarMusica(musicaDelJefe);
+    }
+
 }

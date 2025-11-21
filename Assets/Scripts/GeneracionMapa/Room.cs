@@ -142,6 +142,15 @@ public class Room : MonoBehaviour
 
     public void OnPlayerEnter()
     {
+        if (isBossRoom)
+{
+        if (MusicManagerGlobal.instance != null)
+        {
+        MusicManagerGlobal.instance.ReproducirMusicaJefe();
+        }
+    // ... aquí puedes poner también el resto de lógica de la sala.
+}
+
         if (playerHasEntered) return;
         playerHasEntered = true;
 
