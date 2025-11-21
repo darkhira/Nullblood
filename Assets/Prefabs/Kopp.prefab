@@ -179,12 +179,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28b17aa360a8ff47badbc0e5dc46caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossKopp
-  maxHealth: 1000
+  rangoDeteccion: 10
+  estaActivo: 0
+  maxHealth: 2000
   currentHealth: 0
   moveSpeed: 2
   contactDamage: 50
+  bossName: Kopp, el Corruptor
   acidPoolPrefab: {fileID: 7470607643276329601, guid: b48c9f6ef2ecac141b2ed48a1abbf007, type: 3}
-  attackPoint: {fileID: 7775160769501874382}
   initialAcidInterval: 4
 --- !u!1 &5334765040428990876
 GameObject:
