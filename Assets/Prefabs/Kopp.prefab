@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2100443137996625728}
   - component: {fileID: 5760179043640953136}
   - component: {fileID: 7347681002588186393}
-  - component: {fileID: 8814591418865951920}
+  - component: {fileID: -712956620049588383}
+  - component: {fileID: -7226005992887112236}
   m_Layer: 0
   m_Name: Kopp
   m_TagString: Enemigo
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 936800394922271151, guid: a3fc853caf291284d88931f4c8c56d10, type: 3}
+  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,17 +157,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.01554817}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0922668, y: 1.6700001}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.626845}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &7347681002588186393
 MonoBehaviour:
@@ -180,39 +181,141 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28b17aa360a8ff47badbc0e5dc46caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossKopp
-  bossName: Kopp, el Corruptor
+  rangoDeteccion: 10
+  estaActivo: 0
   maxHealth: 2000
   currentHealth: 0
   moveSpeed: 2
-  contactDamage: 5
-  rangoAtaqueMelee: 1.2
-  cooldownAtaque: 2
-  estaActivo: 0
-  rangoDeteccion: 10
+  contactDamage: 50
+  bossName: Kopp, el Corruptor
   acidPoolPrefab: {fileID: 7470607643276329601, guid: b48c9f6ef2ecac141b2ed48a1abbf007, type: 3}
   initialAcidInterval: 4
---- !u!95 &8814591418865951920
-Animator:
-  serializedVersion: 7
+--- !u!82 &-712956620049588383
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087896847573703914}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: efcf19ab870e5dd42bbdf0f72e7c111d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-7226005992887112236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087896847573703914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334a0447470de924ba5bb35ed3effa9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSoundController
+  audioSource: {fileID: 0}
+  sonidoPasillos: {fileID: 0}
+  sonidoMuerte: {fileID: 0}
+  sonidoGolpe: {fileID: 0}
+  sonidoDash: {fileID: 0}
+  sonidoPeleaKopp: {fileID: 0}
+  sonidoMuerteVorr: {fileID: 0}
+  sonidoMuerteMono: {fileID: 0}
+  sonidoEspacio: {fileID: 0}
+  sonidoPistolaLaser: {fileID: 0}
+  sonidoPuerta: {fileID: 0}
+  sonidoClipMenu: {fileID: 0}
+  sonidoRecibirDanio: {fileID: 0}
+  sonidoPasillosdescartado: {fileID: 0}
+  sonidoCofreAbierto: {fileID: 0}
+  sonidoBoomerang: {fileID: 0}
+  sonidoMuerteKopp: {fileID: 8300000, guid: f5f848c41bf9718448c1369f8a616fb0, type: 3}
 --- !u!1 &5334765040428990876
 GameObject:
   m_ObjectHideFlags: 0

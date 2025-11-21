@@ -19,6 +19,8 @@ public class PlayerSoundController : MonoBehaviour
     public AudioClip sonidoCofreAbierto;
     public AudioClip sonidoBoomerang;
 
+    public AudioClip sonidoMuerteKopp;
+
 
     void Awake()
     {
@@ -112,7 +114,7 @@ public class PlayerSoundController : MonoBehaviour
     public void playsonidoRecibirDanio()
     {
         audioSource.PlayOneShot(sonidoRecibirDanio);
-        audioSource.volume = 0.3f;
+        audioSource.volume = 0.1f;
     }
 
     public void playsonidoPasillosdescartado()
@@ -129,6 +131,12 @@ public class PlayerSoundController : MonoBehaviour
     {
         audioSource.PlayOneShot(sonidoBoomerang);
         audioSource.volume = 0.2f;
+    }
+
+    public void playsonidoMuerteKopp()
+    {
+        AudioSource.PlayClipAtPoint(sonidoMuerteKopp, transform.position);
+        audioSource.volume = 1.0f;
     }
 
     

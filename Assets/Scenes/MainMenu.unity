@@ -1615,6 +1615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdbfb2c9692100e4ab52df88a69bc24e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManagerGlobal
+  musicaDelJefe: {fileID: 8300000, guid: 58e7067c93964804ea0d4adbcdce3f20, type: 3}
   musicaDelMenu: {fileID: 8300000, guid: 4ff18a2a6ca81d44e9210832c7cf6472, type: 3}
   nombreEscenaMenu: MainMenu
   musicaDelJuego: {fileID: 8300000, guid: 5d63f67d8fd26cc4e85a7f78f62e8535, type: 3}
